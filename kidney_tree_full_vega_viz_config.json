@@ -1,0 +1,1830 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
+    "width": 1720,
+    "height": 1720,
+    "padding": 0,
+    "autosize": "none",
+    "signals": [
+        {
+            "name": "labels",
+            "value": false,
+            "bind": {
+                "input": "checkbox"
+            }
+        },
+        {
+            "name": "radius",
+            "value": 865,
+            "bind": {
+                "input": "range",
+                "min": 20,
+                "max": 4000
+            }
+        },
+        {
+            "name": "extent",
+            "value": 160,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "rotate",
+            "value": 15,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "layout",
+            "value": "tidy",
+            "bind": {
+                "input": "radio",
+                "options": [
+                    "tidy",
+                    "cluster"
+                ]
+            }
+        },
+        {
+            "name": "links",
+            "value": "diagonal",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "line",
+                    "curve",
+                    "diagonal",
+                    "orthogonal"
+                ]
+            }
+        },
+        {
+            "name": "originX",
+            "update": "width / 2"
+        },
+        {
+            "name": "originY",
+            "update": "height / 2"
+        }
+    ],
+    "data": [
+        {
+            "name": "tree",
+            "values": [
+                {
+                    "id": 8991.0,
+                    "name": 8991.0,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002113",
+                    "id_from_ontology_id": "UBERON:0002113",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8992.0,
+                    "name": 8992.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002015",
+                    "id_from_ontology_id": "UBERON:0002015",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8993.0,
+                    "name": 8993.0,
+                    "parent": 8992,
+                    "type": "CT",
+                    "ontology_id": "CL:0000499",
+                    "id_from_ontology_id": "CL:0000499$$4144",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8994.0,
+                    "name": 8994.0,
+                    "parent": 8993,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:capsule-mesenchymal-stromal-cell",
+                    "id_from_ontology_id": "ASCTB-TEMP:capsule-mesenchymal-stromal-cell",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8995.0,
+                    "name": 8995.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001225",
+                    "id_from_ontology_id": "UBERON:0001225",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8996.0,
+                    "name": 8996.0,
+                    "parent": 8995,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002189",
+                    "id_from_ontology_id": "UBERON:0002189",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8997.0,
+                    "name": 8997.0,
+                    "parent": 8996,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004188",
+                    "id_from_ontology_id": "UBERON:0004188",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8998.0,
+                    "name": 8998.0,
+                    "parent": 8997,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005751",
+                    "id_from_ontology_id": "UBERON:0005751",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 8999.0,
+                    "name": 8999.0,
+                    "parent": 8998,
+                    "type": "CT",
+                    "ontology_id": "CL:0000653",
+                    "id_from_ontology_id": "CL:0000653",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9000.0,
+                    "name": 9000.0,
+                    "parent": 8995,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005271",
+                    "id_from_ontology_id": "UBERON:0005271",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9001.0,
+                    "name": 9001.0,
+                    "parent": 9000,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004188",
+                    "id_from_ontology_id": "UBERON:0004188$$4145",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9002.0,
+                    "name": 9002.0,
+                    "parent": 9001,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005751",
+                    "id_from_ontology_id": "UBERON:0005751$$4146",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9003.0,
+                    "name": 9003.0,
+                    "parent": 9002,
+                    "type": "CT",
+                    "ontology_id": "CL:0000653",
+                    "id_from_ontology_id": "CL:0000653$$4147",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9004.0,
+                    "name": 9004.0,
+                    "parent": 8995,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0009883",
+                    "id_from_ontology_id": "UBERON:0009883",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9005.0,
+                    "name": 9005.0,
+                    "parent": 9004,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004203",
+                    "id_from_ontology_id": "UBERON:0004203",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9006.0,
+                    "name": 9006.0,
+                    "parent": 9005,
+                    "type": "CT",
+                    "ontology_id": "CL:1000714",
+                    "id_from_ontology_id": "CL:1000714",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9007.0,
+                    "name": 9007.0,
+                    "parent": 8995,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001284",
+                    "id_from_ontology_id": "UBERON:0001284",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9008.0,
+                    "name": 9008.0,
+                    "parent": 9007,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004188",
+                    "id_from_ontology_id": "UBERON:0004188$$4149",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9009.0,
+                    "name": 9009.0,
+                    "parent": 9008,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005751",
+                    "id_from_ontology_id": "UBERON:0005751$$4150",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9010.0,
+                    "name": 9010.0,
+                    "parent": 9009,
+                    "type": "CT",
+                    "ontology_id": "CL:0000653",
+                    "id_from_ontology_id": "CL:0000653$$4151",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9011.0,
+                    "name": 9011.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0000362",
+                    "id_from_ontology_id": "UBERON:0000362",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9012.0,
+                    "name": 9012.0,
+                    "parent": 9011,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004202",
+                    "id_from_ontology_id": "UBERON:0004202",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9013.0,
+                    "name": 9013.0,
+                    "parent": 9012,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001291",
+                    "id_from_ontology_id": "UBERON:0001291",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9014.0,
+                    "name": 9014.0,
+                    "parent": 9013,
+                    "type": "CT",
+                    "ontology_id": "CL:1001108",
+                    "id_from_ontology_id": "CL:1001108",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9015.0,
+                    "name": 9015.0,
+                    "parent": 9011,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004201",
+                    "id_from_ontology_id": "UBERON:0004201",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9016.0,
+                    "name": 9016.0,
+                    "parent": 9015,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001289",
+                    "id_from_ontology_id": "UBERON:0001289",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9017.0,
+                    "name": 9017.0,
+                    "parent": 9016,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8600036",
+                    "id_from_ontology_id": "UBERON:8600036",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9018.0,
+                    "name": 9018.0,
+                    "parent": 9017,
+                    "type": "CT",
+                    "ontology_id": "CL:4030013",
+                    "id_from_ontology_id": "CL:4030013",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9019.0,
+                    "name": 9019.0,
+                    "parent": 9011,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001294",
+                    "id_from_ontology_id": "UBERON:0001294",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9020.0,
+                    "name": 9020.0,
+                    "parent": 9019,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0009202",
+                    "id_from_ontology_id": "UBERON:0009202$$4148",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9021.0,
+                    "name": 9021.0,
+                    "parent": 9020,
+                    "type": "CT",
+                    "ontology_id": "CL:1001285",
+                    "id_from_ontology_id": "CL:1001285",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9022.0,
+                    "name": 9022.0,
+                    "parent": 9019,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001228",
+                    "id_from_ontology_id": "UBERON:0001228",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9023.0,
+                    "name": 9023.0,
+                    "parent": 9022,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0009095",
+                    "id_from_ontology_id": "UBERON:0009095",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9024.0,
+                    "name": 9024.0,
+                    "parent": 9023,
+                    "type": "CT",
+                    "ontology_id": "CL:1000718",
+                    "id_from_ontology_id": "CL:1000718",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9025.0,
+                    "name": 9025.0,
+                    "parent": 9011,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004200",
+                    "id_from_ontology_id": "UBERON:0004200",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9026.0,
+                    "name": 9026.0,
+                    "parent": 9025,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0009202",
+                    "id_from_ontology_id": "UBERON:0009202$$4152",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9027.0,
+                    "name": 9027.0,
+                    "parent": 9026,
+                    "type": "CT",
+                    "ontology_id": "CL:1001285",
+                    "id_from_ontology_id": "CL:1001285$$4153",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9028.0,
+                    "name": 9028.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001285",
+                    "id_from_ontology_id": "UBERON:0001285",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9029.0,
+                    "name": 9029.0,
+                    "parent": 9028,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001229",
+                    "id_from_ontology_id": "UBERON:0001229",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9030.0,
+                    "name": 9030.0,
+                    "parent": 9029,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004188",
+                    "id_from_ontology_id": "UBERON:0004188$$4154",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9031.0,
+                    "name": 9031.0,
+                    "parent": 9030,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005750",
+                    "id_from_ontology_id": "UBERON:0005750",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9032.0,
+                    "name": 9032.0,
+                    "parent": 9031,
+                    "type": "CT",
+                    "ontology_id": "CL:1000452",
+                    "id_from_ontology_id": "CL:1000452",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9033.0,
+                    "name": 9033.0,
+                    "parent": 9030,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005751",
+                    "id_from_ontology_id": "UBERON:0005751$$4155",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9034.0,
+                    "name": 9034.0,
+                    "parent": 9033,
+                    "type": "CT",
+                    "ontology_id": "CL:0000653",
+                    "id_from_ontology_id": "CL:0000653$$4156",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9035.0,
+                    "name": 9035.0,
+                    "parent": 9029,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0000074",
+                    "id_from_ontology_id": "UBERON:0000074",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9036.0,
+                    "name": 9036.0,
+                    "parent": 9035,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004190",
+                    "id_from_ontology_id": "UBERON:0004190",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9037.0,
+                    "name": 9037.0,
+                    "parent": 9036,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004294",
+                    "id_from_ontology_id": "UBERON:0004294",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9038.0,
+                    "name": 9038.0,
+                    "parent": 9037,
+                    "type": "CT",
+                    "ontology_id": "CL:1001005",
+                    "id_from_ontology_id": "CL:1001005",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9039.0,
+                    "name": 9039.0,
+                    "parent": 9029,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005215",
+                    "id_from_ontology_id": "UBERON:0005215",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9040.0,
+                    "name": 9040.0,
+                    "parent": 9039,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002319",
+                    "id_from_ontology_id": "UBERON:0002319",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9041.0,
+                    "name": 9041.0,
+                    "parent": 9040,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002320",
+                    "id_from_ontology_id": "UBERON:0002320",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9042.0,
+                    "name": 9042.0,
+                    "parent": 9041,
+                    "type": "CT",
+                    "ontology_id": "CL:1000742",
+                    "id_from_ontology_id": "CL:1000742",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9043.0,
+                    "name": 9043.0,
+                    "parent": 9028,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001231",
+                    "id_from_ontology_id": "UBERON:0001231",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9044.0,
+                    "name": 9044.0,
+                    "parent": 9043,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004134",
+                    "id_from_ontology_id": "UBERON:0004134",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9045.0,
+                    "name": 9045.0,
+                    "parent": 9044,
+                    "type": "CT",
+                    "ontology_id": "CL:0002306",
+                    "id_from_ontology_id": "CL:0002306",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9046.0,
+                    "name": 9046.0,
+                    "parent": 9044,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004196",
+                    "id_from_ontology_id": "UBERON:0004196",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9047.0,
+                    "name": 9047.0,
+                    "parent": 9046,
+                    "type": "CT",
+                    "ontology_id": "CL:4030009",
+                    "id_from_ontology_id": "CL:4030009",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9048.0,
+                    "name": 9048.0,
+                    "parent": 9044,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004197",
+                    "id_from_ontology_id": "UBERON:0004197",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9049.0,
+                    "name": 9049.0,
+                    "parent": 9048,
+                    "type": "CT",
+                    "ontology_id": "CL:4030010",
+                    "id_from_ontology_id": "CL:4030010",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9050.0,
+                    "name": 9050.0,
+                    "parent": 9044,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001290",
+                    "id_from_ontology_id": "UBERON:0001290",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9051.0,
+                    "name": 9051.0,
+                    "parent": 9050,
+                    "type": "CT",
+                    "ontology_id": "CL:4030011",
+                    "id_from_ontology_id": "CL:4030011",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9052.0,
+                    "name": 9052.0,
+                    "parent": 9043,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001289",
+                    "id_from_ontology_id": "UBERON:0001289$$4157",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9053.0,
+                    "name": 9053.0,
+                    "parent": 9052,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005096",
+                    "id_from_ontology_id": "UBERON:0005096",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9054.0,
+                    "name": 9054.0,
+                    "parent": 9053,
+                    "type": "CT",
+                    "ontology_id": "CL:1001111",
+                    "id_from_ontology_id": "CL:1001111",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9055.0,
+                    "name": 9055.0,
+                    "parent": 9052,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005099",
+                    "id_from_ontology_id": "UBERON:0005099",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9056.0,
+                    "name": 9056.0,
+                    "parent": 9055,
+                    "type": "CT",
+                    "ontology_id": "CL:4030012",
+                    "id_from_ontology_id": "CL:4030012",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9057.0,
+                    "name": 9057.0,
+                    "parent": 9052,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8600036",
+                    "id_from_ontology_id": "UBERON:8600036$$4158",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9058.0,
+                    "name": 9058.0,
+                    "parent": 9057,
+                    "type": "CT",
+                    "ontology_id": "CL:4030013",
+                    "id_from_ontology_id": "CL:4030013$$4159",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9059.0,
+                    "name": 9059.0,
+                    "parent": 9052,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8600037",
+                    "id_from_ontology_id": "UBERON:8600037",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9060.0,
+                    "name": 9060.0,
+                    "parent": 9059,
+                    "type": "CT",
+                    "ontology_id": "CL:4030014",
+                    "id_from_ontology_id": "CL:4030014",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9061.0,
+                    "name": 9061.0,
+                    "parent": 9043,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004193",
+                    "id_from_ontology_id": "UBERON:0004193",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9062.0,
+                    "name": 9062.0,
+                    "parent": 9061,
+                    "type": "CT",
+                    "ontology_id": "CL:1001107",
+                    "id_from_ontology_id": "CL:1001107",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9063.0,
+                    "name": 9063.0,
+                    "parent": 9043,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001291",
+                    "id_from_ontology_id": "UBERON:0001291$$4160",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9064.0,
+                    "name": 9064.0,
+                    "parent": 9063,
+                    "type": "CT",
+                    "ontology_id": "CL:1001106",
+                    "id_from_ontology_id": "CL:1001106",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9065.0,
+                    "name": 9065.0,
+                    "parent": 9063,
+                    "type": "CT",
+                    "ontology_id": "CL:1001109",
+                    "id_from_ontology_id": "CL:1001109",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9066.0,
+                    "name": 9066.0,
+                    "parent": 9063,
+                    "type": "CT",
+                    "ontology_id": "CL:1001108",
+                    "id_from_ontology_id": "CL:1001108$$4161",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9067.0,
+                    "name": 9067.0,
+                    "parent": 9063,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002335",
+                    "id_from_ontology_id": "UBERON:0002335",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9068.0,
+                    "name": 9068.0,
+                    "parent": 9067,
+                    "type": "CT",
+                    "ontology_id": "CL:1000850",
+                    "id_from_ontology_id": "CL:1000850",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9069.0,
+                    "name": 9069.0,
+                    "parent": 9043,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001292",
+                    "id_from_ontology_id": "UBERON:0001292",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9070.0,
+                    "name": 9070.0,
+                    "parent": 9069,
+                    "type": "CT",
+                    "ontology_id": "CL:1000849",
+                    "id_from_ontology_id": "CL:1000849",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9071.0,
+                    "name": 9071.0,
+                    "parent": 9069,
+                    "type": "CT",
+                    "ontology_id": "CL:4030016",
+                    "id_from_ontology_id": "CL:4030016",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9072.0,
+                    "name": 9072.0,
+                    "parent": 9069,
+                    "type": "CT",
+                    "ontology_id": "CL:4030017",
+                    "id_from_ontology_id": "CL:4030017",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9073.0,
+                    "name": 9073.0,
+                    "parent": 9043,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005097",
+                    "id_from_ontology_id": "UBERON:0005097",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9074.0,
+                    "name": 9074.0,
+                    "parent": 9073,
+                    "type": "CT",
+                    "ontology_id": "CL:1000768",
+                    "id_from_ontology_id": "CL:1000768",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9075.0,
+                    "name": 9075.0,
+                    "parent": 9073,
+                    "type": "CT",
+                    "ontology_id": "CL:4030018",
+                    "id_from_ontology_id": "CL:4030018",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9076.0,
+                    "name": 9076.0,
+                    "parent": 9073,
+                    "type": "CT",
+                    "ontology_id": "CL:4030019",
+                    "id_from_ontology_id": "CL:4030019",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9077.0,
+                    "name": 9077.0,
+                    "parent": 9073,
+                    "type": "CT",
+                    "ontology_id": "CL:4030020",
+                    "id_from_ontology_id": "CL:4030020",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9078.0,
+                    "name": 9078.0,
+                    "parent": 9073,
+                    "type": "CT",
+                    "ontology_id": "CL:4030021",
+                    "id_from_ontology_id": "CL:4030021",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9079.0,
+                    "name": 9079.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004100",
+                    "id_from_ontology_id": "UBERON:0004100",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9080.0,
+                    "name": 9080.0,
+                    "parent": 9079,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001232",
+                    "id_from_ontology_id": "UBERON:0001232",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9081.0,
+                    "name": 9081.0,
+                    "parent": 9080,
+                    "type": "CT",
+                    "ontology_id": "CL:1000454",
+                    "id_from_ontology_id": "CL:1000454",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9082.0,
+                    "name": 9082.0,
+                    "parent": 9081,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:transitional-principal-intercalated-cell",
+                    "id_from_ontology_id": "ASCTB-TEMP:transitional-principal-intercalated-cell",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9083.0,
+                    "name": 9083.0,
+                    "parent": 9080,
+                    "type": "CT",
+                    "ontology_id": "CL:1001431",
+                    "id_from_ontology_id": "CL:1001431",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9084.0,
+                    "name": 9084.0,
+                    "parent": 9080,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004203",
+                    "id_from_ontology_id": "UBERON:0004203$$4162",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9085.0,
+                    "name": 9085.0,
+                    "parent": 9084,
+                    "type": "CT",
+                    "ontology_id": "CL:1000714",
+                    "id_from_ontology_id": "CL:1000714$$4163",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9086.0,
+                    "name": 9086.0,
+                    "parent": 9084,
+                    "type": "CT",
+                    "ontology_id": "CL:1000715",
+                    "id_from_ontology_id": "CL:1000715",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9087.0,
+                    "name": 9087.0,
+                    "parent": 9080,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004204",
+                    "id_from_ontology_id": "UBERON:0004204",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9088.0,
+                    "name": 9088.0,
+                    "parent": 9087,
+                    "type": "CT",
+                    "ontology_id": "CL:1000716",
+                    "id_from_ontology_id": "CL:1000716",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9089.0,
+                    "name": 9089.0,
+                    "parent": 9087,
+                    "type": "CT",
+                    "ontology_id": "CL:1000717",
+                    "id_from_ontology_id": "CL:1000717",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9090.0,
+                    "name": 9090.0,
+                    "parent": 9080,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004205",
+                    "id_from_ontology_id": "UBERON:0004205",
+                    "color": "#56a04e",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9091.0,
+                    "name": 9091.0,
+                    "parent": 9090,
+                    "type": "CT",
+                    "ontology_id": "CL:1000718",
+                    "id_from_ontology_id": "CL:1000718$$4164",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9092.0,
+                    "name": 9092.0,
+                    "parent": 9080,
+                    "type": "CT",
+                    "ontology_id": "CL:1001432",
+                    "id_from_ontology_id": "CL:1001432",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9093.0,
+                    "name": 9093.0,
+                    "parent": 9080,
+                    "type": "CT",
+                    "ontology_id": "CL:4030015",
+                    "id_from_ontology_id": "CL:4030015",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9094.0,
+                    "name": 9094.0,
+                    "parent": 9080,
+                    "type": "CT",
+                    "ontology_id": "CL:0002201",
+                    "id_from_ontology_id": "CL:0002201",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9095.0,
+                    "name": 9095.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0006544",
+                    "id_from_ontology_id": "UBERON:0006544",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9096.0,
+                    "name": 9096.0,
+                    "parent": 9095,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0003517",
+                    "id_from_ontology_id": "UBERON:0003517",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9097.0,
+                    "name": 9097.0,
+                    "parent": 9096,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001986",
+                    "id_from_ontology_id": "UBERON:0001986",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9098.0,
+                    "name": 9098.0,
+                    "parent": 9097,
+                    "type": "CT",
+                    "ontology_id": "CL:0000115",
+                    "id_from_ontology_id": "CL:0000115$$4165",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9099.0,
+                    "name": 9099.0,
+                    "parent": 9096,
+                    "type": "CT",
+                    "ontology_id": "CL:1001318",
+                    "id_from_ontology_id": "CL:1001318",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9100.0,
+                    "name": 9100.0,
+                    "parent": 9096,
+                    "type": "CT",
+                    "ontology_id": "CL:0019018",
+                    "id_from_ontology_id": "CL:0019018",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9101.0,
+                    "name": 9101.0,
+                    "parent": 9096,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002303",
+                    "id_from_ontology_id": "UBERON:0002303",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9102.0,
+                    "name": 9102.0,
+                    "parent": 9101,
+                    "type": "CT",
+                    "ontology_id": "CL:0000648",
+                    "id_from_ontology_id": "CL:0000648",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9103.0,
+                    "name": 9103.0,
+                    "parent": 9095,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0034884",
+                    "id_from_ontology_id": "UBERON:0034884",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9104.0,
+                    "name": 9104.0,
+                    "parent": 9103,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004639",
+                    "id_from_ontology_id": "UBERON:0004639$$4166",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9105.0,
+                    "name": 9105.0,
+                    "parent": 9104,
+                    "type": "CT",
+                    "ontology_id": "CL:1001096",
+                    "id_from_ontology_id": "CL:1001096",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9106.0,
+                    "name": 9106.0,
+                    "parent": 9103,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004640",
+                    "id_from_ontology_id": "UBERON:0004640$$4167",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9107.0,
+                    "name": 9107.0,
+                    "parent": 9106,
+                    "type": "CT",
+                    "ontology_id": "CL:1001099",
+                    "id_from_ontology_id": "CL:1001099",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9108.0,
+                    "name": 9108.0,
+                    "parent": 9095,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0003527",
+                    "id_from_ontology_id": "UBERON:0003527",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9109.0,
+                    "name": 9109.0,
+                    "parent": 9108,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005272",
+                    "id_from_ontology_id": "UBERON:0005272$$4168",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9110.0,
+                    "name": 9110.0,
+                    "parent": 9109,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0012441",
+                    "id_from_ontology_id": "UBERON:0012441",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9111.0,
+                    "name": 9111.0,
+                    "parent": 9110,
+                    "type": "CT",
+                    "ontology_id": "CL:1001033",
+                    "id_from_ontology_id": "CL:1001033",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9112.0,
+                    "name": 9112.0,
+                    "parent": 9095,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004726",
+                    "id_from_ontology_id": "UBERON:0004726$$4169",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9113.0,
+                    "name": 9113.0,
+                    "parent": 9112,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0009202",
+                    "id_from_ontology_id": "UBERON:0009202$$4170",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9114.0,
+                    "name": 9114.0,
+                    "parent": 9113,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001986",
+                    "id_from_ontology_id": "UBERON:0001986$$4171",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9115.0,
+                    "name": 9115.0,
+                    "parent": 9114,
+                    "type": "CT",
+                    "ontology_id": "CL:1001285",
+                    "id_from_ontology_id": "CL:1001285$$4172",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9116.0,
+                    "name": 9116.0,
+                    "parent": 9112,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0009091",
+                    "id_from_ontology_id": "UBERON:0009091$$4173",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9117.0,
+                    "name": 9117.0,
+                    "parent": 9116,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001986",
+                    "id_from_ontology_id": "UBERON:0001986$$4174",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9118.0,
+                    "name": 9118.0,
+                    "parent": 9117,
+                    "type": "CT",
+                    "ontology_id": "CL:1001131",
+                    "id_from_ontology_id": "CL:1001131",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9119.0,
+                    "name": 9119.0,
+                    "parent": 9095,
+                    "type": "AS",
+                    "ontology_id": "ASCTB-TEMP:kidney-lymphatic-vessel",
+                    "id_from_ontology_id": "ASCTB-TEMP:kidney-lymphatic-vessel",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9120.0,
+                    "name": 9120.0,
+                    "parent": 9119,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002042",
+                    "id_from_ontology_id": "UBERON:0002042",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9121.0,
+                    "name": 9121.0,
+                    "parent": 9120,
+                    "type": "CT",
+                    "ontology_id": "CL:0002138",
+                    "id_from_ontology_id": "CL:0002138$$4175",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9122.0,
+                    "name": 9122.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005215",
+                    "id_from_ontology_id": "UBERON:0005215$$4176",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9123.0,
+                    "name": 9123.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:1000692",
+                    "id_from_ontology_id": "CL:1000692",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9124.0,
+                    "name": 9124.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:4030022",
+                    "id_from_ontology_id": "CL:4030022",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9125.0,
+                    "name": 9125.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:1000691",
+                    "id_from_ontology_id": "CL:1000691",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9126.0,
+                    "name": 9126.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000738",
+                    "id_from_ontology_id": "CL:0000738",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9127.0,
+                    "name": 9127.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:1000695",
+                    "id_from_ontology_id": "CL:1000695",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9128.0,
+                    "name": 9128.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000875",
+                    "id_from_ontology_id": "CL:0000875",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9129.0,
+                    "name": 9129.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000623",
+                    "id_from_ontology_id": "CL:0000623$$4177",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9130.0,
+                    "name": 9130.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000814",
+                    "id_from_ontology_id": "CL:0000814$$4178",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9131.0,
+                    "name": 9131.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0001056",
+                    "id_from_ontology_id": "CL:0001056$$4179",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9132.0,
+                    "name": 9132.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000990",
+                    "id_from_ontology_id": "CL:0000990$$4180",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9133.0,
+                    "name": 9133.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0001058",
+                    "id_from_ontology_id": "CL:0001058$$4181",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9134.0,
+                    "name": 9134.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000576",
+                    "id_from_ontology_id": "CL:0000576$$4182",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9135.0,
+                    "name": 9135.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000113",
+                    "id_from_ontology_id": "CL:0000113",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9136.0,
+                    "name": 9136.0,
+                    "parent": 9135,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:monocyte-derived-cell",
+                    "id_from_ontology_id": "ASCTB-TEMP:monocyte-derived-cell",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9137.0,
+                    "name": 9137.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000084",
+                    "id_from_ontology_id": "CL:0000084$$4183",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9138.0,
+                    "name": 9138.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000910",
+                    "id_from_ontology_id": "CL:0000910",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9139.0,
+                    "name": 9139.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000815",
+                    "id_from_ontology_id": "CL:0000815$$4184",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9140.0,
+                    "name": 9140.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000236",
+                    "id_from_ontology_id": "CL:0000236$$4185",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9141.0,
+                    "name": 9141.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000786",
+                    "id_from_ontology_id": "CL:0000786$$4186",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9142.0,
+                    "name": 9142.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000775",
+                    "id_from_ontology_id": "CL:0000775$$4187",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9143.0,
+                    "name": 9143.0,
+                    "parent": 9122,
+                    "type": "CT",
+                    "ontology_id": "CL:0000097",
+                    "id_from_ontology_id": "CL:0000097$$4188",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9144.0,
+                    "name": 9144.0,
+                    "parent": 8991,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001228",
+                    "id_from_ontology_id": "UBERON:0001228$$4189",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9145.0,
+                    "name": 9145.0,
+                    "parent": 9144,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0009095",
+                    "id_from_ontology_id": "UBERON:0009095$$4190",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9146.0,
+                    "name": 9146.0,
+                    "parent": 9145,
+                    "type": "AS",
+                    "ontology_id": "ASCTB-TEMP:papillary-tip-epithelium",
+                    "id_from_ontology_id": "ASCTB-TEMP:papillary-tip-epithelium",
+                    "color": "#984ea0",
+                    "organ": "kidney"
+                },
+                {
+                    "id": 9147.0,
+                    "name": 9147.0,
+                    "parent": 9146,
+                    "type": "CT",
+                    "ontology_id": "CL:1000597",
+                    "id_from_ontology_id": "CL:1000597",
+                    "color": "#ff7f00",
+                    "organ": "kidney"
+                }
+            ],
+            "transform": [
+                {
+                    "type": "stratify",
+                    "key": "id",
+                    "parentKey": "parent"
+                },
+                {
+                    "type": "tree",
+                    "method": {
+                        "signal": "layout"
+                    },
+                    "size": [
+                        1,
+                        {
+                            "signal": "radius"
+                        }
+                    ],
+                    "as": [
+                        "alpha",
+                        "radius",
+                        "depth",
+                        "children"
+                    ]
+                },
+                {
+                    "type": "formula",
+                    "expr": "(rotate + extent * datum.alpha + 270) % 360",
+                    "as": "angle"
+                },
+                {
+                    "type": "formula",
+                    "expr": "PI * datum.angle / 180",
+                    "as": "radians"
+                },
+                {
+                    "type": "formula",
+                    "expr": "inrange(datum.angle, [90, 270])",
+                    "as": "leftside"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originX + datum.radius * cos(datum.radians)",
+                    "as": "x"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originY + datum.radius * sin(datum.radians)",
+                    "as": "y"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "source": "tree",
+            "transform": [
+                {
+                    "type": "treelinks"
+                },
+                {
+                    "type": "linkpath",
+                    "shape": {
+                        "signal": "links"
+                    },
+                    "orient": "radial",
+                    "sourceX": "source.radians",
+                    "sourceY": "source.radius",
+                    "targetX": "target.radians",
+                    "targetY": "target.radius"
+                }
+            ]
+        }
+    ],
+    "marks": [
+        {
+            "type": "path",
+            "from": {
+                "data": "links"
+            },
+            "encode": {
+                "update": {
+                    "x": {
+                        "signal": "originX"
+                    },
+                    "y": {
+                        "signal": "originY"
+                    },
+                    "path": {
+                        "field": "path"
+                    },
+                    "stroke": {
+                        "value": "#ccc"
+                    },
+                    "opacity": {
+                        "value": 0.7
+                    },
+                    "strokeWidth": {
+                        "value": 0.5
+                    }
+                }
+            }
+        },
+        {
+            "type": "symbol",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "size": {
+                        "value": 12
+                    },
+                    "stroke": {
+                        "value": "#fff"
+                    },
+                    "strokeWidth": {
+                        "value": 0.2
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "fill": {
+                        "field": "color"
+                    },
+                    "opacity": {
+                        "value": 0.3
+                    }
+                }
+            }
+        },
+        {
+            "type": "text",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "text": {
+                        "field": "name"
+                    },
+                    "fontSize": {
+                        "value": 8
+                    },
+                    "font": {
+                        "value": "Benton Sans Book"
+                    },
+                    "baseline": {
+                        "value": "middle"
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "dx": {
+                        "signal": "(datum.leftside ? -1 : 1) * 6"
+                    },
+                    "angle": {
+                        "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
+                    },
+                    "align": {
+                        "signal": "datum.leftside ? 'right' : 'left'"
+                    },
+                    "opacity": {
+                        "signal": "labels ? 0.5 : 1"
+                    }
+                }
+            }
+        }
+    ],
+    "config": {}
+}

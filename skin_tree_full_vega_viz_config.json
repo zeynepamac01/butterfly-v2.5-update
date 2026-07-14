@@ -1,0 +1,1200 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
+    "width": 1720,
+    "height": 1720,
+    "padding": 0,
+    "autosize": "none",
+    "signals": [
+        {
+            "name": "labels",
+            "value": false,
+            "bind": {
+                "input": "checkbox"
+            }
+        },
+        {
+            "name": "radius",
+            "value": 865,
+            "bind": {
+                "input": "range",
+                "min": 20,
+                "max": 4000
+            }
+        },
+        {
+            "name": "extent",
+            "value": 160,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "rotate",
+            "value": 15,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "layout",
+            "value": "tidy",
+            "bind": {
+                "input": "radio",
+                "options": [
+                    "tidy",
+                    "cluster"
+                ]
+            }
+        },
+        {
+            "name": "links",
+            "value": "diagonal",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "line",
+                    "curve",
+                    "diagonal",
+                    "orthogonal"
+                ]
+            }
+        },
+        {
+            "name": "originX",
+            "update": "width / 2"
+        },
+        {
+            "name": "originY",
+            "update": "height / 2"
+        }
+    ],
+    "data": [
+        {
+            "name": "tree",
+            "values": [
+                {
+                    "id": 6719.0,
+                    "name": 6719.0,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002097",
+                    "id_from_ontology_id": "UBERON:0002097",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6720.0,
+                    "name": 6720.0,
+                    "parent": 6719,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001003",
+                    "id_from_ontology_id": "UBERON:0001003$$7998",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6721.0,
+                    "name": 6721.0,
+                    "parent": 6720,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0013487",
+                    "id_from_ontology_id": "UBERON:0013487",
+                    "color": "#56a04e",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6722.0,
+                    "name": 6722.0,
+                    "parent": 6721,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002027",
+                    "id_from_ontology_id": "UBERON:0002027",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6723.0,
+                    "name": 6723.0,
+                    "parent": 6722,
+                    "type": "CT",
+                    "ontology_id": "CL:0002153",
+                    "id_from_ontology_id": "CL:0002153",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6724.0,
+                    "name": 6724.0,
+                    "parent": 6721,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002069",
+                    "id_from_ontology_id": "UBERON:0002069",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6725.0,
+                    "name": 6725.0,
+                    "parent": 6724,
+                    "type": "CT",
+                    "ontology_id": "CL:0000312",
+                    "id_from_ontology_id": "CL:0000312$$7999",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6726.0,
+                    "name": 6726.0,
+                    "parent": 6724,
+                    "type": "CT",
+                    "ontology_id": "CL:0002457",
+                    "id_from_ontology_id": "CL:0002457",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6727.0,
+                    "name": 6727.0,
+                    "parent": 6721,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002026",
+                    "id_from_ontology_id": "UBERON:0002026",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6728.0,
+                    "name": 6728.0,
+                    "parent": 6727,
+                    "type": "CT",
+                    "ontology_id": "CL:0000649",
+                    "id_from_ontology_id": "CL:0000649",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6729.0,
+                    "name": 6729.0,
+                    "parent": 6727,
+                    "type": "CT",
+                    "ontology_id": "CL:0002457",
+                    "id_from_ontology_id": "CL:0002457$$8000",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6730.0,
+                    "name": 6730.0,
+                    "parent": 6727,
+                    "type": "CT",
+                    "ontology_id": "CL:0000242",
+                    "id_from_ontology_id": "CL:0000242$$8001",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6731.0,
+                    "name": 6731.0,
+                    "parent": 6721,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002025",
+                    "id_from_ontology_id": "UBERON:0002025",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6732.0,
+                    "name": 6732.0,
+                    "parent": 6731,
+                    "type": "CT",
+                    "ontology_id": "CL:0000646",
+                    "id_from_ontology_id": "CL:0000646",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6733.0,
+                    "name": 6733.0,
+                    "parent": 6731,
+                    "type": "CT",
+                    "ontology_id": "CL:0002457",
+                    "id_from_ontology_id": "CL:0002457$$8002",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6734.0,
+                    "name": 6734.0,
+                    "parent": 6731,
+                    "type": "CT",
+                    "ontology_id": "CL:0000242",
+                    "id_from_ontology_id": "CL:0000242$$8003",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6735.0,
+                    "name": 6735.0,
+                    "parent": 6731,
+                    "type": "CT",
+                    "ontology_id": "CL:1000458",
+                    "id_from_ontology_id": "CL:1000458",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6736.0,
+                    "name": 6736.0,
+                    "parent": 6731,
+                    "type": "CT",
+                    "ontology_id": "CL:0000312",
+                    "id_from_ontology_id": "CL:0000312$$8004",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6737.0,
+                    "name": 6737.0,
+                    "parent": 6720,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002283",
+                    "id_from_ontology_id": "UBERON:0002283",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6738.0,
+                    "name": 6738.0,
+                    "parent": 6737,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0008198",
+                    "id_from_ontology_id": "UBERON:0008198",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6739.0,
+                    "name": 6739.0,
+                    "parent": 6738,
+                    "type": "CT",
+                    "ontology_id": "CL:0000312",
+                    "id_from_ontology_id": "CL:0000312$$8005",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6740.0,
+                    "name": 6740.0,
+                    "parent": 6739,
+                    "type": "CT",
+                    "ontology_id": "CL:4033056",
+                    "id_from_ontology_id": "CL:4033056",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6741.0,
+                    "name": 6741.0,
+                    "parent": 6719,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002067",
+                    "id_from_ontology_id": "UBERON:0002067$$8006",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6742.0,
+                    "name": 6742.0,
+                    "parent": 6741,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002073",
+                    "id_from_ontology_id": "UBERON:0002073$$8007",
+                    "color": "#56a04e",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6743.0,
+                    "name": 6743.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005932",
+                    "id_from_ontology_id": "UBERON:0005932",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6744.0,
+                    "name": 6744.0,
+                    "parent": 6743,
+                    "type": "CT",
+                    "ontology_id": "CL:0002562",
+                    "id_from_ontology_id": "CL:0002562",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6745.0,
+                    "name": 6745.0,
+                    "parent": 6743,
+                    "type": "CT",
+                    "ontology_id": "CL:0002483",
+                    "id_from_ontology_id": "CL:0002483",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6746.0,
+                    "name": 6746.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0000412",
+                    "id_from_ontology_id": "UBERON:0000412",
+                    "color": "#56a04e",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6747.0,
+                    "name": 6747.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005942",
+                    "id_from_ontology_id": "UBERON:0005942",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6748.0,
+                    "name": 6748.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005941",
+                    "id_from_ontology_id": "UBERON:0005941",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6749.0,
+                    "name": 6749.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002074",
+                    "id_from_ontology_id": "UBERON:0002074",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6750.0,
+                    "name": 6750.0,
+                    "parent": 6749,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002076",
+                    "id_from_ontology_id": "UBERON:0002076",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6751.0,
+                    "name": 6751.0,
+                    "parent": 6749,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002077",
+                    "id_from_ontology_id": "UBERON:0002077",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6752.0,
+                    "name": 6752.0,
+                    "parent": 6749,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005184",
+                    "id_from_ontology_id": "UBERON:0005184",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6753.0,
+                    "name": 6753.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002033",
+                    "id_from_ontology_id": "UBERON:0002033",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6754.0,
+                    "name": 6754.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "ASCTB-TEMP:connective-tissue-sheath",
+                    "id_from_ontology_id": "ASCTB-TEMP:connective-tissue-sheath",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6755.0,
+                    "name": 6755.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005968",
+                    "id_from_ontology_id": "UBERON:0005968",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6756.0,
+                    "name": 6756.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0005975",
+                    "id_from_ontology_id": "UBERON:0005975",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6757.0,
+                    "name": 6757.0,
+                    "parent": 6742,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001821",
+                    "id_from_ontology_id": "UBERON:0001821$$8008",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6758.0,
+                    "name": 6758.0,
+                    "parent": 6757,
+                    "type": "CT",
+                    "ontology_id": "CL:0000317",
+                    "id_from_ontology_id": "CL:0000317$$8009",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6759.0,
+                    "name": 6759.0,
+                    "parent": 6742,
+                    "type": "CT",
+                    "ontology_id": "CL:0002337",
+                    "id_from_ontology_id": "CL:0002337",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6760.0,
+                    "name": 6760.0,
+                    "parent": 6741,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001820",
+                    "id_from_ontology_id": "UBERON:0001820",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6761.0,
+                    "name": 6761.0,
+                    "parent": 6760,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0000423",
+                    "id_from_ontology_id": "UBERON:0000423$$8010",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6762.0,
+                    "name": 6762.0,
+                    "parent": 6761,
+                    "type": "CT",
+                    "ontology_id": "CL:1000417",
+                    "id_from_ontology_id": "CL:1000417$$8011",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6763.0,
+                    "name": 6763.0,
+                    "parent": 6760,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0008974",
+                    "id_from_ontology_id": "UBERON:0008974$$8012",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6764.0,
+                    "name": 6764.0,
+                    "parent": 6763,
+                    "type": "CT",
+                    "ontology_id": "CL:1000417",
+                    "id_from_ontology_id": "CL:1000417$$8013",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6765.0,
+                    "name": 6765.0,
+                    "parent": 6741,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001992",
+                    "id_from_ontology_id": "UBERON:0001992",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6766.0,
+                    "name": 6766.0,
+                    "parent": 6765,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0000412",
+                    "id_from_ontology_id": "UBERON:0000412$$8014",
+                    "color": "#56a04e",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6767.0,
+                    "name": 6767.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:1000417",
+                    "id_from_ontology_id": "CL:1000417$$8015",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6768.0,
+                    "name": 6768.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0002620",
+                    "id_from_ontology_id": "CL:0002620",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6769.0,
+                    "name": 6769.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000097",
+                    "id_from_ontology_id": "CL:0000097$$8016",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6770.0,
+                    "name": 6770.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0001006",
+                    "id_from_ontology_id": "CL:0001006",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6771.0,
+                    "name": 6771.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000235",
+                    "id_from_ontology_id": "CL:0000235$$8017",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6772.0,
+                    "name": 6772.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000545",
+                    "id_from_ontology_id": "CL:0000545$$8018",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6773.0,
+                    "name": 6773.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000910",
+                    "id_from_ontology_id": "CL:0000910$$8019",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6774.0,
+                    "name": 6774.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000815",
+                    "id_from_ontology_id": "CL:0000815$$8020",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6775.0,
+                    "name": 6775.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000623",
+                    "id_from_ontology_id": "CL:0000623$$8021",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6776.0,
+                    "name": 6776.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0001067",
+                    "id_from_ontology_id": "CL:0001067",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6777.0,
+                    "name": 6777.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0001069",
+                    "id_from_ontology_id": "CL:0001069",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6778.0,
+                    "name": 6778.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0001071",
+                    "id_from_ontology_id": "CL:0001071",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6779.0,
+                    "name": 6779.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000236",
+                    "id_from_ontology_id": "CL:0000236$$8022",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6780.0,
+                    "name": 6780.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000786",
+                    "id_from_ontology_id": "CL:0000786$$8023",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6781.0,
+                    "name": 6781.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000775",
+                    "id_from_ontology_id": "CL:0000775$$8024",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6782.0,
+                    "name": 6782.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000771",
+                    "id_from_ontology_id": "CL:0000771$$8025",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6783.0,
+                    "name": 6783.0,
+                    "parent": 6766,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0007121",
+                    "id_from_ontology_id": "UBERON:0007121",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6784.0,
+                    "name": 6784.0,
+                    "parent": 6783,
+                    "type": "CT",
+                    "ontology_id": "CL:0000540",
+                    "id_from_ontology_id": "CL:0000540$$8026",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6785.0,
+                    "name": 6785.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0002573",
+                    "id_from_ontology_id": "CL:0002573$$8027",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6786.0,
+                    "name": 6786.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0002576",
+                    "id_from_ontology_id": "CL:0002576$$8028",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6787.0,
+                    "name": 6787.0,
+                    "parent": 6766,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0035549",
+                    "id_from_ontology_id": "UBERON:0035549",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6788.0,
+                    "name": 6788.0,
+                    "parent": 6787,
+                    "type": "CT",
+                    "ontology_id": "CL:0000115",
+                    "id_from_ontology_id": "CL:0000115$$8029",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6789.0,
+                    "name": 6789.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000359",
+                    "id_from_ontology_id": "CL:0000359$$8030",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6790.0,
+                    "name": 6790.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0002292",
+                    "id_from_ontology_id": "CL:0002292$$8031",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6791.0,
+                    "name": 6791.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0000669",
+                    "id_from_ontology_id": "CL:0000669$$8032",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6792.0,
+                    "name": 6792.0,
+                    "parent": 6766,
+                    "type": "CT",
+                    "ontology_id": "CL:0002138",
+                    "id_from_ontology_id": "CL:0002138$$8033",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6793.0,
+                    "name": 6793.0,
+                    "parent": 6719,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002072",
+                    "id_from_ontology_id": "UBERON:0002072",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6794.0,
+                    "name": 6794.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0002138",
+                    "id_from_ontology_id": "CL:0002138$$8034",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6795.0,
+                    "name": 6795.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0002521",
+                    "id_from_ontology_id": "CL:0002521",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6796.0,
+                    "name": 6796.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0002620",
+                    "id_from_ontology_id": "CL:0002620$$8035",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6797.0,
+                    "name": 6797.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000235",
+                    "id_from_ontology_id": "CL:0000235$$8036",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6798.0,
+                    "name": 6798.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000097",
+                    "id_from_ontology_id": "CL:0000097$$8037",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6799.0,
+                    "name": 6799.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000545",
+                    "id_from_ontology_id": "CL:0000545$$8038",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6800.0,
+                    "name": 6800.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000910",
+                    "id_from_ontology_id": "CL:0000910$$8039",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6801.0,
+                    "name": 6801.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000815",
+                    "id_from_ontology_id": "CL:0000815$$8040",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6802.0,
+                    "name": 6802.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000236",
+                    "id_from_ontology_id": "CL:0000236$$8041",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6803.0,
+                    "name": 6803.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000775",
+                    "id_from_ontology_id": "CL:0000775$$8042",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6804.0,
+                    "name": 6804.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000771",
+                    "id_from_ontology_id": "CL:0000771$$8043",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6805.0,
+                    "name": 6805.0,
+                    "parent": 6793,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0007121",
+                    "id_from_ontology_id": "UBERON:0007121$$8044",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6806.0,
+                    "name": 6806.0,
+                    "parent": 6805,
+                    "type": "CT",
+                    "ontology_id": "CL:0000540",
+                    "id_from_ontology_id": "CL:0000540$$8045",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6807.0,
+                    "name": 6807.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0002573",
+                    "id_from_ontology_id": "CL:0002573$$8046",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6808.0,
+                    "name": 6808.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0002576",
+                    "id_from_ontology_id": "CL:0002576$$8047",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6809.0,
+                    "name": 6809.0,
+                    "parent": 6793,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0035549",
+                    "id_from_ontology_id": "UBERON:0035549$$8048",
+                    "color": "#984ea0",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6810.0,
+                    "name": 6810.0,
+                    "parent": 6809,
+                    "type": "CT",
+                    "ontology_id": "CL:0000115",
+                    "id_from_ontology_id": "CL:0000115$$8049",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6811.0,
+                    "name": 6811.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0000359",
+                    "id_from_ontology_id": "CL:0000359$$8050",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                },
+                {
+                    "id": 6812.0,
+                    "name": 6812.0,
+                    "parent": 6793,
+                    "type": "CT",
+                    "ontology_id": "CL:0002292",
+                    "id_from_ontology_id": "CL:0002292$$8051",
+                    "color": "#ff7f00",
+                    "organ": "skin"
+                }
+            ],
+            "transform": [
+                {
+                    "type": "stratify",
+                    "key": "id",
+                    "parentKey": "parent"
+                },
+                {
+                    "type": "tree",
+                    "method": {
+                        "signal": "layout"
+                    },
+                    "size": [
+                        1,
+                        {
+                            "signal": "radius"
+                        }
+                    ],
+                    "as": [
+                        "alpha",
+                        "radius",
+                        "depth",
+                        "children"
+                    ]
+                },
+                {
+                    "type": "formula",
+                    "expr": "(rotate + extent * datum.alpha + 270) % 360",
+                    "as": "angle"
+                },
+                {
+                    "type": "formula",
+                    "expr": "PI * datum.angle / 180",
+                    "as": "radians"
+                },
+                {
+                    "type": "formula",
+                    "expr": "inrange(datum.angle, [90, 270])",
+                    "as": "leftside"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originX + datum.radius * cos(datum.radians)",
+                    "as": "x"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originY + datum.radius * sin(datum.radians)",
+                    "as": "y"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "source": "tree",
+            "transform": [
+                {
+                    "type": "treelinks"
+                },
+                {
+                    "type": "linkpath",
+                    "shape": {
+                        "signal": "links"
+                    },
+                    "orient": "radial",
+                    "sourceX": "source.radians",
+                    "sourceY": "source.radius",
+                    "targetX": "target.radians",
+                    "targetY": "target.radius"
+                }
+            ]
+        }
+    ],
+    "marks": [
+        {
+            "type": "path",
+            "from": {
+                "data": "links"
+            },
+            "encode": {
+                "update": {
+                    "x": {
+                        "signal": "originX"
+                    },
+                    "y": {
+                        "signal": "originY"
+                    },
+                    "path": {
+                        "field": "path"
+                    },
+                    "stroke": {
+                        "value": "#ccc"
+                    },
+                    "opacity": {
+                        "value": 0.7
+                    },
+                    "strokeWidth": {
+                        "value": 0.5
+                    }
+                }
+            }
+        },
+        {
+            "type": "symbol",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "size": {
+                        "value": 12
+                    },
+                    "stroke": {
+                        "value": "#fff"
+                    },
+                    "strokeWidth": {
+                        "value": 0.2
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "fill": {
+                        "field": "color"
+                    },
+                    "opacity": {
+                        "value": 0.3
+                    }
+                }
+            }
+        },
+        {
+            "type": "text",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "text": {
+                        "field": "name"
+                    },
+                    "fontSize": {
+                        "value": 8
+                    },
+                    "font": {
+                        "value": "Benton Sans Book"
+                    },
+                    "baseline": {
+                        "value": "middle"
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "dx": {
+                        "signal": "(datum.leftside ? -1 : 1) * 6"
+                    },
+                    "angle": {
+                        "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
+                    },
+                    "align": {
+                        "signal": "datum.leftside ? 'right' : 'left'"
+                    },
+                    "opacity": {
+                        "signal": "labels ? 0.5 : 1"
+                    }
+                }
+            }
+        }
+    ],
+    "config": {}
+}

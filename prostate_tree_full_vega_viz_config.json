@@ -1,0 +1,600 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
+    "width": 1720,
+    "height": 1720,
+    "padding": 0,
+    "autosize": "none",
+    "signals": [
+        {
+            "name": "labels",
+            "value": false,
+            "bind": {
+                "input": "checkbox"
+            }
+        },
+        {
+            "name": "radius",
+            "value": 865,
+            "bind": {
+                "input": "range",
+                "min": 20,
+                "max": 4000
+            }
+        },
+        {
+            "name": "extent",
+            "value": 160,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "rotate",
+            "value": 15,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "layout",
+            "value": "tidy",
+            "bind": {
+                "input": "radio",
+                "options": [
+                    "tidy",
+                    "cluster"
+                ]
+            }
+        },
+        {
+            "name": "links",
+            "value": "diagonal",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "line",
+                    "curve",
+                    "diagonal",
+                    "orthogonal"
+                ]
+            }
+        },
+        {
+            "name": "originX",
+            "update": "width / 2"
+        },
+        {
+            "name": "originY",
+            "update": "height / 2"
+        }
+    ],
+    "data": [
+        {
+            "name": "tree",
+            "values": [
+                {
+                    "id": 9201.0,
+                    "name": 9201.0,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002367",
+                    "id_from_ontology_id": "UBERON:0002367",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9202.0,
+                    "name": 9202.0,
+                    "parent": 9201,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0000428",
+                    "id_from_ontology_id": "UBERON:0000428",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9203.0,
+                    "name": 9203.0,
+                    "parent": 9202,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004179",
+                    "id_from_ontology_id": "UBERON:0004179",
+                    "color": "#56a04e",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9204.0,
+                    "name": 9204.0,
+                    "parent": 9203,
+                    "type": "CT",
+                    "ontology_id": "CL:0002340",
+                    "id_from_ontology_id": "CL:0002340",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9205.0,
+                    "name": 9205.0,
+                    "parent": 9203,
+                    "type": "CT",
+                    "ontology_id": "CL:0002341",
+                    "id_from_ontology_id": "CL:0002341",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9206.0,
+                    "name": 9206.0,
+                    "parent": 9202,
+                    "type": "CT",
+                    "ontology_id": "CL:0017002",
+                    "id_from_ontology_id": "CL:0017002",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9207.0,
+                    "name": 9207.0,
+                    "parent": 9202,
+                    "type": "CT",
+                    "ontology_id": "CL:0005006",
+                    "id_from_ontology_id": "CL:0005006",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9208.0,
+                    "name": 9208.0,
+                    "parent": 9207,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:ionocyte-epithelia",
+                    "id_from_ontology_id": "ASCTB-TEMP:ionocyte-epithelia",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9209.0,
+                    "name": 9209.0,
+                    "parent": 9201,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004184",
+                    "id_from_ontology_id": "UBERON:0004184",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9210.0,
+                    "name": 9210.0,
+                    "parent": 9209,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004243",
+                    "id_from_ontology_id": "UBERON:0004243",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9211.0,
+                    "name": 9211.0,
+                    "parent": 9210,
+                    "type": "CT",
+                    "ontology_id": "CL:1000487",
+                    "id_from_ontology_id": "CL:1000487",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9212.0,
+                    "name": 9212.0,
+                    "parent": 9209,
+                    "type": "CT",
+                    "ontology_id": "CL:1000301",
+                    "id_from_ontology_id": "CL:1000301",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9213.0,
+                    "name": 9213.0,
+                    "parent": 9209,
+                    "type": "CT",
+                    "ontology_id": "CL:1000299",
+                    "id_from_ontology_id": "CL:1000299",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9214.0,
+                    "name": 9214.0,
+                    "parent": 9201,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004537",
+                    "id_from_ontology_id": "UBERON:0004537",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9215.0,
+                    "name": 9215.0,
+                    "parent": 9214,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001981",
+                    "id_from_ontology_id": "UBERON:0001981$$7988",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9216.0,
+                    "name": 9216.0,
+                    "parent": 9215,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004638",
+                    "id_from_ontology_id": "UBERON:0004638",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9217.0,
+                    "name": 9217.0,
+                    "parent": 9216,
+                    "type": "CT",
+                    "ontology_id": "CL:0000071",
+                    "id_from_ontology_id": "CL:0000071$$7989",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9218.0,
+                    "name": 9218.0,
+                    "parent": 9217,
+                    "type": "CT",
+                    "ontology_id": "CL:1000413",
+                    "id_from_ontology_id": "CL:1000413$$7990",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9219.0,
+                    "name": 9219.0,
+                    "parent": 9217,
+                    "type": "CT",
+                    "ontology_id": "CL:0002144",
+                    "id_from_ontology_id": "CL:0002144$$7991",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9220.0,
+                    "name": 9220.0,
+                    "parent": 9217,
+                    "type": "CT",
+                    "ontology_id": "CL:0002543",
+                    "id_from_ontology_id": "CL:0002543$$7992",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9221.0,
+                    "name": 9221.0,
+                    "parent": 9201,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004536",
+                    "id_from_ontology_id": "UBERON:0004536",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9222.0,
+                    "name": 9222.0,
+                    "parent": 9221,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001473",
+                    "id_from_ontology_id": "UBERON:0001473$$7993",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9223.0,
+                    "name": 9223.0,
+                    "parent": 9222,
+                    "type": "CT",
+                    "ontology_id": "CL:0002138",
+                    "id_from_ontology_id": "CL:0002138$$7994",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9224.0,
+                    "name": 9224.0,
+                    "parent": 9223,
+                    "type": "CT",
+                    "ontology_id": "CL:0009115",
+                    "id_from_ontology_id": "CL:0009115",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9225.0,
+                    "name": 9225.0,
+                    "parent": 9201,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0007798",
+                    "id_from_ontology_id": "UBERON:0007798",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9226.0,
+                    "name": 9226.0,
+                    "parent": 9225,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001981",
+                    "id_from_ontology_id": "UBERON:0001981$$7995",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9227.0,
+                    "name": 9227.0,
+                    "parent": 9226,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004237",
+                    "id_from_ontology_id": "UBERON:0004237",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9228.0,
+                    "name": 9228.0,
+                    "parent": 9227,
+                    "type": "CT",
+                    "ontology_id": "CL:0000359",
+                    "id_from_ontology_id": "CL:0000359$$7996",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9229.0,
+                    "name": 9229.0,
+                    "parent": 9226,
+                    "type": "CT",
+                    "ontology_id": "CL:0000669",
+                    "id_from_ontology_id": "CL:0000669$$7997",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9230.0,
+                    "name": 9230.0,
+                    "parent": 9201,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001335",
+                    "id_from_ontology_id": "UBERON:0001335",
+                    "color": "#984ea0",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9231.0,
+                    "name": 9231.0,
+                    "parent": 9230,
+                    "type": "CT",
+                    "ontology_id": "CL:1000486",
+                    "id_from_ontology_id": "CL:1000486",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9232.0,
+                    "name": 9232.0,
+                    "parent": 9231,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:basal-cell-of-prostatic-urethra",
+                    "id_from_ontology_id": "ASCTB-TEMP:basal-cell-of-prostatic-urethra",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9233.0,
+                    "name": 9233.0,
+                    "parent": 9230,
+                    "type": "CT",
+                    "ontology_id": "CL:4032000",
+                    "id_from_ontology_id": "CL:4032000",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                },
+                {
+                    "id": 9234.0,
+                    "name": 9234.0,
+                    "parent": 9230,
+                    "type": "CT",
+                    "ontology_id": "CL:0017011",
+                    "id_from_ontology_id": "CL:0017011",
+                    "color": "#ff7f00",
+                    "organ": "prostate"
+                }
+            ],
+            "transform": [
+                {
+                    "type": "stratify",
+                    "key": "id",
+                    "parentKey": "parent"
+                },
+                {
+                    "type": "tree",
+                    "method": {
+                        "signal": "layout"
+                    },
+                    "size": [
+                        1,
+                        {
+                            "signal": "radius"
+                        }
+                    ],
+                    "as": [
+                        "alpha",
+                        "radius",
+                        "depth",
+                        "children"
+                    ]
+                },
+                {
+                    "type": "formula",
+                    "expr": "(rotate + extent * datum.alpha + 270) % 360",
+                    "as": "angle"
+                },
+                {
+                    "type": "formula",
+                    "expr": "PI * datum.angle / 180",
+                    "as": "radians"
+                },
+                {
+                    "type": "formula",
+                    "expr": "inrange(datum.angle, [90, 270])",
+                    "as": "leftside"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originX + datum.radius * cos(datum.radians)",
+                    "as": "x"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originY + datum.radius * sin(datum.radians)",
+                    "as": "y"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "source": "tree",
+            "transform": [
+                {
+                    "type": "treelinks"
+                },
+                {
+                    "type": "linkpath",
+                    "shape": {
+                        "signal": "links"
+                    },
+                    "orient": "radial",
+                    "sourceX": "source.radians",
+                    "sourceY": "source.radius",
+                    "targetX": "target.radians",
+                    "targetY": "target.radius"
+                }
+            ]
+        }
+    ],
+    "marks": [
+        {
+            "type": "path",
+            "from": {
+                "data": "links"
+            },
+            "encode": {
+                "update": {
+                    "x": {
+                        "signal": "originX"
+                    },
+                    "y": {
+                        "signal": "originY"
+                    },
+                    "path": {
+                        "field": "path"
+                    },
+                    "stroke": {
+                        "value": "#ccc"
+                    },
+                    "opacity": {
+                        "value": 0.7
+                    },
+                    "strokeWidth": {
+                        "value": 0.5
+                    }
+                }
+            }
+        },
+        {
+            "type": "symbol",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "size": {
+                        "value": 12
+                    },
+                    "stroke": {
+                        "value": "#fff"
+                    },
+                    "strokeWidth": {
+                        "value": 0.2
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "fill": {
+                        "field": "color"
+                    },
+                    "opacity": {
+                        "value": 0.3
+                    }
+                }
+            }
+        },
+        {
+            "type": "text",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "text": {
+                        "field": "name"
+                    },
+                    "fontSize": {
+                        "value": 8
+                    },
+                    "font": {
+                        "value": "Benton Sans Book"
+                    },
+                    "baseline": {
+                        "value": "middle"
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "dx": {
+                        "signal": "(datum.leftside ? -1 : 1) * 6"
+                    },
+                    "angle": {
+                        "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
+                    },
+                    "align": {
+                        "signal": "datum.leftside ? 'right' : 'left'"
+                    },
+                    "opacity": {
+                        "signal": "labels ? 0.5 : 1"
+                    }
+                }
+            }
+        }
+    ],
+    "config": {}
+}

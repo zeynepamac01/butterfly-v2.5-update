@@ -1,0 +1,1290 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
+    "width": 1720,
+    "height": 1720,
+    "padding": 0,
+    "autosize": "none",
+    "signals": [
+        {
+            "name": "labels",
+            "value": false,
+            "bind": {
+                "input": "checkbox"
+            }
+        },
+        {
+            "name": "radius",
+            "value": 865,
+            "bind": {
+                "input": "range",
+                "min": 20,
+                "max": 4000
+            }
+        },
+        {
+            "name": "extent",
+            "value": 160,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "rotate",
+            "value": 15,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 360,
+                "step": 1
+            }
+        },
+        {
+            "name": "layout",
+            "value": "tidy",
+            "bind": {
+                "input": "radio",
+                "options": [
+                    "tidy",
+                    "cluster"
+                ]
+            }
+        },
+        {
+            "name": "links",
+            "value": "diagonal",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "line",
+                    "curve",
+                    "diagonal",
+                    "orthogonal"
+                ]
+            }
+        },
+        {
+            "name": "originX",
+            "update": "width / 2"
+        },
+        {
+            "name": "originY",
+            "update": "height / 2"
+        }
+    ],
+    "data": [
+        {
+            "name": "tree",
+            "values": [
+                {
+                    "id": 277.0,
+                    "name": 277.0,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0000165",
+                    "id_from_ontology_id": "UBERON:0000165",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 278.0,
+                    "name": 278.0,
+                    "parent": 277,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001723",
+                    "id_from_ontology_id": "UBERON:0001723",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 279.0,
+                    "name": 279.0,
+                    "parent": 277,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0003729",
+                    "id_from_ontology_id": "UBERON:0003729",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 280.0,
+                    "name": 280.0,
+                    "parent": 279,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001828",
+                    "id_from_ontology_id": "UBERON:0001828",
+                    "color": "#56a04e",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 281.0,
+                    "name": 281.0,
+                    "parent": 280,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8000014",
+                    "id_from_ontology_id": "UBERON:8000014",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 282.0,
+                    "name": 282.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0002621",
+                    "id_from_ontology_id": "CL:0002621",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 283.0,
+                    "name": 283.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000057",
+                    "id_from_ontology_id": "CL:0000057$$5656",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 284.0,
+                    "name": 284.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000084",
+                    "id_from_ontology_id": "CL:0000084$$5657",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 285.0,
+                    "name": 285.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000097",
+                    "id_from_ontology_id": "CL:0000097$$5658",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 286.0,
+                    "name": 286.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000115",
+                    "id_from_ontology_id": "CL:0000115$$5659",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 287.0,
+                    "name": 287.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000148",
+                    "id_from_ontology_id": "CL:0000148$$5660",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 288.0,
+                    "name": 288.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000235",
+                    "id_from_ontology_id": "CL:0000235$$5661",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 289.0,
+                    "name": 289.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000236",
+                    "id_from_ontology_id": "CL:0000236$$5662",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 290.0,
+                    "name": 290.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000242",
+                    "id_from_ontology_id": "CL:0000242$$5663",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 291.0,
+                    "name": 291.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000312",
+                    "id_from_ontology_id": "CL:0000312$$5664",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 292.0,
+                    "name": 292.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000451",
+                    "id_from_ontology_id": "CL:0000451$$5665",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 293.0,
+                    "name": 293.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000453",
+                    "id_from_ontology_id": "CL:0000453$$5666",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 294.0,
+                    "name": 294.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000623",
+                    "id_from_ontology_id": "CL:0000623$$5667",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 295.0,
+                    "name": 295.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000775",
+                    "id_from_ontology_id": "CL:0000775$$5668",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 296.0,
+                    "name": 296.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000786",
+                    "id_from_ontology_id": "CL:0000786$$5669",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 297.0,
+                    "name": 297.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0000815",
+                    "id_from_ontology_id": "CL:0000815$$5670",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 298.0,
+                    "name": 298.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:0001065",
+                    "id_from_ontology_id": "CL:0001065$$5671",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 299.0,
+                    "name": 299.0,
+                    "parent": 281,
+                    "type": "CT",
+                    "ontology_id": "CL:9900004",
+                    "id_from_ontology_id": "CL:9900004",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 300.0,
+                    "name": 300.0,
+                    "parent": 279,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0006956",
+                    "id_from_ontology_id": "UBERON:0006956",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 301.0,
+                    "name": 301.0,
+                    "parent": 279,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0004923",
+                    "id_from_ontology_id": "UBERON:0004923",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 302.0,
+                    "name": 302.0,
+                    "parent": 279,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0035967",
+                    "id_from_ontology_id": "UBERON:0035967",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 303.0,
+                    "name": 303.0,
+                    "parent": 277,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0010047",
+                    "id_from_ontology_id": "UBERON:0010047",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 304.0,
+                    "name": 304.0,
+                    "parent": 303,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001044",
+                    "id_from_ontology_id": "UBERON:0001044",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 305.0,
+                    "name": 305.0,
+                    "parent": 304,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001829",
+                    "id_from_ontology_id": "UBERON:0001829",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 306.0,
+                    "name": 306.0,
+                    "parent": 305,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001831",
+                    "id_from_ontology_id": "UBERON:0001831",
+                    "color": "#56a04e",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 307.0,
+                    "name": 307.0,
+                    "parent": 306,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8000011",
+                    "id_from_ontology_id": "UBERON:8000011",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 308.0,
+                    "name": 308.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000136",
+                    "id_from_ontology_id": "CL:0000136$$5672",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 309.0,
+                    "name": 309.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:9900002",
+                    "id_from_ontology_id": "CL:9900002",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 310.0,
+                    "name": 310.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000451",
+                    "id_from_ontology_id": "CL:0000451$$5673",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 311.0,
+                    "name": 311.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000115",
+                    "id_from_ontology_id": "CL:0000115$$5674",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 312.0,
+                    "name": 312.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000912",
+                    "id_from_ontology_id": "CL:0000912",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 313.0,
+                    "name": 313.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000987",
+                    "id_from_ontology_id": "CL:0000987",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 314.0,
+                    "name": 314.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:9900007",
+                    "id_from_ontology_id": "CL:9900007",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 315.0,
+                    "name": 315.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000235",
+                    "id_from_ontology_id": "CL:0000235$$5675",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 316.0,
+                    "name": 316.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000097",
+                    "id_from_ontology_id": "CL:0000097$$5676",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 317.0,
+                    "name": 317.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:9900008",
+                    "id_from_ontology_id": "CL:9900008",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 318.0,
+                    "name": 318.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000057",
+                    "id_from_ontology_id": "CL:0000057$$5677",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 319.0,
+                    "name": 319.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000669",
+                    "id_from_ontology_id": "CL:0000669$$5678",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 320.0,
+                    "name": 320.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:9900003",
+                    "id_from_ontology_id": "CL:9900003",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 321.0,
+                    "name": 321.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:4052065",
+                    "id_from_ontology_id": "CL:4052065",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 322.0,
+                    "name": 322.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:0000192",
+                    "id_from_ontology_id": "CL:0000192$$5679",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 323.0,
+                    "name": 323.0,
+                    "parent": 307,
+                    "type": "CT",
+                    "ontology_id": "CL:9900005",
+                    "id_from_ontology_id": "CL:9900005",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 324.0,
+                    "name": 324.0,
+                    "parent": 307,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0035048",
+                    "id_from_ontology_id": "UBERON:0035048",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 325.0,
+                    "name": 325.0,
+                    "parent": 324,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:excretory-duct-epithelial-cell",
+                    "id_from_ontology_id": "ASCTB-TEMP:excretory-duct-epithelial-cell",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 326.0,
+                    "name": 326.0,
+                    "parent": 307,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0035046",
+                    "id_from_ontology_id": "UBERON:0035046",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 327.0,
+                    "name": 327.0,
+                    "parent": 326,
+                    "type": "CT",
+                    "ontology_id": "CL:4052048",
+                    "id_from_ontology_id": "CL:4052048",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 328.0,
+                    "name": 328.0,
+                    "parent": 307,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0035047",
+                    "id_from_ontology_id": "UBERON:0035047",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 329.0,
+                    "name": 329.0,
+                    "parent": 328,
+                    "type": "CT",
+                    "ontology_id": "CL:4052049",
+                    "id_from_ontology_id": "CL:4052049",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 330.0,
+                    "name": 330.0,
+                    "parent": 305,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001832",
+                    "id_from_ontology_id": "UBERON:0001832",
+                    "color": "#56a04e",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 331.0,
+                    "name": 331.0,
+                    "parent": 330,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8000012",
+                    "id_from_ontology_id": "UBERON:8000012",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 332.0,
+                    "name": 332.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:9900001",
+                    "id_from_ontology_id": "CL:9900001",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 333.0,
+                    "name": 333.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000451",
+                    "id_from_ontology_id": "CL:0000451$$5680",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 334.0,
+                    "name": 334.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000115",
+                    "id_from_ontology_id": "CL:0000115$$5681",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 335.0,
+                    "name": 335.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000912",
+                    "id_from_ontology_id": "CL:0000912$$5682",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 336.0,
+                    "name": 336.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000987",
+                    "id_from_ontology_id": "CL:0000987$$5683",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 337.0,
+                    "name": 337.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:9900007",
+                    "id_from_ontology_id": "CL:9900007$$5684",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 338.0,
+                    "name": 338.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000235",
+                    "id_from_ontology_id": "CL:0000235$$5685",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 339.0,
+                    "name": 339.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000097",
+                    "id_from_ontology_id": "CL:0000097$$5686",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 340.0,
+                    "name": 340.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:mucous-acinar-cell",
+                    "id_from_ontology_id": "ASCTB-TEMP:mucous-acinar-cell",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 341.0,
+                    "name": 341.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:9900008",
+                    "id_from_ontology_id": "CL:9900008$$5687",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 342.0,
+                    "name": 342.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000057",
+                    "id_from_ontology_id": "CL:0000057$$5688",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 343.0,
+                    "name": 343.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000669",
+                    "id_from_ontology_id": "CL:0000669$$5689",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 344.0,
+                    "name": 344.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:9900003",
+                    "id_from_ontology_id": "CL:9900003$$5690",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 345.0,
+                    "name": 345.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:4052067",
+                    "id_from_ontology_id": "CL:4052067",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 346.0,
+                    "name": 346.0,
+                    "parent": 331,
+                    "type": "CT",
+                    "ontology_id": "CL:0000192",
+                    "id_from_ontology_id": "CL:0000192$$5691",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 347.0,
+                    "name": 347.0,
+                    "parent": 331,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001838",
+                    "id_from_ontology_id": "UBERON:0001838",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 348.0,
+                    "name": 348.0,
+                    "parent": 347,
+                    "type": "CT",
+                    "ontology_id": "CL:4052048",
+                    "id_from_ontology_id": "CL:4052048$$5692",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 349.0,
+                    "name": 349.0,
+                    "parent": 305,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001736",
+                    "id_from_ontology_id": "UBERON:0001736",
+                    "color": "#56a04e",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 350.0,
+                    "name": 350.0,
+                    "parent": 349,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8000013",
+                    "id_from_ontology_id": "UBERON:8000013",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 351.0,
+                    "name": 351.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:9900002",
+                    "id_from_ontology_id": "CL:9900002$$5693",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 352.0,
+                    "name": 352.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:9900001",
+                    "id_from_ontology_id": "CL:9900001$$5694",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 353.0,
+                    "name": 353.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000451",
+                    "id_from_ontology_id": "CL:0000451$$5695",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 354.0,
+                    "name": 354.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000115",
+                    "id_from_ontology_id": "CL:0000115$$5696",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 355.0,
+                    "name": 355.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000912",
+                    "id_from_ontology_id": "CL:0000912$$5697",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 356.0,
+                    "name": 356.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000987",
+                    "id_from_ontology_id": "CL:0000987$$5698",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 357.0,
+                    "name": 357.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:9900007",
+                    "id_from_ontology_id": "CL:9900007$$5699",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 358.0,
+                    "name": 358.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000235",
+                    "id_from_ontology_id": "CL:0000235$$5700",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 359.0,
+                    "name": 359.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000097",
+                    "id_from_ontology_id": "CL:0000097$$5701",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 360.0,
+                    "name": 360.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:mucous-acinar-cell",
+                    "id_from_ontology_id": "ASCTB-TEMP:mucous-acinar-cell$$5702",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 361.0,
+                    "name": 361.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:9900008",
+                    "id_from_ontology_id": "CL:9900008$$5703",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 362.0,
+                    "name": 362.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000057",
+                    "id_from_ontology_id": "CL:0000057$$5704",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 363.0,
+                    "name": 363.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000669",
+                    "id_from_ontology_id": "CL:0000669$$5705",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 364.0,
+                    "name": 364.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:9900003",
+                    "id_from_ontology_id": "CL:9900003$$5706",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 365.0,
+                    "name": 365.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:4052067",
+                    "id_from_ontology_id": "CL:4052067$$5707",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 366.0,
+                    "name": 366.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:0000192",
+                    "id_from_ontology_id": "CL:0000192$$5708",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 367.0,
+                    "name": 367.0,
+                    "parent": 350,
+                    "type": "CT",
+                    "ontology_id": "CL:9900006",
+                    "id_from_ontology_id": "CL:9900006",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 368.0,
+                    "name": 368.0,
+                    "parent": 350,
+                    "type": "AS",
+                    "ontology_id": "ASCTB-TEMP:excretory-duct",
+                    "id_from_ontology_id": "ASCTB-TEMP:excretory-duct",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 369.0,
+                    "name": 369.0,
+                    "parent": 368,
+                    "type": "CT",
+                    "ontology_id": "ASCTB-TEMP:excretory-duct-epithelial-cell",
+                    "id_from_ontology_id": "ASCTB-TEMP:excretory-duct-epithelial-cell$$5709",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 370.0,
+                    "name": 370.0,
+                    "parent": 350,
+                    "type": "AS",
+                    "ontology_id": "ASCTB-TEMP:intercalated-duct",
+                    "id_from_ontology_id": "ASCTB-TEMP:intercalated-duct",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 371.0,
+                    "name": 371.0,
+                    "parent": 370,
+                    "type": "CT",
+                    "ontology_id": "CL:4052048",
+                    "id_from_ontology_id": "CL:4052048$$5710",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 372.0,
+                    "name": 372.0,
+                    "parent": 350,
+                    "type": "AS",
+                    "ontology_id": "ASCTB-TEMP:striated-duct",
+                    "id_from_ontology_id": "ASCTB-TEMP:striated-duct",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 373.0,
+                    "name": 373.0,
+                    "parent": 372,
+                    "type": "CT",
+                    "ontology_id": "CL:4052049",
+                    "id_from_ontology_id": "CL:4052049$$5711",
+                    "color": "#ff7f00",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 374.0,
+                    "name": 374.0,
+                    "parent": 304,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0001830",
+                    "id_from_ontology_id": "UBERON:0001830",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 375.0,
+                    "name": 375.0,
+                    "parent": 374,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0006330",
+                    "id_from_ontology_id": "UBERON:0006330",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 376.0,
+                    "name": 376.0,
+                    "parent": 374,
+                    "type": "AS",
+                    "ontology_id": "UBERON:8480065",
+                    "id_from_ontology_id": "UBERON:8480065",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 377.0,
+                    "name": 377.0,
+                    "parent": 374,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0002447",
+                    "id_from_ontology_id": "UBERON:0002447",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 378.0,
+                    "name": 378.0,
+                    "parent": 374,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0034934",
+                    "id_from_ontology_id": "UBERON:0034934",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                },
+                {
+                    "id": 379.0,
+                    "name": 379.0,
+                    "parent": 374,
+                    "type": "AS",
+                    "ontology_id": "UBERON:0013475",
+                    "id_from_ontology_id": "UBERON:0013475",
+                    "color": "#984ea0",
+                    "organ": "mouth"
+                }
+            ],
+            "transform": [
+                {
+                    "type": "stratify",
+                    "key": "id",
+                    "parentKey": "parent"
+                },
+                {
+                    "type": "tree",
+                    "method": {
+                        "signal": "layout"
+                    },
+                    "size": [
+                        1,
+                        {
+                            "signal": "radius"
+                        }
+                    ],
+                    "as": [
+                        "alpha",
+                        "radius",
+                        "depth",
+                        "children"
+                    ]
+                },
+                {
+                    "type": "formula",
+                    "expr": "(rotate + extent * datum.alpha + 270) % 360",
+                    "as": "angle"
+                },
+                {
+                    "type": "formula",
+                    "expr": "PI * datum.angle / 180",
+                    "as": "radians"
+                },
+                {
+                    "type": "formula",
+                    "expr": "inrange(datum.angle, [90, 270])",
+                    "as": "leftside"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originX + datum.radius * cos(datum.radians)",
+                    "as": "x"
+                },
+                {
+                    "type": "formula",
+                    "expr": "originY + datum.radius * sin(datum.radians)",
+                    "as": "y"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "source": "tree",
+            "transform": [
+                {
+                    "type": "treelinks"
+                },
+                {
+                    "type": "linkpath",
+                    "shape": {
+                        "signal": "links"
+                    },
+                    "orient": "radial",
+                    "sourceX": "source.radians",
+                    "sourceY": "source.radius",
+                    "targetX": "target.radians",
+                    "targetY": "target.radius"
+                }
+            ]
+        }
+    ],
+    "marks": [
+        {
+            "type": "path",
+            "from": {
+                "data": "links"
+            },
+            "encode": {
+                "update": {
+                    "x": {
+                        "signal": "originX"
+                    },
+                    "y": {
+                        "signal": "originY"
+                    },
+                    "path": {
+                        "field": "path"
+                    },
+                    "stroke": {
+                        "value": "#ccc"
+                    },
+                    "opacity": {
+                        "value": 0.7
+                    },
+                    "strokeWidth": {
+                        "value": 0.5
+                    }
+                }
+            }
+        },
+        {
+            "type": "symbol",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "size": {
+                        "value": 12
+                    },
+                    "stroke": {
+                        "value": "#fff"
+                    },
+                    "strokeWidth": {
+                        "value": 0.2
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "fill": {
+                        "field": "color"
+                    },
+                    "opacity": {
+                        "value": 0.3
+                    }
+                }
+            }
+        },
+        {
+            "type": "text",
+            "from": {
+                "data": "tree"
+            },
+            "encode": {
+                "enter": {
+                    "text": {
+                        "field": "name"
+                    },
+                    "fontSize": {
+                        "value": 8
+                    },
+                    "font": {
+                        "value": "Benton Sans Book"
+                    },
+                    "baseline": {
+                        "value": "middle"
+                    }
+                },
+                "update": {
+                    "x": {
+                        "field": "x"
+                    },
+                    "y": {
+                        "field": "y"
+                    },
+                    "dx": {
+                        "signal": "(datum.leftside ? -1 : 1) * 6"
+                    },
+                    "angle": {
+                        "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
+                    },
+                    "align": {
+                        "signal": "datum.leftside ? 'right' : 'left'"
+                    },
+                    "opacity": {
+                        "signal": "labels ? 0.5 : 1"
+                    }
+                }
+            }
+        }
+    ],
+    "config": {}
+}

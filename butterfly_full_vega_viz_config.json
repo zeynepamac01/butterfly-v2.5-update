@@ -124594,7 +124594,10 @@
                         "field": "name"
                     },
                     "fontSize": {
-                        "value": 2
+                        "value": 8
+                    },
+                    "font": {
+                        "value": "Benton Sans Book"
                     },
                     "baseline": {
                         "value": "middle"

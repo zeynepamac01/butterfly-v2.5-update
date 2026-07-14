@@ -2,12 +2,11 @@
 prepare_release.py
 
 This script:
-1. Asks for the HRA version.
-2. Downloads the corresponding HRA JSON.
-3. Creates the output folder if needed.
-4. Saves the JSON locally.
-5. Checks whether the expected CSV files exist.
-6. Prints the notebook paths needed for the visualization notebook.
+1) ask for the HRA version
+2) download the JSON
+3) save it
+4) print the notebook paths
+5) check whether key files exist
 
 """
 

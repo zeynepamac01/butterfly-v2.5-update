@@ -186,7 +186,8 @@
       "encode": {
         "enter": {
           "text": {"field": "name"},
-          "fontSize": {"value": 2},
+          "fontSize": {"value": 8},
+          "font": {"value": "Benton Sans Book"},
           "baseline": {"value": "middle"}
         },
         "update": {
