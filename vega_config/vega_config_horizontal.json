@@ -6,25 +6,11 @@
   "padding": 0,
   "autosize": "none",
   "signals": [
-    {"name": "labels", "value": false, "bind": {"input": "checkbox"}},
-    {
-      "name": "radius",
-      "value": 865,
-      "bind": {"input": "range", "min": 20, "max": 4000}
-    },
-    {
-      "name": "extent",
-      "value": 160,
-      "bind": {"input": "range", "min": 0, "max": 360, "step": 1}
-    },
-    {
-      "name": "rotate",
-      "value": 15,
-      "bind": {"input": "range", "min": 0, "max": 360, "step": 1}
-    },
+    {"name": "xShift", "value": 80},
+    {"name": "labels", "value": true, "bind": {"input": "checkbox"}},
     {
       "name": "layout",
-      "value": "tidy",
+      "value": "cluster",
       "bind": {"input": "radio", "options": ["tidy", "cluster"]}
     },
     {
@@ -34,9 +20,7 @@
         "input": "select",
         "options": ["line", "curve", "diagonal", "orthogonal"]
       }
-    },
-    {"name": "originX", "update": "width / 2"},
-    {"name": "originY", "update": "height / 2"}
+    }
   ],
   "data": [
     {
@@ -51,12 +35,8 @@
           "organ": "body",
           "organ_label": "",
           "alpha": 0.511211774098372,
-          "radius": 0,
           "depth": 0,
           "children": 21,
-          "angle": 356.90600159672323,
-          "radians": 6.229184847990959,
-          "leftside": false,
           "x": 860,
           "y": 860
         },
@@ -70,12 +50,8 @@
           "organ": "lung",
           "organ_label": "Respiratory System",
           "alpha": 0.0357527161650873,
-          "radius": 45.526315789473685,
           "depth": 1,
           "children": 2,
-          "angle": 276.07796174806487,
-          "radians": 4.818469424698692,
-          "leftside": false,
           "x": 864.8203992162016,
           "y": 814.729599286517
         },
@@ -89,12 +65,8 @@
           "organ": "lung",
           "organ_label": "",
           "alpha": 0.02787323405880107,
-          "radius": 91.05263157894737,
           "depth": 2,
           "children": 1,
-          "angle": 274.7384497899962,
-          "radians": 4.795090530660557,
-          "leftside": false,
           "x": 867.5216128716223,
           "y": 769.2585703371334
         }
@@ -105,30 +77,19 @@
         {
           "type": "tree",
           "method": {"signal": "layout"},
-          "size": [{"signal": "width"}, {"signal": "height"}],
+          "size": [{"signal": "height * 0.20"}, {"signal": "width * 0.25"}],
           "as": ["x", "y", "depth", "children"]
-},
-        {
-          "type": "formula",
-          "expr": "(rotate + extent * datum.alpha + 270) % 360",
-          "as": "angle"
-        },
-        {"type": "formula", "expr": "PI * datum.angle / 180", "as": "radians"},
-        {
-          "type": "formula",
-          "expr": "inrange(datum.angle, [90, 270])",
-          "as": "leftside"
         },
         {
           "type": "formula",
-          "expr": "originX + datum.radius * cos(datum.radians)",
-          "as": "x"
+          "expr": "datum.y + xShift",
+          "as": "x_draw"
         },
         {
           "type": "formula",
-          "expr": "originY + datum.radius * sin(datum.radians)",
-          "as": "y"
-        }
+          "expr": "datum.x",
+          "as": "y_draw"
+}
       ]
     },
     {
@@ -140,43 +101,41 @@
           "type": "linkpath",
           "shape": {"signal": "links"},
           "orient": "horizontal",
-          "sourceX": "source.radians",
-          "sourceY": "source.radius",
-          "targetX": "target.radians",
-          "targetY": "target.radius"
-        }
+          "sourceX": "source.x_draw",
+          "sourceY": "source.y_draw",
+          "targetX": "target.x_draw",
+          "targetY": "target.y_draw"
+}
       ]
     }
   ],
   "marks": [
     {
-      "type": "path",
-      "from": {"data": "links"},
-      "encode": {
-        "update": {
-          "x": {"signal": "originX"},
-          "y": {"signal": "originY"},
-          "path": {"field": "path"},
-          "stroke": {"value": "#ccc"},
-          "opacity": {"value": 0.7},
-          "strokeWidth": {"value": 0.5}
-        }
-      }
-    },
+  "type": "path",
+  "from": {"data": "links"},
+  "encode": {
+    "update": {
+      "path": {"field": "path"},
+      "stroke": {"value": "#ccc"},
+      "opacity": {"value": 0.8},
+      "strokeWidth": {"value": 0.75}
+    }
+  }
+},
     {
       "type": "symbol",
       "from": {"data": "tree"},
       "encode": {
         "enter": {
-          "size": {"value": 12},
+          "size": {"value": 20},
           "stroke": {"value": "#fff"},
           "strokeWidth": {"value": 0.2}
         },
         "update": {
-          "x": {"field": "x"},
-          "y": {"field": "y"},
+          "x": {"field": "x_draw"},
+          "y": {"field": "y_draw"},
           "fill": {"field": "color"},
-          "opacity": {"value": 0.3}
+          "opacity": {"value": 0.7}
         }
       }
     },
@@ -190,15 +149,11 @@
           "font": {"value": "BentonSans"},
           "baseline": {"value": "middle"}
         },
-        "update": {
-          "x": {"field": "x"},
-          "y": {"field": "y"},
-          "dx": {"signal": "(datum.leftside ? -1 : 1) * 6"},
-          "angle": {
-            "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
-          },
-          "align": {"signal": "datum.leftside ? 'right' : 'left'"},
-          "opacity": {"signal": "labels ? 0.5 : 0"}
+        "update": {  
+        "x": {"field": "x_draw"},
+        "y": {"field": "y_draw"},
+        "align": "left",
+        "opacity": {"field": "show_label"}
         }
       }
     }

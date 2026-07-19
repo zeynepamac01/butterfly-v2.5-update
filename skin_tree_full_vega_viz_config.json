@@ -1,45 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
-    "width": 1720,
-    "height": 1720,
+    "width": 3000,
+    "height": 1200,
     "padding": 0,
     "autosize": "none",
     "signals": [
         {
             "name": "labels",
-            "value": false,
+            "value": true,
             "bind": {
                 "input": "checkbox"
-            }
-        },
-        {
-            "name": "radius",
-            "value": 865,
-            "bind": {
-                "input": "range",
-                "min": 20,
-                "max": 4000
-            }
-        },
-        {
-            "name": "extent",
-            "value": 160,
-            "bind": {
-                "input": "range",
-                "min": 0,
-                "max": 360,
-                "step": 1
-            }
-        },
-        {
-            "name": "rotate",
-            "value": 15,
-            "bind": {
-                "input": "range",
-                "min": 0,
-                "max": 360,
-                "step": 1
             }
         },
         {
@@ -65,14 +36,6 @@
                     "orthogonal"
                 ]
             }
-        },
-        {
-            "name": "originX",
-            "update": "width / 2"
-        },
-        {
-            "name": "originY",
-            "update": "height / 2"
         }
     ],
     "data": [
@@ -81,7 +44,7 @@
             "values": [
                 {
                     "id": 6719.0,
-                    "name": 6719.0,
+                    "name": "skin of body",
                     "type": "AS",
                     "ontology_id": "UBERON:0002097",
                     "id_from_ontology_id": "UBERON:0002097",
@@ -90,7 +53,7 @@
                 },
                 {
                     "id": 6720.0,
-                    "name": 6720.0,
+                    "name": "skin epidermis",
                     "parent": 6719,
                     "type": "AS",
                     "ontology_id": "UBERON:0001003",
@@ -100,17 +63,17 @@
                 },
                 {
                     "id": 6721.0,
-                    "name": 6721.0,
+                    "name": "epidermal ridge of digit",
                     "parent": 6720,
                     "type": "AS",
                     "ontology_id": "UBERON:0013487",
                     "id_from_ontology_id": "UBERON:0013487",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "skin"
                 },
                 {
                     "id": 6722.0,
-                    "name": 6722.0,
+                    "name": "stratum corneum of epidermis",
                     "parent": 6721,
                     "type": "AS",
                     "ontology_id": "UBERON:0002027",
@@ -120,7 +83,7 @@
                 },
                 {
                     "id": 6723.0,
-                    "name": 6723.0,
+                    "name": "corneocyte",
                     "parent": 6722,
                     "type": "CT",
                     "ontology_id": "CL:0002153",
@@ -130,7 +93,7 @@
                 },
                 {
                     "id": 6724.0,
-                    "name": 6724.0,
+                    "name": "stratum granulosum of epidermis",
                     "parent": 6721,
                     "type": "AS",
                     "ontology_id": "UBERON:0002069",
@@ -140,7 +103,7 @@
                 },
                 {
                     "id": 6725.0,
-                    "name": 6725.0,
+                    "name": "keratinocyte",
                     "parent": 6724,
                     "type": "CT",
                     "ontology_id": "CL:0000312",
@@ -150,7 +113,7 @@
                 },
                 {
                     "id": 6726.0,
-                    "name": 6726.0,
+                    "name": "epidermal Langerhans cell",
                     "parent": 6724,
                     "type": "CT",
                     "ontology_id": "CL:0002457",
@@ -160,7 +123,7 @@
                 },
                 {
                     "id": 6727.0,
-                    "name": 6727.0,
+                    "name": "stratum spinosum of epidermis",
                     "parent": 6721,
                     "type": "AS",
                     "ontology_id": "UBERON:0002026",
@@ -170,7 +133,7 @@
                 },
                 {
                     "id": 6728.0,
-                    "name": 6728.0,
+                    "name": "prickle cell",
                     "parent": 6727,
                     "type": "CT",
                     "ontology_id": "CL:0000649",
@@ -180,7 +143,7 @@
                 },
                 {
                     "id": 6729.0,
-                    "name": 6729.0,
+                    "name": "epidermal Langerhans cell",
                     "parent": 6727,
                     "type": "CT",
                     "ontology_id": "CL:0002457",
@@ -190,7 +153,7 @@
                 },
                 {
                     "id": 6730.0,
-                    "name": 6730.0,
+                    "name": "Merkel cell",
                     "parent": 6727,
                     "type": "CT",
                     "ontology_id": "CL:0000242",
@@ -200,7 +163,7 @@
                 },
                 {
                     "id": 6731.0,
-                    "name": 6731.0,
+                    "name": "stratum basale of epidermis",
                     "parent": 6721,
                     "type": "AS",
                     "ontology_id": "UBERON:0002025",
@@ -210,7 +173,7 @@
                 },
                 {
                     "id": 6732.0,
-                    "name": 6732.0,
+                    "name": "basal cell",
                     "parent": 6731,
                     "type": "CT",
                     "ontology_id": "CL:0000646",
@@ -220,7 +183,7 @@
                 },
                 {
                     "id": 6733.0,
-                    "name": 6733.0,
+                    "name": "epidermal Langerhans cell",
                     "parent": 6731,
                     "type": "CT",
                     "ontology_id": "CL:0002457",
@@ -230,7 +193,7 @@
                 },
                 {
                     "id": 6734.0,
-                    "name": 6734.0,
+                    "name": "Merkel cell",
                     "parent": 6731,
                     "type": "CT",
                     "ontology_id": "CL:0000242",
@@ -240,7 +203,7 @@
                 },
                 {
                     "id": 6735.0,
-                    "name": 6735.0,
+                    "name": "melanocyte of skin",
                     "parent": 6731,
                     "type": "CT",
                     "ontology_id": "CL:1000458",
@@ -250,7 +213,7 @@
                 },
                 {
                     "id": 6736.0,
-                    "name": 6736.0,
+                    "name": "keratinocyte",
                     "parent": 6731,
                     "type": "CT",
                     "ontology_id": "CL:0000312",
@@ -260,7 +223,7 @@
                 },
                 {
                     "id": 6737.0,
-                    "name": 6737.0,
+                    "name": "nail matrix",
                     "parent": 6720,
                     "type": "AS",
                     "ontology_id": "UBERON:0002283",
@@ -270,7 +233,7 @@
                 },
                 {
                     "id": 6738.0,
-                    "name": 6738.0,
+                    "name": "Nail plate",
                     "parent": 6737,
                     "type": "AS",
                     "ontology_id": "UBERON:0008198",
@@ -280,7 +243,7 @@
                 },
                 {
                     "id": 6739.0,
-                    "name": 6739.0,
+                    "name": "keratinocyte",
                     "parent": 6738,
                     "type": "CT",
                     "ontology_id": "CL:0000312",
@@ -290,7 +253,7 @@
                 },
                 {
                     "id": 6740.0,
-                    "name": 6740.0,
+                    "name": "onychocyte",
                     "parent": 6739,
                     "type": "CT",
                     "ontology_id": "CL:4033056",
@@ -300,7 +263,7 @@
                 },
                 {
                     "id": 6741.0,
-                    "name": 6741.0,
+                    "name": "dermis",
                     "parent": 6719,
                     "type": "AS",
                     "ontology_id": "UBERON:0002067",
@@ -310,17 +273,17 @@
                 },
                 {
                     "id": 6742.0,
-                    "name": 6742.0,
+                    "name": "hair follicle",
                     "parent": 6741,
                     "type": "AS",
                     "ontology_id": "UBERON:0002073",
                     "id_from_ontology_id": "UBERON:0002073$$8007",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "skin"
                 },
                 {
                     "id": 6743.0,
-                    "name": 6743.0,
+                    "name": "bulb of hair follicle",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0005932",
@@ -330,7 +293,7 @@
                 },
                 {
                     "id": 6744.0,
-                    "name": 6744.0,
+                    "name": "hair germinal matrix cell",
                     "parent": 6743,
                     "type": "CT",
                     "ontology_id": "CL:0002562",
@@ -340,7 +303,7 @@
                 },
                 {
                     "id": 6745.0,
-                    "name": 6745.0,
+                    "name": "hair follicle melanocyte",
                     "parent": 6743,
                     "type": "CT",
                     "ontology_id": "CL:0002483",
@@ -350,17 +313,17 @@
                 },
                 {
                     "id": 6746.0,
-                    "name": 6746.0,
+                    "name": "dermal papilla",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0000412",
                     "id_from_ontology_id": "UBERON:0000412",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "skin"
                 },
                 {
                     "id": 6747.0,
-                    "name": 6747.0,
+                    "name": "hair outer root sheath",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0005942",
@@ -370,7 +333,7 @@
                 },
                 {
                     "id": 6748.0,
-                    "name": 6748.0,
+                    "name": "hair inner root sheath",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0005941",
@@ -380,7 +343,7 @@
                 },
                 {
                     "id": 6749.0,
-                    "name": 6749.0,
+                    "name": "hair shaft",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0002074",
@@ -390,7 +353,7 @@
                 },
                 {
                     "id": 6750.0,
-                    "name": 6750.0,
+                    "name": "cuticle of hair",
                     "parent": 6749,
                     "type": "AS",
                     "ontology_id": "UBERON:0002076",
@@ -400,7 +363,7 @@
                 },
                 {
                     "id": 6751.0,
-                    "name": 6751.0,
+                    "name": "cortex of hair",
                     "parent": 6749,
                     "type": "AS",
                     "ontology_id": "UBERON:0002077",
@@ -410,7 +373,7 @@
                 },
                 {
                     "id": 6752.0,
-                    "name": 6752.0,
+                    "name": "hair medulla",
                     "parent": 6749,
                     "type": "AS",
                     "ontology_id": "UBERON:0005184",
@@ -420,7 +383,7 @@
                 },
                 {
                     "id": 6753.0,
-                    "name": 6753.0,
+                    "name": "arrector muscle of hair",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0002033",
@@ -430,7 +393,7 @@
                 },
                 {
                     "id": 6754.0,
-                    "name": 6754.0,
+                    "name": "connective tissue sheath",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "ASCTB-TEMP:connective-tissue-sheath",
@@ -440,7 +403,7 @@
                 },
                 {
                     "id": 6755.0,
-                    "name": 6755.0,
+                    "name": "infundibulum of hair follicle",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0005968",
@@ -450,7 +413,7 @@
                 },
                 {
                     "id": 6756.0,
-                    "name": 6756.0,
+                    "name": "hair follicle bulge",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0005975",
@@ -460,7 +423,7 @@
                 },
                 {
                     "id": 6757.0,
-                    "name": 6757.0,
+                    "name": "sebaceous gland",
                     "parent": 6742,
                     "type": "AS",
                     "ontology_id": "UBERON:0001821",
@@ -470,7 +433,7 @@
                 },
                 {
                     "id": 6758.0,
-                    "name": 6758.0,
+                    "name": "sebum secreting cell",
                     "parent": 6757,
                     "type": "CT",
                     "ontology_id": "CL:0000317",
@@ -480,7 +443,7 @@
                 },
                 {
                     "id": 6759.0,
-                    "name": 6759.0,
+                    "name": "keratinocyte stem cell",
                     "parent": 6742,
                     "type": "CT",
                     "ontology_id": "CL:0002337",
@@ -490,7 +453,7 @@
                 },
                 {
                     "id": 6760.0,
-                    "name": 6760.0,
+                    "name": "sweat gland",
                     "parent": 6741,
                     "type": "AS",
                     "ontology_id": "UBERON:0001820",
@@ -500,7 +463,7 @@
                 },
                 {
                     "id": 6761.0,
-                    "name": 6761.0,
+                    "name": "eccrine sweat gland",
                     "parent": 6760,
                     "type": "AS",
                     "ontology_id": "UBERON:0000423",
@@ -510,7 +473,7 @@
                 },
                 {
                     "id": 6762.0,
-                    "name": 6762.0,
+                    "name": "myoepithelial cell of sweat gland",
                     "parent": 6761,
                     "type": "CT",
                     "ontology_id": "CL:1000417",
@@ -520,7 +483,7 @@
                 },
                 {
                     "id": 6763.0,
-                    "name": 6763.0,
+                    "name": "apocrine gland",
                     "parent": 6760,
                     "type": "AS",
                     "ontology_id": "UBERON:0008974",
@@ -530,7 +493,7 @@
                 },
                 {
                     "id": 6764.0,
-                    "name": 6764.0,
+                    "name": "myoepithelial cell of sweat gland",
                     "parent": 6763,
                     "type": "CT",
                     "ontology_id": "CL:1000417",
@@ -540,7 +503,7 @@
                 },
                 {
                     "id": 6765.0,
-                    "name": 6765.0,
+                    "name": "UBERON:0002067",
                     "parent": 6741,
                     "type": "AS",
                     "ontology_id": "UBERON:0001992",
@@ -550,17 +513,17 @@
                 },
                 {
                     "id": 6766.0,
-                    "name": 6766.0,
+                    "name": "dermal papilla",
                     "parent": 6765,
                     "type": "AS",
                     "ontology_id": "UBERON:0000412",
                     "id_from_ontology_id": "UBERON:0000412$$8014",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "skin"
                 },
                 {
                     "id": 6767.0,
-                    "name": 6767.0,
+                    "name": "myoepithelial cell of sweat gland",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:1000417",
@@ -570,7 +533,7 @@
                 },
                 {
                     "id": 6768.0,
-                    "name": 6768.0,
+                    "name": "skin fibroblast",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0002620",
@@ -580,7 +543,7 @@
                 },
                 {
                     "id": 6769.0,
-                    "name": 6769.0,
+                    "name": "mast cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000097",
@@ -590,7 +553,7 @@
                 },
                 {
                     "id": 6770.0,
-                    "name": 6770.0,
+                    "name": "dermal dendritic cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0001006",
@@ -600,7 +563,7 @@
                 },
                 {
                     "id": 6771.0,
-                    "name": 6771.0,
+                    "name": "macrophage",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000235",
@@ -610,7 +573,7 @@
                 },
                 {
                     "id": 6772.0,
-                    "name": 6772.0,
+                    "name": "T-helper 1 cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000545",
@@ -620,7 +583,7 @@
                 },
                 {
                     "id": 6773.0,
-                    "name": 6773.0,
+                    "name": "cytotoxic T cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000910",
@@ -630,7 +593,7 @@
                 },
                 {
                     "id": 6774.0,
-                    "name": 6774.0,
+                    "name": "regulatory T cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000815",
@@ -640,7 +603,7 @@
                 },
                 {
                     "id": 6775.0,
-                    "name": 6775.0,
+                    "name": "natural killer cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000623",
@@ -650,7 +613,7 @@
                 },
                 {
                     "id": 6776.0,
-                    "name": 6776.0,
+                    "name": "group 1 innate lymphoid cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0001067",
@@ -660,7 +623,7 @@
                 },
                 {
                     "id": 6777.0,
-                    "name": 6777.0,
+                    "name": "group 2 innate lymphoid cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0001069",
@@ -670,7 +633,7 @@
                 },
                 {
                     "id": 6778.0,
-                    "name": 6778.0,
+                    "name": "group 3 innate lymphoid cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0001071",
@@ -680,7 +643,7 @@
                 },
                 {
                     "id": 6779.0,
-                    "name": 6779.0,
+                    "name": "B cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000236",
@@ -690,7 +653,7 @@
                 },
                 {
                     "id": 6780.0,
-                    "name": 6780.0,
+                    "name": "plasma cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000786",
@@ -700,7 +663,7 @@
                 },
                 {
                     "id": 6781.0,
-                    "name": 6781.0,
+                    "name": "neutrophil",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000775",
@@ -710,7 +673,7 @@
                 },
                 {
                     "id": 6782.0,
-                    "name": 6782.0,
+                    "name": "eosinophil",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000771",
@@ -720,7 +683,7 @@
                 },
                 {
                     "id": 6783.0,
-                    "name": 6783.0,
+                    "name": "skin nerve field",
                     "parent": 6766,
                     "type": "AS",
                     "ontology_id": "UBERON:0007121",
@@ -730,7 +693,7 @@
                 },
                 {
                     "id": 6784.0,
-                    "name": 6784.0,
+                    "name": "Neuron",
                     "parent": 6783,
                     "type": "CT",
                     "ontology_id": "CL:0000540",
@@ -740,7 +703,7 @@
                 },
                 {
                     "id": 6785.0,
-                    "name": 6785.0,
+                    "name": "Schwann cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0002573",
@@ -750,7 +713,7 @@
                 },
                 {
                     "id": 6786.0,
-                    "name": 6786.0,
+                    "name": "perineurial cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0002576",
@@ -760,7 +723,7 @@
                 },
                 {
                     "id": 6787.0,
-                    "name": 6787.0,
+                    "name": "vasculature of integument",
                     "parent": 6766,
                     "type": "AS",
                     "ontology_id": "UBERON:0035549",
@@ -770,7 +733,7 @@
                 },
                 {
                     "id": 6788.0,
-                    "name": 6788.0,
+                    "name": "endothelial cell",
                     "parent": 6787,
                     "type": "CT",
                     "ontology_id": "CL:0000115",
@@ -780,7 +743,7 @@
                 },
                 {
                     "id": 6789.0,
-                    "name": 6789.0,
+                    "name": "vascular associated smooth muscle cell",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000359",
@@ -790,7 +753,7 @@
                 },
                 {
                     "id": 6790.0,
-                    "name": 6790.0,
+                    "name": "type I cell of carotid body",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0002292",
@@ -800,7 +763,7 @@
                 },
                 {
                     "id": 6791.0,
-                    "name": 6791.0,
+                    "name": "pericyte",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0000669",
@@ -810,7 +773,7 @@
                 },
                 {
                     "id": 6792.0,
-                    "name": 6792.0,
+                    "name": "endothelial cell of lymphatic vessel",
                     "parent": 6766,
                     "type": "CT",
                     "ontology_id": "CL:0002138",
@@ -820,7 +783,7 @@
                 },
                 {
                     "id": 6793.0,
-                    "name": 6793.0,
+                    "name": "hypodermis",
                     "parent": 6719,
                     "type": "AS",
                     "ontology_id": "UBERON:0002072",
@@ -830,7 +793,7 @@
                 },
                 {
                     "id": 6794.0,
-                    "name": 6794.0,
+                    "name": "endothelial cell of lymphatic vessel",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0002138",
@@ -840,7 +803,7 @@
                 },
                 {
                     "id": 6795.0,
-                    "name": 6795.0,
+                    "name": "subcutaneous adipocyte",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0002521",
@@ -850,7 +813,7 @@
                 },
                 {
                     "id": 6796.0,
-                    "name": 6796.0,
+                    "name": "skin fibroblast",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0002620",
@@ -860,7 +823,7 @@
                 },
                 {
                     "id": 6797.0,
-                    "name": 6797.0,
+                    "name": "macrophage",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000235",
@@ -870,7 +833,7 @@
                 },
                 {
                     "id": 6798.0,
-                    "name": 6798.0,
+                    "name": "mast cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000097",
@@ -880,7 +843,7 @@
                 },
                 {
                     "id": 6799.0,
-                    "name": 6799.0,
+                    "name": "T-helper 1 cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000545",
@@ -890,7 +853,7 @@
                 },
                 {
                     "id": 6800.0,
-                    "name": 6800.0,
+                    "name": "cytotoxic T cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000910",
@@ -900,7 +863,7 @@
                 },
                 {
                     "id": 6801.0,
-                    "name": 6801.0,
+                    "name": "regulatory T cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000815",
@@ -910,7 +873,7 @@
                 },
                 {
                     "id": 6802.0,
-                    "name": 6802.0,
+                    "name": "B cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000236",
@@ -920,7 +883,7 @@
                 },
                 {
                     "id": 6803.0,
-                    "name": 6803.0,
+                    "name": "neutrophil",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000775",
@@ -930,7 +893,7 @@
                 },
                 {
                     "id": 6804.0,
-                    "name": 6804.0,
+                    "name": "eosinophil",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000771",
@@ -940,7 +903,7 @@
                 },
                 {
                     "id": 6805.0,
-                    "name": 6805.0,
+                    "name": "skin nerve field",
                     "parent": 6793,
                     "type": "AS",
                     "ontology_id": "UBERON:0007121",
@@ -950,7 +913,7 @@
                 },
                 {
                     "id": 6806.0,
-                    "name": 6806.0,
+                    "name": "Neuron",
                     "parent": 6805,
                     "type": "CT",
                     "ontology_id": "CL:0000540",
@@ -960,7 +923,7 @@
                 },
                 {
                     "id": 6807.0,
-                    "name": 6807.0,
+                    "name": "Schwann cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0002573",
@@ -970,7 +933,7 @@
                 },
                 {
                     "id": 6808.0,
-                    "name": 6808.0,
+                    "name": "perineurial cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0002576",
@@ -980,7 +943,7 @@
                 },
                 {
                     "id": 6809.0,
-                    "name": 6809.0,
+                    "name": "vasculature of integument",
                     "parent": 6793,
                     "type": "AS",
                     "ontology_id": "UBERON:0035549",
@@ -990,7 +953,7 @@
                 },
                 {
                     "id": 6810.0,
-                    "name": 6810.0,
+                    "name": "endothelial cell",
                     "parent": 6809,
                     "type": "CT",
                     "ontology_id": "CL:0000115",
@@ -1000,7 +963,7 @@
                 },
                 {
                     "id": 6811.0,
-                    "name": 6811.0,
+                    "name": "vascular associated smooth muscle cell",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0000359",
@@ -1010,7 +973,7 @@
                 },
                 {
                     "id": 6812.0,
-                    "name": 6812.0,
+                    "name": "type I cell of carotid body",
                     "parent": 6793,
                     "type": "CT",
                     "ontology_id": "CL:0002292",
@@ -1031,42 +994,19 @@
                         "signal": "layout"
                     },
                     "size": [
-                        1,
                         {
-                            "signal": "radius"
+                            "signal": "width"
+                        },
+                        {
+                            "signal": "height"
                         }
                     ],
                     "as": [
-                        "alpha",
-                        "radius",
+                        "x",
+                        "y",
                         "depth",
                         "children"
                     ]
-                },
-                {
-                    "type": "formula",
-                    "expr": "(rotate + extent * datum.alpha + 270) % 360",
-                    "as": "angle"
-                },
-                {
-                    "type": "formula",
-                    "expr": "PI * datum.angle / 180",
-                    "as": "radians"
-                },
-                {
-                    "type": "formula",
-                    "expr": "inrange(datum.angle, [90, 270])",
-                    "as": "leftside"
-                },
-                {
-                    "type": "formula",
-                    "expr": "originX + datum.radius * cos(datum.radians)",
-                    "as": "x"
-                },
-                {
-                    "type": "formula",
-                    "expr": "originY + datum.radius * sin(datum.radians)",
-                    "as": "y"
                 }
             ]
         },
@@ -1082,11 +1022,11 @@
                     "shape": {
                         "signal": "links"
                     },
-                    "orient": "radial",
-                    "sourceX": "source.radians",
-                    "sourceY": "source.radius",
-                    "targetX": "target.radians",
-                    "targetY": "target.radius"
+                    "orient": "horizontal",
+                    "sourceX": "source.y",
+                    "sourceY": "source.x",
+                    "targetX": "target.y",
+                    "targetY": "target.x"
                 }
             ]
         }
@@ -1099,12 +1039,6 @@
             },
             "encode": {
                 "update": {
-                    "x": {
-                        "signal": "originX"
-                    },
-                    "y": {
-                        "signal": "originY"
-                    },
                     "path": {
                         "field": "path"
                     },
@@ -1139,10 +1073,10 @@
                 },
                 "update": {
                     "x": {
-                        "field": "x"
+                        "field": "y"
                     },
                     "y": {
-                        "field": "y"
+                        "field": "x"
                     },
                     "fill": {
                         "field": "color"
@@ -1167,7 +1101,7 @@
                         "value": 8
                     },
                     "font": {
-                        "value": "Benton Sans Book"
+                        "value": "BentonSans"
                     },
                     "baseline": {
                         "value": "middle"
@@ -1175,22 +1109,15 @@
                 },
                 "update": {
                     "x": {
-                        "field": "x"
-                    },
-                    "y": {
                         "field": "y"
                     },
-                    "dx": {
-                        "signal": "(datum.leftside ? -1 : 1) * 6"
+                    "y": {
+                        "field": "x"
                     },
-                    "angle": {
-                        "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
-                    },
-                    "align": {
-                        "signal": "datum.leftside ? 'right' : 'left'"
-                    },
+                    "dx": 6,
+                    "align": "left",
                     "opacity": {
-                        "signal": "labels ? 0.5 : 1"
+                        "value": 1
                     }
                 }
             }

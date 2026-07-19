@@ -1,45 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
-    "width": 1720,
-    "height": 1720,
+    "width": 3000,
+    "height": 1200,
     "padding": 0,
     "autosize": "none",
     "signals": [
         {
             "name": "labels",
-            "value": false,
+            "value": true,
             "bind": {
                 "input": "checkbox"
-            }
-        },
-        {
-            "name": "radius",
-            "value": 865,
-            "bind": {
-                "input": "range",
-                "min": 20,
-                "max": 4000
-            }
-        },
-        {
-            "name": "extent",
-            "value": 160,
-            "bind": {
-                "input": "range",
-                "min": 0,
-                "max": 360,
-                "step": 1
-            }
-        },
-        {
-            "name": "rotate",
-            "value": 15,
-            "bind": {
-                "input": "range",
-                "min": 0,
-                "max": 360,
-                "step": 1
             }
         },
         {
@@ -65,14 +36,6 @@
                     "orthogonal"
                 ]
             }
-        },
-        {
-            "name": "originX",
-            "update": "width / 2"
-        },
-        {
-            "name": "originY",
-            "update": "height / 2"
         }
     ],
     "data": [
@@ -81,7 +44,7 @@
             "values": [
                 {
                     "id": 277.0,
-                    "name": 277.0,
+                    "name": "mouth",
                     "type": "AS",
                     "ontology_id": "UBERON:0000165",
                     "id_from_ontology_id": "UBERON:0000165",
@@ -90,7 +53,7 @@
                 },
                 {
                     "id": 278.0,
-                    "name": 278.0,
+                    "name": "tongue",
                     "parent": 277,
                     "type": "AS",
                     "ontology_id": "UBERON:0001723",
@@ -100,7 +63,7 @@
                 },
                 {
                     "id": 279.0,
-                    "name": 279.0,
+                    "name": "mouth mucosa",
                     "parent": 277,
                     "type": "AS",
                     "ontology_id": "UBERON:0003729",
@@ -110,17 +73,17 @@
                 },
                 {
                     "id": 280.0,
-                    "name": 280.0,
+                    "name": "gingiva",
                     "parent": 279,
                     "type": "AS",
                     "ontology_id": "UBERON:0001828",
                     "id_from_ontology_id": "UBERON:0001828",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "mouth"
                 },
                 {
                     "id": 281.0,
-                    "name": 281.0,
+                    "name": "dentogingival junction",
                     "parent": 280,
                     "type": "AS",
                     "ontology_id": "UBERON:8000014",
@@ -130,7 +93,7 @@
                 },
                 {
                     "id": 282.0,
-                    "name": 282.0,
+                    "name": "gingival epithelial cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0002621",
@@ -140,7 +103,7 @@
                 },
                 {
                     "id": 283.0,
-                    "name": 283.0,
+                    "name": "fibroblast",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000057",
@@ -150,7 +113,7 @@
                 },
                 {
                     "id": 284.0,
-                    "name": 284.0,
+                    "name": "T cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000084",
@@ -160,7 +123,7 @@
                 },
                 {
                     "id": 285.0,
-                    "name": 285.0,
+                    "name": "mast cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000097",
@@ -170,7 +133,7 @@
                 },
                 {
                     "id": 286.0,
-                    "name": 286.0,
+                    "name": "endothelial cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000115",
@@ -180,7 +143,7 @@
                 },
                 {
                     "id": 287.0,
-                    "name": 287.0,
+                    "name": "melanocyte",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000148",
@@ -190,7 +153,7 @@
                 },
                 {
                     "id": 288.0,
-                    "name": 288.0,
+                    "name": "macrophage",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000235",
@@ -200,7 +163,7 @@
                 },
                 {
                     "id": 289.0,
-                    "name": 289.0,
+                    "name": "B cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000236",
@@ -210,7 +173,7 @@
                 },
                 {
                     "id": 290.0,
-                    "name": 290.0,
+                    "name": "Merkel cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000242",
@@ -220,7 +183,7 @@
                 },
                 {
                     "id": 291.0,
-                    "name": 291.0,
+                    "name": "keratinocyte",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000312",
@@ -230,7 +193,7 @@
                 },
                 {
                     "id": 292.0,
-                    "name": 292.0,
+                    "name": "dendritic cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000451",
@@ -240,7 +203,7 @@
                 },
                 {
                     "id": 293.0,
-                    "name": 293.0,
+                    "name": "Langerhans cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000453",
@@ -250,7 +213,7 @@
                 },
                 {
                     "id": 294.0,
-                    "name": 294.0,
+                    "name": "natural killer cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000623",
@@ -260,7 +223,7 @@
                 },
                 {
                     "id": 295.0,
-                    "name": 295.0,
+                    "name": "neutrophil",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000775",
@@ -270,7 +233,7 @@
                 },
                 {
                     "id": 296.0,
-                    "name": 296.0,
+                    "name": "plasma cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000786",
@@ -280,7 +243,7 @@
                 },
                 {
                     "id": 297.0,
-                    "name": 297.0,
+                    "name": "regulatory T cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0000815",
@@ -290,7 +253,7 @@
                 },
                 {
                     "id": 298.0,
-                    "name": 298.0,
+                    "name": "innate lymphoid cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:0001065",
@@ -300,7 +263,7 @@
                 },
                 {
                     "id": 299.0,
-                    "name": 299.0,
+                    "name": "junctional epithelial cell",
                     "parent": 281,
                     "type": "CT",
                     "ontology_id": "CL:9900004",
@@ -310,7 +273,7 @@
                 },
                 {
                     "id": 300.0,
-                    "name": 300.0,
+                    "name": "buccal mucosa",
                     "parent": 279,
                     "type": "AS",
                     "ontology_id": "UBERON:0006956",
@@ -320,7 +283,7 @@
                 },
                 {
                     "id": 301.0,
-                    "name": 301.0,
+                    "name": "mucosa of the lip",
                     "parent": 279,
                     "type": "AS",
                     "ontology_id": "UBERON:0004923",
@@ -330,7 +293,7 @@
                 },
                 {
                     "id": 302.0,
-                    "name": 302.0,
+                    "name": "alveolar mucosa",
                     "parent": 279,
                     "type": "AS",
                     "ontology_id": "UBERON:0035967",
@@ -340,7 +303,7 @@
                 },
                 {
                     "id": 303.0,
-                    "name": 303.0,
+                    "name": "oral gland",
                     "parent": 277,
                     "type": "AS",
                     "ontology_id": "UBERON:0010047",
@@ -350,7 +313,7 @@
                 },
                 {
                     "id": 304.0,
-                    "name": 304.0,
+                    "name": "saliva-secreting gland",
                     "parent": 303,
                     "type": "AS",
                     "ontology_id": "UBERON:0001044",
@@ -360,7 +323,7 @@
                 },
                 {
                     "id": 305.0,
-                    "name": 305.0,
+                    "name": "major salivary gland",
                     "parent": 304,
                     "type": "AS",
                     "ontology_id": "UBERON:0001829",
@@ -370,17 +333,17 @@
                 },
                 {
                     "id": 306.0,
-                    "name": 306.0,
+                    "name": "parotid gland",
                     "parent": 305,
                     "type": "AS",
                     "ontology_id": "UBERON:0001831",
                     "id_from_ontology_id": "UBERON:0001831",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "mouth"
                 },
                 {
                     "id": 307.0,
-                    "name": 307.0,
+                    "name": "parotid gland ducto-acinar unit",
                     "parent": 306,
                     "type": "AS",
                     "ontology_id": "UBERON:8000011",
@@ -390,7 +353,7 @@
                 },
                 {
                     "id": 308.0,
-                    "name": 308.0,
+                    "name": "adipocyte",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000136",
@@ -400,7 +363,7 @@
                 },
                 {
                     "id": 309.0,
-                    "name": 309.0,
+                    "name": "basal duct cell of salivary gland",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:9900002",
@@ -410,7 +373,7 @@
                 },
                 {
                     "id": 310.0,
-                    "name": 310.0,
+                    "name": "dendritic cell",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000451",
@@ -420,7 +383,7 @@
                 },
                 {
                     "id": 311.0,
-                    "name": 311.0,
+                    "name": "endothelial cell",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000115",
@@ -430,7 +393,7 @@
                 },
                 {
                     "id": 312.0,
-                    "name": 312.0,
+                    "name": "helper T cell",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000912",
@@ -440,7 +403,7 @@
                 },
                 {
                     "id": 313.0,
-                    "name": 313.0,
+                    "name": "IgA plasma cell",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000987",
@@ -450,7 +413,7 @@
                 },
                 {
                     "id": 314.0,
-                    "name": 314.0,
+                    "name": "ionocyte of salivary gland",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:9900007",
@@ -460,7 +423,7 @@
                 },
                 {
                     "id": 315.0,
-                    "name": 315.0,
+                    "name": "macrophage",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000235",
@@ -470,7 +433,7 @@
                 },
                 {
                     "id": 316.0,
-                    "name": 316.0,
+                    "name": "mast cell",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000097",
@@ -480,7 +443,7 @@
                 },
                 {
                     "id": 317.0,
-                    "name": 317.0,
+                    "name": "myoepithelial cell of salivary gland",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:9900008",
@@ -490,7 +453,7 @@
                 },
                 {
                     "id": 318.0,
-                    "name": 318.0,
+                    "name": "periductal fibroblast of salivary gland",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000057",
@@ -500,7 +463,7 @@
                 },
                 {
                     "id": 319.0,
-                    "name": 319.0,
+                    "name": "pericyte",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000669",
@@ -510,7 +473,7 @@
                 },
                 {
                     "id": 320.0,
-                    "name": 320.0,
+                    "name": "periductal fibroblast of salivary gland",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:9900003",
@@ -520,7 +483,7 @@
                 },
                 {
                     "id": 321.0,
-                    "name": 321.0,
+                    "name": "serous acinar cell of salivary gland",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:4052065",
@@ -530,7 +493,7 @@
                 },
                 {
                     "id": 322.0,
-                    "name": 322.0,
+                    "name": "smooth muscle cell",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:0000192",
@@ -540,7 +503,7 @@
                 },
                 {
                     "id": 323.0,
-                    "name": 323.0,
+                    "name": "tuft cell of parotid gland",
                     "parent": 307,
                     "type": "CT",
                     "ontology_id": "CL:9900005",
@@ -550,7 +513,7 @@
                 },
                 {
                     "id": 324.0,
-                    "name": 324.0,
+                    "name": "parotid gland excretory duct",
                     "parent": 307,
                     "type": "AS",
                     "ontology_id": "UBERON:0035048",
@@ -560,7 +523,7 @@
                 },
                 {
                     "id": 325.0,
-                    "name": 325.0,
+                    "name": "excretory duct epithelial cell",
                     "parent": 324,
                     "type": "CT",
                     "ontology_id": "ASCTB-TEMP:excretory-duct-epithelial-cell",
@@ -570,7 +533,7 @@
                 },
                 {
                     "id": 326.0,
-                    "name": 326.0,
+                    "name": "parotid gland intercalated duct",
                     "parent": 307,
                     "type": "AS",
                     "ontology_id": "UBERON:0035046",
@@ -580,7 +543,7 @@
                 },
                 {
                     "id": 327.0,
-                    "name": 327.0,
+                    "name": "intercalated cell of salivary gland",
                     "parent": 326,
                     "type": "CT",
                     "ontology_id": "CL:4052048",
@@ -590,7 +553,7 @@
                 },
                 {
                     "id": 328.0,
-                    "name": 328.0,
+                    "name": "parotid gland striated duct",
                     "parent": 307,
                     "type": "AS",
                     "ontology_id": "UBERON:0035047",
@@ -600,7 +563,7 @@
                 },
                 {
                     "id": 329.0,
-                    "name": 329.0,
+                    "name": "striated cell of salivary gland",
                     "parent": 328,
                     "type": "CT",
                     "ontology_id": "CL:4052049",
@@ -610,17 +573,17 @@
                 },
                 {
                     "id": 330.0,
-                    "name": 330.0,
+                    "name": "sublingual gland",
                     "parent": 305,
                     "type": "AS",
                     "ontology_id": "UBERON:0001832",
                     "id_from_ontology_id": "UBERON:0001832",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "mouth"
                 },
                 {
                     "id": 331.0,
-                    "name": 331.0,
+                    "name": "sublingual gland ducto-acinar unit",
                     "parent": 330,
                     "type": "AS",
                     "ontology_id": "UBERON:8000012",
@@ -630,7 +593,7 @@
                 },
                 {
                     "id": 332.0,
-                    "name": 332.0,
+                    "name": "serous demilune cell of salivary gland",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:9900001",
@@ -640,7 +603,7 @@
                 },
                 {
                     "id": 333.0,
-                    "name": 333.0,
+                    "name": "dendritic cell",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000451",
@@ -650,7 +613,7 @@
                 },
                 {
                     "id": 334.0,
-                    "name": 334.0,
+                    "name": "endothelial cell",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000115",
@@ -660,7 +623,7 @@
                 },
                 {
                     "id": 335.0,
-                    "name": 335.0,
+                    "name": "helper T cell",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000912",
@@ -670,7 +633,7 @@
                 },
                 {
                     "id": 336.0,
-                    "name": 336.0,
+                    "name": "IgA plasma cell",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000987",
@@ -680,7 +643,7 @@
                 },
                 {
                     "id": 337.0,
-                    "name": 337.0,
+                    "name": "ionocyte of salivary gland",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:9900007",
@@ -690,7 +653,7 @@
                 },
                 {
                     "id": 338.0,
-                    "name": 338.0,
+                    "name": "macrophage",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000235",
@@ -700,7 +663,7 @@
                 },
                 {
                     "id": 339.0,
-                    "name": 339.0,
+                    "name": "mast cell",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000097",
@@ -710,7 +673,7 @@
                 },
                 {
                     "id": 340.0,
-                    "name": 340.0,
+                    "name": "mucous acinar cell",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "ASCTB-TEMP:mucous-acinar-cell",
@@ -720,7 +683,7 @@
                 },
                 {
                     "id": 341.0,
-                    "name": 341.0,
+                    "name": "myoepithelial cell of salivary gland",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:9900008",
@@ -730,7 +693,7 @@
                 },
                 {
                     "id": 342.0,
-                    "name": 342.0,
+                    "name": "periductal fibroblast of salivary gland",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000057",
@@ -740,7 +703,7 @@
                 },
                 {
                     "id": 343.0,
-                    "name": 343.0,
+                    "name": "pericyte",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000669",
@@ -750,7 +713,7 @@
                 },
                 {
                     "id": 344.0,
-                    "name": 344.0,
+                    "name": "periductal fibroblast of salivary gland",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:9900003",
@@ -760,7 +723,7 @@
                 },
                 {
                     "id": 345.0,
-                    "name": 345.0,
+                    "name": "seromucous acinar cell of salivary gland",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:4052067",
@@ -770,7 +733,7 @@
                 },
                 {
                     "id": 346.0,
-                    "name": 346.0,
+                    "name": "smooth muscle cell",
                     "parent": 331,
                     "type": "CT",
                     "ontology_id": "CL:0000192",
@@ -780,7 +743,7 @@
                 },
                 {
                     "id": 347.0,
-                    "name": 347.0,
+                    "name": "sublingual duct",
                     "parent": 331,
                     "type": "AS",
                     "ontology_id": "UBERON:0001838",
@@ -790,7 +753,7 @@
                 },
                 {
                     "id": 348.0,
-                    "name": 348.0,
+                    "name": "intercalated cell of salivary gland",
                     "parent": 347,
                     "type": "CT",
                     "ontology_id": "CL:4052048",
@@ -800,17 +763,17 @@
                 },
                 {
                     "id": 349.0,
-                    "name": 349.0,
+                    "name": "submandibular gland",
                     "parent": 305,
                     "type": "AS",
                     "ontology_id": "UBERON:0001736",
                     "id_from_ontology_id": "UBERON:0001736",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "mouth"
                 },
                 {
                     "id": 350.0,
-                    "name": 350.0,
+                    "name": "submandibular gland ducto-acinar unit",
                     "parent": 349,
                     "type": "AS",
                     "ontology_id": "UBERON:8000013",
@@ -820,7 +783,7 @@
                 },
                 {
                     "id": 351.0,
-                    "name": 351.0,
+                    "name": "basal duct cell of salivary gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:9900002",
@@ -830,7 +793,7 @@
                 },
                 {
                     "id": 352.0,
-                    "name": 352.0,
+                    "name": "serous demilune cell of salivary gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:9900001",
@@ -840,7 +803,7 @@
                 },
                 {
                     "id": 353.0,
-                    "name": 353.0,
+                    "name": "dendritic cell",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000451",
@@ -850,7 +813,7 @@
                 },
                 {
                     "id": 354.0,
-                    "name": 354.0,
+                    "name": "endothelial cell",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000115",
@@ -860,7 +823,7 @@
                 },
                 {
                     "id": 355.0,
-                    "name": 355.0,
+                    "name": "helper T cell",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000912",
@@ -870,7 +833,7 @@
                 },
                 {
                     "id": 356.0,
-                    "name": 356.0,
+                    "name": "IgA plasma cell",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000987",
@@ -880,7 +843,7 @@
                 },
                 {
                     "id": 357.0,
-                    "name": 357.0,
+                    "name": "ionocyte of salivary gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:9900007",
@@ -890,7 +853,7 @@
                 },
                 {
                     "id": 358.0,
-                    "name": 358.0,
+                    "name": "macrophage",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000235",
@@ -900,7 +863,7 @@
                 },
                 {
                     "id": 359.0,
-                    "name": 359.0,
+                    "name": "mast cell",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000097",
@@ -910,7 +873,7 @@
                 },
                 {
                     "id": 360.0,
-                    "name": 360.0,
+                    "name": "mucous acinar cell",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "ASCTB-TEMP:mucous-acinar-cell",
@@ -920,7 +883,7 @@
                 },
                 {
                     "id": 361.0,
-                    "name": 361.0,
+                    "name": "myoepithelial cell of salivary gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:9900008",
@@ -930,7 +893,7 @@
                 },
                 {
                     "id": 362.0,
-                    "name": 362.0,
+                    "name": "periductal fibroblast of salivary gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000057",
@@ -940,7 +903,7 @@
                 },
                 {
                     "id": 363.0,
-                    "name": 363.0,
+                    "name": "pericyte",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000669",
@@ -950,7 +913,7 @@
                 },
                 {
                     "id": 364.0,
-                    "name": 364.0,
+                    "name": "periductal fibroblast of salivary gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:9900003",
@@ -960,7 +923,7 @@
                 },
                 {
                     "id": 365.0,
-                    "name": 365.0,
+                    "name": "seromucous acinar cell of salivary gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:4052067",
@@ -970,7 +933,7 @@
                 },
                 {
                     "id": 366.0,
-                    "name": 366.0,
+                    "name": "smooth muscle cell",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:0000192",
@@ -980,7 +943,7 @@
                 },
                 {
                     "id": 367.0,
-                    "name": 367.0,
+                    "name": "tuft cell of sublingual gland",
                     "parent": 350,
                     "type": "CT",
                     "ontology_id": "CL:9900006",
@@ -990,7 +953,7 @@
                 },
                 {
                     "id": 368.0,
-                    "name": 368.0,
+                    "name": "excretory duct",
                     "parent": 350,
                     "type": "AS",
                     "ontology_id": "ASCTB-TEMP:excretory-duct",
@@ -1000,7 +963,7 @@
                 },
                 {
                     "id": 369.0,
-                    "name": 369.0,
+                    "name": "excretory duct epithelial cell",
                     "parent": 368,
                     "type": "CT",
                     "ontology_id": "ASCTB-TEMP:excretory-duct-epithelial-cell",
@@ -1010,7 +973,7 @@
                 },
                 {
                     "id": 370.0,
-                    "name": 370.0,
+                    "name": "intercalated duct",
                     "parent": 350,
                     "type": "AS",
                     "ontology_id": "ASCTB-TEMP:intercalated-duct",
@@ -1020,7 +983,7 @@
                 },
                 {
                     "id": 371.0,
-                    "name": 371.0,
+                    "name": "intercalated cell of salivary gland",
                     "parent": 370,
                     "type": "CT",
                     "ontology_id": "CL:4052048",
@@ -1030,7 +993,7 @@
                 },
                 {
                     "id": 372.0,
-                    "name": 372.0,
+                    "name": "striated duct",
                     "parent": 350,
                     "type": "AS",
                     "ontology_id": "ASCTB-TEMP:striated-duct",
@@ -1040,7 +1003,7 @@
                 },
                 {
                     "id": 373.0,
-                    "name": 373.0,
+                    "name": "striated cell of salivary gland",
                     "parent": 372,
                     "type": "CT",
                     "ontology_id": "CL:4052049",
@@ -1050,7 +1013,7 @@
                 },
                 {
                     "id": 374.0,
-                    "name": 374.0,
+                    "name": "minor salivary gland",
                     "parent": 304,
                     "type": "AS",
                     "ontology_id": "UBERON:0001830",
@@ -1060,7 +1023,7 @@
                 },
                 {
                     "id": 375.0,
-                    "name": 375.0,
+                    "name": "anterior lingual gland",
                     "parent": 374,
                     "type": "AS",
                     "ontology_id": "UBERON:0006330",
@@ -1070,7 +1033,7 @@
                 },
                 {
                     "id": 376.0,
-                    "name": 376.0,
+                    "name": "labial gland",
                     "parent": 374,
                     "type": "AS",
                     "ontology_id": "UBERON:8480065",
@@ -1080,7 +1043,7 @@
                 },
                 {
                     "id": 377.0,
-                    "name": 377.0,
+                    "name": "palatine gland",
                     "parent": 374,
                     "type": "AS",
                     "ontology_id": "UBERON:0002447",
@@ -1090,7 +1053,7 @@
                 },
                 {
                     "id": 378.0,
-                    "name": 378.0,
+                    "name": "Weber's gland",
                     "parent": 374,
                     "type": "AS",
                     "ontology_id": "UBERON:0034934",
@@ -1100,7 +1063,7 @@
                 },
                 {
                     "id": 379.0,
-                    "name": 379.0,
+                    "name": "gustatory gland",
                     "parent": 374,
                     "type": "AS",
                     "ontology_id": "UBERON:0013475",
@@ -1121,42 +1084,19 @@
                         "signal": "layout"
                     },
                     "size": [
-                        1,
                         {
-                            "signal": "radius"
+                            "signal": "width"
+                        },
+                        {
+                            "signal": "height"
                         }
                     ],
                     "as": [
-                        "alpha",
-                        "radius",
+                        "x",
+                        "y",
                         "depth",
                         "children"
                     ]
-                },
-                {
-                    "type": "formula",
-                    "expr": "(rotate + extent * datum.alpha + 270) % 360",
-                    "as": "angle"
-                },
-                {
-                    "type": "formula",
-                    "expr": "PI * datum.angle / 180",
-                    "as": "radians"
-                },
-                {
-                    "type": "formula",
-                    "expr": "inrange(datum.angle, [90, 270])",
-                    "as": "leftside"
-                },
-                {
-                    "type": "formula",
-                    "expr": "originX + datum.radius * cos(datum.radians)",
-                    "as": "x"
-                },
-                {
-                    "type": "formula",
-                    "expr": "originY + datum.radius * sin(datum.radians)",
-                    "as": "y"
                 }
             ]
         },
@@ -1172,11 +1112,11 @@
                     "shape": {
                         "signal": "links"
                     },
-                    "orient": "radial",
-                    "sourceX": "source.radians",
-                    "sourceY": "source.radius",
-                    "targetX": "target.radians",
-                    "targetY": "target.radius"
+                    "orient": "horizontal",
+                    "sourceX": "source.y",
+                    "sourceY": "source.x",
+                    "targetX": "target.y",
+                    "targetY": "target.x"
                 }
             ]
         }
@@ -1189,12 +1129,6 @@
             },
             "encode": {
                 "update": {
-                    "x": {
-                        "signal": "originX"
-                    },
-                    "y": {
-                        "signal": "originY"
-                    },
                     "path": {
                         "field": "path"
                     },
@@ -1229,10 +1163,10 @@
                 },
                 "update": {
                     "x": {
-                        "field": "x"
+                        "field": "y"
                     },
                     "y": {
-                        "field": "y"
+                        "field": "x"
                     },
                     "fill": {
                         "field": "color"
@@ -1257,7 +1191,7 @@
                         "value": 8
                     },
                     "font": {
-                        "value": "Benton Sans Book"
+                        "value": "BentonSans"
                     },
                     "baseline": {
                         "value": "middle"
@@ -1265,22 +1199,15 @@
                 },
                 "update": {
                     "x": {
-                        "field": "x"
-                    },
-                    "y": {
                         "field": "y"
                     },
-                    "dx": {
-                        "signal": "(datum.leftside ? -1 : 1) * 6"
+                    "y": {
+                        "field": "x"
                     },
-                    "angle": {
-                        "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
-                    },
-                    "align": {
-                        "signal": "datum.leftside ? 'right' : 'left'"
-                    },
+                    "dx": 6,
+                    "align": "left",
                     "opacity": {
-                        "signal": "labels ? 0.5 : 1"
+                        "value": 1
                     }
                 }
             }

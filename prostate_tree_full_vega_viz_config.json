@@ -1,45 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
-    "width": 1720,
-    "height": 1720,
+    "width": 3000,
+    "height": 1200,
     "padding": 0,
     "autosize": "none",
     "signals": [
         {
             "name": "labels",
-            "value": false,
+            "value": true,
             "bind": {
                 "input": "checkbox"
-            }
-        },
-        {
-            "name": "radius",
-            "value": 865,
-            "bind": {
-                "input": "range",
-                "min": 20,
-                "max": 4000
-            }
-        },
-        {
-            "name": "extent",
-            "value": 160,
-            "bind": {
-                "input": "range",
-                "min": 0,
-                "max": 360,
-                "step": 1
-            }
-        },
-        {
-            "name": "rotate",
-            "value": 15,
-            "bind": {
-                "input": "range",
-                "min": 0,
-                "max": 360,
-                "step": 1
             }
         },
         {
@@ -65,14 +36,6 @@
                     "orthogonal"
                 ]
             }
-        },
-        {
-            "name": "originX",
-            "update": "width / 2"
-        },
-        {
-            "name": "originY",
-            "update": "height / 2"
         }
     ],
     "data": [
@@ -81,7 +44,7 @@
             "values": [
                 {
                     "id": 9201.0,
-                    "name": 9201.0,
+                    "name": "prostate gland",
                     "type": "AS",
                     "ontology_id": "UBERON:0002367",
                     "id_from_ontology_id": "UBERON:0002367",
@@ -90,7 +53,7 @@
                 },
                 {
                     "id": 9202.0,
-                    "name": 9202.0,
+                    "name": "prostate epithelium",
                     "parent": 9201,
                     "type": "AS",
                     "ontology_id": "UBERON:0000428",
@@ -100,17 +63,17 @@
                 },
                 {
                     "id": 9203.0,
-                    "name": 9203.0,
+                    "name": "Prostate Glandular Acinus",
                     "parent": 9202,
                     "type": "AS",
                     "ontology_id": "UBERON:0004179",
                     "id_from_ontology_id": "UBERON:0004179",
-                    "color": "#56a04e",
+                    "color": "#C62828",
                     "organ": "prostate"
                 },
                 {
                     "id": 9204.0,
-                    "name": 9204.0,
+                    "name": "luminal cell of prostate epithelium",
                     "parent": 9203,
                     "type": "CT",
                     "ontology_id": "CL:0002340",
@@ -120,7 +83,7 @@
                 },
                 {
                     "id": 9205.0,
-                    "name": 9205.0,
+                    "name": "basal cell of prostate epithelium",
                     "parent": 9203,
                     "type": "CT",
                     "ontology_id": "CL:0002341",
@@ -130,7 +93,7 @@
                 },
                 {
                     "id": 9206.0,
-                    "name": 9206.0,
+                    "name": "prostate neuroendocrine cell",
                     "parent": 9202,
                     "type": "CT",
                     "ontology_id": "CL:0017002",
@@ -140,7 +103,7 @@
                 },
                 {
                     "id": 9207.0,
-                    "name": 9207.0,
+                    "name": "ionocyte",
                     "parent": 9202,
                     "type": "CT",
                     "ontology_id": "CL:0005006",
@@ -150,7 +113,7 @@
                 },
                 {
                     "id": 9208.0,
-                    "name": 9208.0,
+                    "name": "ionocyte cell of prostate",
                     "parent": 9207,
                     "type": "CT",
                     "ontology_id": "ASCTB-TEMP:ionocyte-epithelia",
@@ -160,7 +123,7 @@
                 },
                 {
                     "id": 9209.0,
-                    "name": 9209.0,
+                    "name": "prostate gland stroma",
                     "parent": 9201,
                     "type": "AS",
                     "ontology_id": "UBERON:0004184",
@@ -170,7 +133,7 @@
                 },
                 {
                     "id": 9210.0,
-                    "name": 9210.0,
+                    "name": "prostate gland smooth muscle",
                     "parent": 9209,
                     "type": "AS",
                     "ontology_id": "UBERON:0004243",
@@ -180,7 +143,7 @@
                 },
                 {
                     "id": 9211.0,
-                    "name": 9211.0,
+                    "name": "smooth muscle cell of prostate",
                     "parent": 9210,
                     "type": "CT",
                     "ontology_id": "CL:1000487",
@@ -190,7 +153,7 @@
                 },
                 {
                     "id": 9212.0,
-                    "name": 9212.0,
+                    "name": "fibroblast of subepithelial connective tissue of prostatic gland",
                     "parent": 9209,
                     "type": "CT",
                     "ontology_id": "CL:1000301",
@@ -200,7 +163,7 @@
                 },
                 {
                     "id": 9213.0,
-                    "name": 9213.0,
+                    "name": "fibroblast of connective tissue of prostate",
                     "parent": 9209,
                     "type": "CT",
                     "ontology_id": "CL:1000299",
@@ -210,7 +173,7 @@
                 },
                 {
                     "id": 9214.0,
-                    "name": 9214.0,
+                    "name": "blood vasculature",
                     "parent": 9201,
                     "type": "AS",
                     "ontology_id": "UBERON:0004537",
@@ -220,7 +183,7 @@
                 },
                 {
                     "id": 9215.0,
-                    "name": 9215.0,
+                    "name": "blood vessel",
                     "parent": 9214,
                     "type": "AS",
                     "ontology_id": "UBERON:0001981",
@@ -230,7 +193,7 @@
                 },
                 {
                     "id": 9216.0,
-                    "name": 9216.0,
+                    "name": "blood vessel endothelium",
                     "parent": 9215,
                     "type": "AS",
                     "ontology_id": "UBERON:0004638",
@@ -240,7 +203,7 @@
                 },
                 {
                     "id": 9217.0,
-                    "name": 9217.0,
+                    "name": "blood vessel endothelial cell",
                     "parent": 9216,
                     "type": "CT",
                     "ontology_id": "CL:0000071",
@@ -250,7 +213,7 @@
                 },
                 {
                     "id": 9218.0,
-                    "name": 9218.0,
+                    "name": "endothelial cell of artery",
                     "parent": 9217,
                     "type": "CT",
                     "ontology_id": "CL:1000413",
@@ -260,7 +223,7 @@
                 },
                 {
                     "id": 9219.0,
-                    "name": 9219.0,
+                    "name": "capillary endothelial cell",
                     "parent": 9217,
                     "type": "CT",
                     "ontology_id": "CL:0002144",
@@ -270,7 +233,7 @@
                 },
                 {
                     "id": 9220.0,
-                    "name": 9220.0,
+                    "name": "vein endothelial cell",
                     "parent": 9217,
                     "type": "CT",
                     "ontology_id": "CL:0002543",
@@ -280,7 +243,7 @@
                 },
                 {
                     "id": 9221.0,
-                    "name": 9221.0,
+                    "name": "lymph vasculature",
                     "parent": 9201,
                     "type": "AS",
                     "ontology_id": "UBERON:0004536",
@@ -290,7 +253,7 @@
                 },
                 {
                     "id": 9222.0,
-                    "name": 9222.0,
+                    "name": "lymphatic vessel",
                     "parent": 9221,
                     "type": "AS",
                     "ontology_id": "UBERON:0001473",
@@ -300,7 +263,7 @@
                 },
                 {
                     "id": 9223.0,
-                    "name": 9223.0,
+                    "name": "endothelial cell of lymphatic vessel",
                     "parent": 9222,
                     "type": "CT",
                     "ontology_id": "CL:0002138",
@@ -310,7 +273,7 @@
                 },
                 {
                     "id": 9224.0,
-                    "name": 9224.0,
+                    "name": "lymph node lymphatic vessel endothelial cell",
                     "parent": 9223,
                     "type": "CT",
                     "ontology_id": "CL:0009115",
@@ -320,7 +283,7 @@
                 },
                 {
                     "id": 9225.0,
-                    "name": 9225.0,
+                    "name": "vascular system",
                     "parent": 9201,
                     "type": "AS",
                     "ontology_id": "UBERON:0007798",
@@ -330,7 +293,7 @@
                 },
                 {
                     "id": 9226.0,
-                    "name": 9226.0,
+                    "name": "blood vessel",
                     "parent": 9225,
                     "type": "AS",
                     "ontology_id": "UBERON:0001981",
@@ -340,7 +303,7 @@
                 },
                 {
                     "id": 9227.0,
-                    "name": 9227.0,
+                    "name": "blood vessel smooth muscle",
                     "parent": 9226,
                     "type": "AS",
                     "ontology_id": "UBERON:0004237",
@@ -350,7 +313,7 @@
                 },
                 {
                     "id": 9228.0,
-                    "name": 9228.0,
+                    "name": "vascular associated smooth muscle cell",
                     "parent": 9227,
                     "type": "CT",
                     "ontology_id": "CL:0000359",
@@ -360,7 +323,7 @@
                 },
                 {
                     "id": 9229.0,
-                    "name": 9229.0,
+                    "name": "pericyte",
                     "parent": 9226,
                     "type": "CT",
                     "ontology_id": "CL:0000669",
@@ -370,7 +333,7 @@
                 },
                 {
                     "id": 9230.0,
-                    "name": 9230.0,
+                    "name": "prostatic urethra",
                     "parent": 9201,
                     "type": "AS",
                     "ontology_id": "UBERON:0001335",
@@ -380,7 +343,7 @@
                 },
                 {
                     "id": 9231.0,
-                    "name": 9231.0,
+                    "name": "basal cell of urothelium",
                     "parent": 9230,
                     "type": "CT",
                     "ontology_id": "CL:1000486",
@@ -390,7 +353,7 @@
                 },
                 {
                     "id": 9232.0,
-                    "name": 9232.0,
+                    "name": "basal cell of prostatic urethral epithelium",
                     "parent": 9231,
                     "type": "CT",
                     "ontology_id": "ASCTB-TEMP:basal-cell-of-prostatic-urethra",
@@ -400,7 +363,7 @@
                 },
                 {
                     "id": 9233.0,
-                    "name": 9233.0,
+                    "name": "club-like cell of the urethral epithelium",
                     "parent": 9230,
                     "type": "CT",
                     "ontology_id": "CL:4032000",
@@ -410,7 +373,7 @@
                 },
                 {
                     "id": 9234.0,
-                    "name": 9234.0,
+                    "name": "hillock cell of prostatic urethral epithelium",
                     "parent": 9230,
                     "type": "CT",
                     "ontology_id": "CL:0017011",
@@ -431,42 +394,19 @@
                         "signal": "layout"
                     },
                     "size": [
-                        1,
                         {
-                            "signal": "radius"
+                            "signal": "width"
+                        },
+                        {
+                            "signal": "height"
                         }
                     ],
                     "as": [
-                        "alpha",
-                        "radius",
+                        "x",
+                        "y",
                         "depth",
                         "children"
                     ]
-                },
-                {
-                    "type": "formula",
-                    "expr": "(rotate + extent * datum.alpha + 270) % 360",
-                    "as": "angle"
-                },
-                {
-                    "type": "formula",
-                    "expr": "PI * datum.angle / 180",
-                    "as": "radians"
-                },
-                {
-                    "type": "formula",
-                    "expr": "inrange(datum.angle, [90, 270])",
-                    "as": "leftside"
-                },
-                {
-                    "type": "formula",
-                    "expr": "originX + datum.radius * cos(datum.radians)",
-                    "as": "x"
-                },
-                {
-                    "type": "formula",
-                    "expr": "originY + datum.radius * sin(datum.radians)",
-                    "as": "y"
                 }
             ]
         },
@@ -482,11 +422,11 @@
                     "shape": {
                         "signal": "links"
                     },
-                    "orient": "radial",
-                    "sourceX": "source.radians",
-                    "sourceY": "source.radius",
-                    "targetX": "target.radians",
-                    "targetY": "target.radius"
+                    "orient": "horizontal",
+                    "sourceX": "source.y",
+                    "sourceY": "source.x",
+                    "targetX": "target.y",
+                    "targetY": "target.x"
                 }
             ]
         }
@@ -499,12 +439,6 @@
             },
             "encode": {
                 "update": {
-                    "x": {
-                        "signal": "originX"
-                    },
-                    "y": {
-                        "signal": "originY"
-                    },
                     "path": {
                         "field": "path"
                     },
@@ -539,10 +473,10 @@
                 },
                 "update": {
                     "x": {
-                        "field": "x"
+                        "field": "y"
                     },
                     "y": {
-                        "field": "y"
+                        "field": "x"
                     },
                     "fill": {
                         "field": "color"
@@ -567,7 +501,7 @@
                         "value": 8
                     },
                     "font": {
-                        "value": "Benton Sans Book"
+                        "value": "BentonSans"
                     },
                     "baseline": {
                         "value": "middle"
@@ -575,22 +509,15 @@
                 },
                 "update": {
                     "x": {
-                        "field": "x"
-                    },
-                    "y": {
                         "field": "y"
                     },
-                    "dx": {
-                        "signal": "(datum.leftside ? -1 : 1) * 6"
+                    "y": {
+                        "field": "x"
                     },
-                    "angle": {
-                        "signal": "datum.leftside ? datum.angle - 180 : datum.angle"
-                    },
-                    "align": {
-                        "signal": "datum.leftside ? 'right' : 'left'"
-                    },
+                    "dx": 6,
+                    "align": "left",
                     "opacity": {
-                        "signal": "labels ? 0.5 : 1"
+                        "value": 1
                     }
                 }
             }

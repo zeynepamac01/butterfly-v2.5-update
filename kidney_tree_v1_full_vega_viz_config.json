@@ -1928,7 +1928,7 @@
                     },
                     "align": "left",
                     "opacity": {
-                        "value": 1
+                        "field": "show_label"
                     }
                 }
             }
