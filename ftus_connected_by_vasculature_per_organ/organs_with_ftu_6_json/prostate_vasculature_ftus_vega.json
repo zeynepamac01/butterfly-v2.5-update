@@ -1,0 +1,1094 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Prostate: directed arterial and venous routes between Heart and unique explicit FTUID endpoints",
+  "width": 3000,
+  "height": 780,
+  "padding": 0,
+  "autosize": "none",
+  "background": "#ffffff",
+  "usermeta": {
+    "source_csv": "prostate_ftu_vascular_data.csv",
+    "validation": {
+      "organ": "prostate",
+      "source_csv": "prostate_ftu_vascular_data.csv",
+      "unique_ftus": 1,
+      "ftuid_count": 1,
+      "arterial_nodes": 13,
+      "arterial_edges": 14,
+      "venous_nodes": 7,
+      "venous_edges": 8,
+      "duplicate_ftu_endpoint_count": 0,
+      "missing_path_ids": 1,
+      "unsupported_or_cross_organ_vessels": 0,
+      "ftus": [
+        {
+          "name": "prostate glandular acinus",
+          "id": "UBERON:0004179"
+        }
+      ]
+    },
+    "layout": "Heart left; vasculature middle; unique FTUIDs right"
+  },
+  "data": [
+    {
+      "name": "links",
+      "values": [
+        {
+          "id": "prostate:edge:001",
+          "source_id": "heart:UBERON:0000948",
+          "target_id": "artery:UBERON:0002084",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M110.00,390.00 C195.00,390.00 195.00,400.00 280.00,400.00",
+          "arrow_x": 218.94,
+          "arrow_y": 397.58,
+          "arrow_angle": 95.18
+        },
+        {
+          "id": "prostate:edge:002",
+          "source_id": "artery:UBERON:0002084",
+          "target_id": "artery:UBERON:0000947",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M280.00,400.00 C360.00,400.00 360.00,400.00 440.00,400.00",
+          "arrow_x": 382.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:003",
+          "source_id": "artery:UBERON:0000947",
+          "target_id": "artery:UBERON:0001496",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M440.00,400.00 C520.00,400.00 520.00,400.00 600.00,400.00",
+          "arrow_x": 542.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:004",
+          "source_id": "artery:UBERON:0001496",
+          "target_id": "artery:UBERON:0001508",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M600.00,400.00 C680.00,400.00 680.00,400.00 760.00,400.00",
+          "arrow_x": 702.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:005",
+          "source_id": "artery:UBERON:0001508",
+          "target_id": "artery:UBERON:0001514",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M760.00,400.00 C840.00,400.00 840.00,400.00 920.00,400.00",
+          "arrow_x": 862.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:006",
+          "source_id": "artery:UBERON:0001514",
+          "target_id": "artery:UBERON:0002345",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M920.00,400.00 C1000.00,400.00 1000.00,400.00 1080.00,400.00",
+          "arrow_x": 1022.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:007",
+          "source_id": "artery:UBERON:0002345",
+          "target_id": "artery:UBERON:0001516",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1080.00,400.00 C1160.00,400.00 1160.00,400.00 1240.00,400.00",
+          "arrow_x": 1182.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:008",
+          "source_id": "artery:UBERON:0001516",
+          "target_id": "artery:UBERON:0001191",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1240.00,400.00 C1320.00,400.00 1320.00,400.00 1400.00,400.00",
+          "arrow_x": 1342.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:009",
+          "source_id": "artery:UBERON:0001191",
+          "target_id": "artery:UBERON:0001309",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1400.00,400.00 C1480.00,400.00 1480.00,400.00 1560.00,400.00",
+          "arrow_x": 1502.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:010",
+          "source_id": "artery:UBERON:0001309",
+          "target_id": "artery:FMA:69797",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1560.00,400.00 C1640.00,400.00 1640.00,400.00 1720.00,400.00",
+          "arrow_x": 1662.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:011",
+          "source_id": "artery:FMA:69797",
+          "target_id": "artery:UBERON:0001311",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1720.00,400.00 C1800.00,400.00 1800.00,400.00 1880.00,400.00",
+          "arrow_x": 1822.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:012",
+          "source_id": "artery:UBERON:0001311",
+          "target_id": "artery:FMA:20966",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1880.00,400.00 C1960.00,400.00 1960.00,400.00 2040.00,400.00",
+          "arrow_x": 1982.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:013",
+          "source_id": "artery:FMA:20966",
+          "target_id": "artery:missing:artery:prostatic-arteriole:91005c88b1",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2040.00,400.00 C2120.00,400.00 2120.00,400.00 2200.00,400.00",
+          "arrow_x": 2142.53,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "prostate:edge:014",
+          "source_id": "artery:missing:artery:prostatic-arteriole:91005c88b1",
+          "target_id": "ftu:UBERON:0004179",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2200.00,400.00 C2290.00,400.00 2290.00,415.00 2380.00,415.00",
+          "arrow_x": 2315.35,
+          "arrow_y": 411.38,
+          "arrow_angle": 97.32
+        },
+        {
+          "id": "prostate:edge:015",
+          "source_id": "ftu:UBERON:0004179",
+          "target_id": "vein:UBERON:8600084",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2380.00,415.00 C2305.00,415.00 2305.00,430.00 2230.00,430.00",
+          "arrow_x": 2283.88,
+          "arrow_y": 426.38,
+          "arrow_angle": 261.24
+        },
+        {
+          "id": "prostate:edge:016",
+          "source_id": "vein:UBERON:8600084",
+          "target_id": "vein:UBERON:0009042",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2230.00,430.00 C2073.34,430.00 2073.34,430.00 1916.67,430.00",
+          "arrow_x": 2029.21,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "prostate:edge:017",
+          "source_id": "vein:UBERON:0009042",
+          "target_id": "vein:UBERON:0001318",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1916.67,430.00 C1760.00,430.00 1760.00,430.00 1603.33,430.00",
+          "arrow_x": 1715.87,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "prostate:edge:018",
+          "source_id": "vein:UBERON:0001318",
+          "target_id": "vein:UBERON:0001317",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1603.33,430.00 C1446.66,430.00 1446.66,430.00 1290.00,430.00",
+          "arrow_x": 1402.54,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "prostate:edge:019",
+          "source_id": "vein:UBERON:0001317",
+          "target_id": "vein:UBERON:0001139",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1290.00,430.00 C1133.34,430.00 1133.34,430.00 976.67,430.00",
+          "arrow_x": 1089.21,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "prostate:edge:020",
+          "source_id": "vein:UBERON:0001139",
+          "target_id": "vein:UBERON:0001072",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M976.67,430.00 C820.00,430.00 820.00,430.00 663.33,430.00",
+          "arrow_x": 775.87,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "prostate:edge:021",
+          "source_id": "vein:UBERON:0001072",
+          "target_id": "vein:UBERON:0002078",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M663.33,430.00 C506.67,430.00 506.67,430.00 350.00,430.00",
+          "arrow_x": 462.54,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "prostate:edge:022",
+          "source_id": "vein:UBERON:0002078",
+          "target_id": "heart:UBERON:0000948",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "prostate:route:01"
+          ],
+          "route_count": 1,
+          "path": "M350.00,430.00 C230.00,430.00 230.00,390.00 110.00,390.00",
+          "arrow_x": 196.2,
+          "arrow_y": 399.67,
+          "arrow_angle": -75.6
+        }
+      ]
+    },
+    {
+      "name": "vessels",
+      "values": [
+        {
+          "id": "artery:UBERON:0002084",
+          "name": "left ventricle",
+          "label": "left ventricle UBERON:0002084",
+          "ontology_id": "UBERON:0002084",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 280.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0000947",
+          "name": "aorta",
+          "label": "aorta UBERON:0000947",
+          "ontology_id": "UBERON:0000947",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 440.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001496",
+          "name": "ascending aorta",
+          "label": "ascending aorta UBERON:0001496",
+          "ontology_id": "UBERON:0001496",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 600.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001508",
+          "name": "aortic arch",
+          "label": "aortic arch UBERON:0001508",
+          "ontology_id": "UBERON:0001508",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 760.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001514",
+          "name": "descending aorta",
+          "label": "descending aorta UBERON:0001514",
+          "ontology_id": "UBERON:0001514",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 920.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0002345",
+          "name": "descending thoracic aorta",
+          "label": "descending thoracic aorta UBERON:0002345",
+          "ontology_id": "UBERON:0002345",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1080.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001516",
+          "name": "abdominal aorta",
+          "label": "abdominal aorta UBERON:0001516",
+          "ontology_id": "UBERON:0001516",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1240.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001191",
+          "name": "common iliac artery",
+          "label": "common iliac artery UBERON:0001191",
+          "ontology_id": "UBERON:0001191",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1400.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001309",
+          "name": "internal iliac artery",
+          "label": "internal iliac artery UBERON:0001309",
+          "ontology_id": "UBERON:0001309",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1560.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:FMA:69797",
+          "name": "anterior division of internal iliac artery",
+          "label": "anterior division of internal iliac artery FMA:69797",
+          "ontology_id": "FMA:69797",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1720.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001311",
+          "name": "inferior vesical artery",
+          "label": "inferior vesical artery UBERON:0001311",
+          "ontology_id": "UBERON:0001311",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1880.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:FMA:20966",
+          "name": "prostatic artery",
+          "label": "prostatic artery FMA:20966",
+          "ontology_id": "FMA:20966",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 2040.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:missing:artery:prostatic-arteriole:91005c88b1",
+          "name": "prostatic arteriole",
+          "label": "prostatic arteriole",
+          "ontology_id": "",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 2200.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:8600084",
+          "name": "prostatic venule",
+          "label": "prostatic venule UBERON:8600084",
+          "ontology_id": "UBERON:8600084",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 2230.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0009042",
+          "name": "prostatic venous plexus",
+          "label": "prostatic venous plexus UBERON:0009042",
+          "ontology_id": "UBERON:0009042",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1916.67,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001318",
+          "name": "inferior vesical vein",
+          "label": "inferior vesical vein UBERON:0001318",
+          "ontology_id": "UBERON:0001318",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1603.33,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001317",
+          "name": "internal iliac vein",
+          "label": "internal iliac vein UBERON:0001317",
+          "ontology_id": "UBERON:0001317",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1290.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001139",
+          "name": "common iliac vein",
+          "label": "common iliac vein UBERON:0001139",
+          "ontology_id": "UBERON:0001139",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 976.67,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001072",
+          "name": "inferior vena cava",
+          "label": "inferior vena cava UBERON:0001072",
+          "ontology_id": "UBERON:0001072",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 663.33,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0002078",
+          "name": "right atrium",
+          "label": "right atrium UBERON:0002078",
+          "ontology_id": "UBERON:0002078",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 350.0,
+          "y": 430.0,
+          "route_count": 1
+        }
+      ]
+    },
+    {
+      "name": "ftus",
+      "values": [
+        {
+          "id": "ftu:UBERON:0004179",
+          "name": "prostate glandular acinus",
+          "ontology_id": "UBERON:0004179",
+          "type": "ftu",
+          "color": "#111111",
+          "x": 2380.0,
+          "y": 415.0
+        }
+      ]
+    },
+    {
+      "name": "heart",
+      "values": [
+        {
+          "id": "heart:UBERON:0000948",
+          "name": "Heart",
+          "ontology_id": "UBERON:0000948",
+          "type": "heart",
+          "color": "#111111",
+          "x": 110.0,
+          "y": 390.0
+        }
+      ]
+    },
+    {
+      "name": "legend",
+      "values": [
+        {
+          "label": "Artery",
+          "color": "#d73027",
+          "shape": "circle",
+          "y": 20
+        },
+        {
+          "label": "Vein",
+          "color": "#2878b5",
+          "shape": "circle",
+          "y": 42
+        },
+        {
+          "label": "FTU endpoint",
+          "color": "#111111",
+          "shape": "square",
+          "y": 64
+        },
+        {
+          "label": "Heart",
+          "color": "#111111",
+          "shape": "triangle-up",
+          "y": 86
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 38
+          },
+          "y": {
+            "value": 42
+          },
+          "text": {
+            "value": "Prostate"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 28
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 38
+          },
+          "y": {
+            "value": 68
+          },
+          "text": {
+            "value": "Heart → organ-specific vasculature → FTUs"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fill": {
+            "value": "#5c5c5c"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 250
+          },
+          "y": {
+            "value": 105
+          },
+          "text": {
+            "value": "ARTERIAL FLOW →"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#d73027"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 2350
+          },
+          "y": {
+            "value": 105
+          },
+          "text": {
+            "value": "← VENOUS RETURN"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#2878b5"
+          }
+        }
+      }
+    },
+    {
+      "type": "path",
+      "from": {
+        "data": "links"
+      },
+      "encode": {
+        "enter": {
+          "path": {
+            "field": "path"
+          },
+          "fill": {
+            "value": null
+          },
+          "stroke": {
+            "field": "color"
+          },
+          "strokeWidth": {
+            "signal": "1.15 + min(datum.route_count, 12) * 0.23"
+          },
+          "strokeOpacity": {
+            "value": 0.78
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "links"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "arrow_x"
+          },
+          "y": {
+            "field": "arrow_y"
+          },
+          "shape": {
+            "value": "triangle-up"
+          },
+          "angle": {
+            "field": "arrow_angle"
+          },
+          "size": {
+            "value": 58
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.78
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "vessels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "value": "circle"
+          },
+          "size": {
+            "signal": "58 + min(datum.route_count, 18) * 7"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.78
+          },
+          "stroke": {
+            "value": "#ffffff"
+          },
+          "strokeWidth": {
+            "value": 0.7
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "vessels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dy": {
+            "signal": "datum.type === 'artery' ? -10 : 10"
+          },
+          "angle": {
+            "value": -12
+          },
+          "text": {
+            "field": "label"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "signal": "datum.type === 'artery' ? 'bottom' : 'top'"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.92
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "ftus"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "value": "square"
+          },
+          "size": {
+            "value": 145
+          },
+          "fill": {
+            "value": "#111111"
+          },
+          "stroke": {
+            "value": "#ffffff"
+          },
+          "strokeWidth": {
+            "value": 0.8
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "ftus"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dx": {
+            "value": 11
+          },
+          "text": {
+            "field": "name"
+          },
+          "align": {
+            "value": "left"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#111111"
+          },
+          "limit": {
+            "value": 335
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "heart"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "value": "triangle-up"
+          },
+          "size": {
+            "value": 360
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "heart"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dx": {
+            "value": 14
+          },
+          "dy": {
+            "value": -12
+          },
+          "text": {
+            "field": "name"
+          },
+          "align": {
+            "value": "left"
+          },
+          "baseline": {
+            "value": "bottom"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "legend"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 2545
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "field": "shape"
+          },
+          "size": {
+            "value": 70
+          },
+          "fill": {
+            "field": "color"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "legend"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 2557
+          },
+          "y": {
+            "field": "y"
+          },
+          "text": {
+            "field": "label"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    }
+  ],
+  "config": {}
+}

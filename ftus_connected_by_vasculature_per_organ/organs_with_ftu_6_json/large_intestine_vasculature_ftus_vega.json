@@ -1,0 +1,1432 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Large intestine: directed arterial and venous routes between Heart and unique explicit FTUID endpoints",
+  "width": 3000,
+  "height": 780,
+  "padding": 0,
+  "autosize": "none",
+  "background": "#ffffff",
+  "usermeta": {
+    "source_csv": "l_intestine_ftu_vascular_data.csv",
+    "validation": {
+      "organ": "large_intestine",
+      "source_csv": "l_intestine_ftu_vascular_data.csv",
+      "unique_ftus": 1,
+      "ftuid_count": 1,
+      "arterial_nodes": 16,
+      "arterial_edges": 17,
+      "venous_nodes": 17,
+      "venous_edges": 18,
+      "duplicate_ftu_endpoint_count": 0,
+      "missing_path_ids": 11,
+      "unsupported_or_cross_organ_vessels": 0,
+      "ftus": [
+        {
+          "name": "crypt of Lieberkuhn",
+          "id": "UBERON:0001983"
+        }
+      ]
+    },
+    "layout": "Heart left; vasculature middle; unique FTUIDs right"
+  },
+  "data": [
+    {
+      "name": "links",
+      "values": [
+        {
+          "id": "large_intestine:edge:001",
+          "source_id": "heart:UBERON:0000948",
+          "target_id": "artery:UBERON:0002084",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M110.00,390.00 C195.00,390.00 195.00,400.00 280.00,400.00",
+          "arrow_x": 218.94,
+          "arrow_y": 397.58,
+          "arrow_angle": 95.18
+        },
+        {
+          "id": "large_intestine:edge:002",
+          "source_id": "artery:UBERON:0002084",
+          "target_id": "artery:UBERON:0000947",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M280.00,400.00 C344.00,400.00 344.00,400.00 408.00,400.00",
+          "arrow_x": 362.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:003",
+          "source_id": "artery:UBERON:0000947",
+          "target_id": "artery:UBERON:0001496",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M408.00,400.00 C472.00,400.00 472.00,400.00 536.00,400.00",
+          "arrow_x": 490.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:004",
+          "source_id": "artery:UBERON:0001496",
+          "target_id": "artery:UBERON:0001508",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M536.00,400.00 C600.00,400.00 600.00,400.00 664.00,400.00",
+          "arrow_x": 618.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:005",
+          "source_id": "artery:UBERON:0001508",
+          "target_id": "artery:UBERON:0001514",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M664.00,400.00 C728.00,400.00 728.00,400.00 792.00,400.00",
+          "arrow_x": 746.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:006",
+          "source_id": "artery:UBERON:0001514",
+          "target_id": "artery:UBERON:0002345",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M792.00,400.00 C856.00,400.00 856.00,400.00 920.00,400.00",
+          "arrow_x": 874.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:007",
+          "source_id": "artery:UBERON:0002345",
+          "target_id": "artery:UBERON:0001516",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M920.00,400.00 C984.00,400.00 984.00,400.00 1048.00,400.00",
+          "arrow_x": 1002.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:008",
+          "source_id": "artery:UBERON:0001516",
+          "target_id": "artery:UBERON:0001183",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1048.00,400.00 C1112.00,400.00 1112.00,400.00 1176.00,400.00",
+          "arrow_x": 1130.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:009",
+          "source_id": "artery:UBERON:0001183",
+          "target_id": "artery:UBERON:8410022",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1176.00,400.00 C1240.00,400.00 1240.00,400.00 1304.00,400.00",
+          "arrow_x": 1258.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:010",
+          "source_id": "artery:UBERON:8410022",
+          "target_id": "artery:FMA:14828",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1304.00,400.00 C1368.00,400.00 1368.00,400.00 1432.00,400.00",
+          "arrow_x": 1386.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:011",
+          "source_id": "artery:FMA:14828",
+          "target_id": "artery:FMA:14824",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1432.00,400.00 C1496.00,400.00 1496.00,400.00 1560.00,400.00",
+          "arrow_x": 1514.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:012",
+          "source_id": "artery:FMA:14824",
+          "target_id": "artery:missing:artery:vasa-recta-of-colon:44821704bc",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1560.00,400.00 C1624.00,400.00 1624.00,400.00 1688.00,400.00",
+          "arrow_x": 1642.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:013",
+          "source_id": "artery:missing:artery:vasa-recta-of-colon:44821704bc",
+          "target_id": "artery:missing:artery:long-branch-of-vasa-recta-of-colon:6ae1ecc99f",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1688.00,400.00 C1752.00,400.00 1752.00,400.00 1816.00,400.00",
+          "arrow_x": 1770.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:014",
+          "source_id": "artery:missing:artery:long-branch-of-vasa-recta-of-colon:6ae1ecc99f",
+          "target_id": "artery:missing:artery:submucosal-artery-of-colon:4307d22690",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1816.00,400.00 C1880.00,400.00 1880.00,400.00 1944.00,400.00",
+          "arrow_x": 1898.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:015",
+          "source_id": "artery:missing:artery:submucosal-artery-of-colon:4307d22690",
+          "target_id": "artery:missing:artery:submucosal-arteriole-of-colon:701fb35d51",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1944.00,400.00 C2008.00,400.00 2008.00,400.00 2072.00,400.00",
+          "arrow_x": 2026.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:016",
+          "source_id": "artery:missing:artery:submucosal-arteriole-of-colon:701fb35d51",
+          "target_id": "artery:missing:artery:mucosal-arteriole-of-colon:32ecf86dc9",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2072.00,400.00 C2136.00,400.00 2136.00,400.00 2200.00,400.00",
+          "arrow_x": 2154.03,
+          "arrow_y": 400.0,
+          "arrow_angle": 90.0
+        },
+        {
+          "id": "large_intestine:edge:017",
+          "source_id": "artery:missing:artery:mucosal-arteriole-of-colon:32ecf86dc9",
+          "target_id": "ftu:UBERON:0001983",
+          "side": "artery",
+          "color": "#d73027",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2200.00,400.00 C2290.00,400.00 2290.00,415.00 2380.00,415.00",
+          "arrow_x": 2315.35,
+          "arrow_y": 411.38,
+          "arrow_angle": 97.32
+        },
+        {
+          "id": "large_intestine:edge:018",
+          "source_id": "ftu:UBERON:0001983",
+          "target_id": "vein:missing:vein:mucosal-venule-of-colon:04c179ba50",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2380.00,415.00 C2305.00,415.00 2305.00,430.00 2230.00,430.00",
+          "arrow_x": 2283.88,
+          "arrow_y": 426.38,
+          "arrow_angle": 261.24
+        },
+        {
+          "id": "large_intestine:edge:019",
+          "source_id": "vein:missing:vein:mucosal-venule-of-colon:04c179ba50",
+          "target_id": "vein:missing:vein:submucosal-venule-of-colon:703b78c311",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2230.00,430.00 C2171.25,430.00 2171.25,430.00 2112.50,430.00",
+          "arrow_x": 2154.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:020",
+          "source_id": "vein:missing:vein:submucosal-venule-of-colon:703b78c311",
+          "target_id": "vein:missing:vein:submucosal-vein-of-colon:df9be6ded2",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M2112.50,430.00 C2053.75,430.00 2053.75,430.00 1995.00,430.00",
+          "arrow_x": 2037.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:021",
+          "source_id": "vein:missing:vein:submucosal-vein-of-colon:df9be6ded2",
+          "target_id": "vein:missing:vein:vena-recta-of-large-intestine:cc267730cc",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1995.00,430.00 C1936.25,430.00 1936.25,430.00 1877.50,430.00",
+          "arrow_x": 1919.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:022",
+          "source_id": "vein:missing:vein:vena-recta-of-large-intestine:cc267730cc",
+          "target_id": "vein:UBERON:0001219",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1877.50,430.00 C1818.75,430.00 1818.75,430.00 1760.00,430.00",
+          "arrow_x": 1802.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:023",
+          "source_id": "vein:UBERON:0001219",
+          "target_id": "vein:UBERON:0001138",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1760.00,430.00 C1701.25,430.00 1701.25,430.00 1642.50,430.00",
+          "arrow_x": 1684.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:024",
+          "source_id": "vein:UBERON:0001138",
+          "target_id": "vein:UBERON:0001639",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1642.50,430.00 C1583.75,430.00 1583.75,430.00 1525.00,430.00",
+          "arrow_x": 1567.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:025",
+          "source_id": "vein:UBERON:0001639",
+          "target_id": "vein:FMA:15415",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1525.00,430.00 C1466.25,430.00 1466.25,430.00 1407.50,430.00",
+          "arrow_x": 1449.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:026",
+          "source_id": "vein:FMA:15415",
+          "target_id": "vein:missing:vein:left-lateral-hepatic-portal-vein:5b522a447e",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1407.50,430.00 C1348.75,430.00 1348.75,430.00 1290.00,430.00",
+          "arrow_x": 1332.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:027",
+          "source_id": "vein:missing:vein:left-lateral-hepatic-portal-vein:5b522a447e",
+          "target_id": "vein:FMA:15432",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1290.00,430.00 C1231.25,430.00 1231.25,430.00 1172.50,430.00",
+          "arrow_x": 1214.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:028",
+          "source_id": "vein:FMA:15432",
+          "target_id": "vein:UBERON:8600085",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1172.50,430.00 C1113.75,430.00 1113.75,430.00 1055.00,430.00",
+          "arrow_x": 1097.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:029",
+          "source_id": "vein:UBERON:8600085",
+          "target_id": "vein:UBERON:0001281",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M1055.00,430.00 C996.25,430.00 996.25,430.00 937.50,430.00",
+          "arrow_x": 979.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:030",
+          "source_id": "vein:UBERON:0001281",
+          "target_id": "vein:UBERON:0006841",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M937.50,430.00 C878.75,430.00 878.75,430.00 820.00,430.00",
+          "arrow_x": 862.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:031",
+          "source_id": "vein:UBERON:0006841",
+          "target_id": "vein:missing:vein:segmental-hepatic-vein:a93c1caff6",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M820.00,430.00 C761.25,430.00 761.25,430.00 702.50,430.00",
+          "arrow_x": 744.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:032",
+          "source_id": "vein:missing:vein:segmental-hepatic-vein:a93c1caff6",
+          "target_id": "vein:UBERON:0011955",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M702.50,430.00 C643.75,430.00 643.75,430.00 585.00,430.00",
+          "arrow_x": 627.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:033",
+          "source_id": "vein:UBERON:0011955",
+          "target_id": "vein:UBERON:0001072",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M585.00,430.00 C526.25,430.00 526.25,430.00 467.50,430.00",
+          "arrow_x": 509.7,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:034",
+          "source_id": "vein:UBERON:0001072",
+          "target_id": "vein:UBERON:0002078",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M467.50,430.00 C408.75,430.00 408.75,430.00 350.00,430.00",
+          "arrow_x": 392.2,
+          "arrow_y": 430.0,
+          "arrow_angle": 270.0
+        },
+        {
+          "id": "large_intestine:edge:035",
+          "source_id": "vein:UBERON:0002078",
+          "target_id": "heart:UBERON:0000948",
+          "side": "vein",
+          "color": "#2878b5",
+          "routes": [
+            "large_intestine:route:01"
+          ],
+          "route_count": 1,
+          "path": "M350.00,430.00 C230.00,430.00 230.00,390.00 110.00,390.00",
+          "arrow_x": 196.2,
+          "arrow_y": 399.67,
+          "arrow_angle": -75.6
+        }
+      ]
+    },
+    {
+      "name": "vessels",
+      "values": [
+        {
+          "id": "artery:UBERON:0002084",
+          "name": "left ventricle",
+          "label": "left ventricle UBERON:0002084",
+          "ontology_id": "UBERON:0002084",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 280.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0000947",
+          "name": "aorta",
+          "label": "aorta UBERON:0000947",
+          "ontology_id": "UBERON:0000947",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 408.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001496",
+          "name": "ascending aorta",
+          "label": "ascending aorta UBERON:0001496",
+          "ontology_id": "UBERON:0001496",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 536.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001508",
+          "name": "aortic arch",
+          "label": "aortic arch UBERON:0001508",
+          "ontology_id": "UBERON:0001508",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 664.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001514",
+          "name": "descending aorta",
+          "label": "descending aorta UBERON:0001514",
+          "ontology_id": "UBERON:0001514",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 792.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0002345",
+          "name": "descending thoracic aorta",
+          "label": "descending thoracic aorta UBERON:0002345",
+          "ontology_id": "UBERON:0002345",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 920.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001516",
+          "name": "abdominal aorta",
+          "label": "abdominal aorta UBERON:0001516",
+          "ontology_id": "UBERON:0001516",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1048.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:0001183",
+          "name": "inferior mesenteric artery",
+          "label": "inferior mesenteric artery UBERON:0001183",
+          "ontology_id": "UBERON:0001183",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1176.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:UBERON:8410022",
+          "name": "left colic artery",
+          "label": "left colic artery UBERON:8410022",
+          "ontology_id": "UBERON:8410022",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1304.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:FMA:14828",
+          "name": "ascending branch of left colic artery",
+          "label": "ascending branch of left colic artery FMA:14828",
+          "ontology_id": "FMA:14828",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1432.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:FMA:14824",
+          "name": "marginal artery of Drummond",
+          "label": "marginal artery of Drummond FMA:14824",
+          "ontology_id": "FMA:14824",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1560.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:missing:artery:vasa-recta-of-colon:44821704bc",
+          "name": "vasa recta of colon",
+          "label": "vasa recta of colon",
+          "ontology_id": "",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1688.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:missing:artery:long-branch-of-vasa-recta-of-colon:6ae1ecc99f",
+          "name": "long branch of vasa recta of colon",
+          "label": "long branch of vasa recta of colon",
+          "ontology_id": "",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1816.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:missing:artery:submucosal-artery-of-colon:4307d22690",
+          "name": "submucosal artery of colon",
+          "label": "submucosal artery of colon",
+          "ontology_id": "",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 1944.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:missing:artery:submucosal-arteriole-of-colon:701fb35d51",
+          "name": "submucosal arteriole of colon",
+          "label": "submucosal arteriole of colon",
+          "ontology_id": "",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 2072.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "artery:missing:artery:mucosal-arteriole-of-colon:32ecf86dc9",
+          "name": "mucosal arteriole of colon",
+          "label": "mucosal arteriole of colon",
+          "ontology_id": "",
+          "type": "artery",
+          "color": "#d73027",
+          "x": 2200.0,
+          "y": 400.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:missing:vein:mucosal-venule-of-colon:04c179ba50",
+          "name": "mucosal venule of colon",
+          "label": "mucosal venule of colon",
+          "ontology_id": "",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 2230.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:missing:vein:submucosal-venule-of-colon:703b78c311",
+          "name": "submucosal venule of colon",
+          "label": "submucosal venule of colon",
+          "ontology_id": "",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 2112.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:missing:vein:submucosal-vein-of-colon:df9be6ded2",
+          "name": "submucosal vein of colon",
+          "label": "submucosal vein of colon",
+          "ontology_id": "",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1995.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:missing:vein:vena-recta-of-large-intestine:cc267730cc",
+          "name": "vena recta of large intestine",
+          "label": "vena recta of large intestine",
+          "ontology_id": "",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1877.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001219",
+          "name": "ileocolic vein",
+          "label": "ileocolic vein UBERON:0001219",
+          "ontology_id": "UBERON:0001219",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1760.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001138",
+          "name": "superior mesenteric vein",
+          "label": "superior mesenteric vein UBERON:0001138",
+          "ontology_id": "UBERON:0001138",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1642.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001639",
+          "name": "hepatic portal vein",
+          "label": "hepatic portal vein UBERON:0001639",
+          "ontology_id": "UBERON:0001639",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1525.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:FMA:15415",
+          "name": "left hepatic portal vein",
+          "label": "left hepatic portal vein FMA:15415",
+          "ontology_id": "FMA:15415",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1407.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:missing:vein:left-lateral-hepatic-portal-vein:5b522a447e",
+          "name": "left lateral hepatic portal vein",
+          "label": "left lateral hepatic portal vein",
+          "ontology_id": "",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1290.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:FMA:15432",
+          "name": "lateral inferior segmental hepatic portal vein",
+          "label": "lateral inferior segmental hepatic portal vein FMA:15432",
+          "ontology_id": "FMA:15432",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1172.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:8600085",
+          "name": "hepatic portal venule",
+          "label": "hepatic portal venule UBERON:8600085",
+          "ontology_id": "UBERON:8600085",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 1055.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001281",
+          "name": "hepatic sinusoid",
+          "label": "hepatic sinusoid UBERON:0001281",
+          "ontology_id": "UBERON:0001281",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 937.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0006841",
+          "name": "central vein of liver",
+          "label": "central vein of liver UBERON:0006841",
+          "ontology_id": "UBERON:0006841",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 820.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:missing:vein:segmental-hepatic-vein:a93c1caff6",
+          "name": "segmental hepatic vein",
+          "label": "segmental hepatic vein",
+          "ontology_id": "",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 702.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0011955",
+          "name": "left hepatic vein",
+          "label": "left hepatic vein UBERON:0011955",
+          "ontology_id": "UBERON:0011955",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 585.0,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0001072",
+          "name": "inferior vena cava",
+          "label": "inferior vena cava UBERON:0001072",
+          "ontology_id": "UBERON:0001072",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 467.5,
+          "y": 430.0,
+          "route_count": 1
+        },
+        {
+          "id": "vein:UBERON:0002078",
+          "name": "right atrium",
+          "label": "right atrium UBERON:0002078",
+          "ontology_id": "UBERON:0002078",
+          "type": "vein",
+          "color": "#2878b5",
+          "x": 350.0,
+          "y": 430.0,
+          "route_count": 1
+        }
+      ]
+    },
+    {
+      "name": "ftus",
+      "values": [
+        {
+          "id": "ftu:UBERON:0001983",
+          "name": "crypt of Lieberkuhn",
+          "ontology_id": "UBERON:0001983",
+          "type": "ftu",
+          "color": "#111111",
+          "x": 2380.0,
+          "y": 415.0
+        }
+      ]
+    },
+    {
+      "name": "heart",
+      "values": [
+        {
+          "id": "heart:UBERON:0000948",
+          "name": "Heart",
+          "ontology_id": "UBERON:0000948",
+          "type": "heart",
+          "color": "#111111",
+          "x": 110.0,
+          "y": 390.0
+        }
+      ]
+    },
+    {
+      "name": "legend",
+      "values": [
+        {
+          "label": "Artery",
+          "color": "#d73027",
+          "shape": "circle",
+          "y": 20
+        },
+        {
+          "label": "Vein",
+          "color": "#2878b5",
+          "shape": "circle",
+          "y": 42
+        },
+        {
+          "label": "FTU endpoint",
+          "color": "#111111",
+          "shape": "square",
+          "y": 64
+        },
+        {
+          "label": "Heart",
+          "color": "#111111",
+          "shape": "triangle-up",
+          "y": 86
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 38
+          },
+          "y": {
+            "value": 42
+          },
+          "text": {
+            "value": "Large intestine"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 28
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 38
+          },
+          "y": {
+            "value": 68
+          },
+          "text": {
+            "value": "Heart → organ-specific vasculature → FTUs"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fill": {
+            "value": "#5c5c5c"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 250
+          },
+          "y": {
+            "value": 105
+          },
+          "text": {
+            "value": "ARTERIAL FLOW →"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#d73027"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 2350
+          },
+          "y": {
+            "value": 105
+          },
+          "text": {
+            "value": "← VENOUS RETURN"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#2878b5"
+          }
+        }
+      }
+    },
+    {
+      "type": "path",
+      "from": {
+        "data": "links"
+      },
+      "encode": {
+        "enter": {
+          "path": {
+            "field": "path"
+          },
+          "fill": {
+            "value": null
+          },
+          "stroke": {
+            "field": "color"
+          },
+          "strokeWidth": {
+            "signal": "1.15 + min(datum.route_count, 12) * 0.23"
+          },
+          "strokeOpacity": {
+            "value": 0.78
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "links"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "arrow_x"
+          },
+          "y": {
+            "field": "arrow_y"
+          },
+          "shape": {
+            "value": "triangle-up"
+          },
+          "angle": {
+            "field": "arrow_angle"
+          },
+          "size": {
+            "value": 58
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.78
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "vessels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "value": "circle"
+          },
+          "size": {
+            "signal": "58 + min(datum.route_count, 18) * 7"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.78
+          },
+          "stroke": {
+            "value": "#ffffff"
+          },
+          "strokeWidth": {
+            "value": 0.7
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "vessels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dy": {
+            "signal": "datum.type === 'artery' ? -10 : 10"
+          },
+          "angle": {
+            "value": -12
+          },
+          "text": {
+            "field": "label"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "signal": "datum.type === 'artery' ? 'bottom' : 'top'"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.92
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "ftus"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "value": "square"
+          },
+          "size": {
+            "value": 145
+          },
+          "fill": {
+            "value": "#111111"
+          },
+          "stroke": {
+            "value": "#ffffff"
+          },
+          "strokeWidth": {
+            "value": 0.8
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "ftus"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dx": {
+            "value": 11
+          },
+          "text": {
+            "field": "name"
+          },
+          "align": {
+            "value": "left"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#111111"
+          },
+          "limit": {
+            "value": 335
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "heart"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "value": "triangle-up"
+          },
+          "size": {
+            "value": 360
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "heart"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dx": {
+            "value": 14
+          },
+          "dy": {
+            "value": -12
+          },
+          "text": {
+            "field": "name"
+          },
+          "align": {
+            "value": "left"
+          },
+          "baseline": {
+            "value": "bottom"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "legend"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 2545
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "field": "shape"
+          },
+          "size": {
+            "value": 70
+          },
+          "fill": {
+            "field": "color"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "legend"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 2557
+          },
+          "y": {
+            "field": "y"
+          },
+          "text": {
+            "field": "label"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    }
+  ],
+  "config": {}
+}
