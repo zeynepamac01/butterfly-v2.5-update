@@ -138,7 +138,7 @@
       }
     </style>
   </defs>
-  <rect class="st32" width="3000" height="900"/>
+  <rect class="st32" width="3000" height="900.00"/>
   <g>
     <text class="st11" transform="translate(81.56 80.93)"><tspan x="0" y="0">Prostate</tspan></text>
     <text class="st27" transform="translate(81.56 105.93)"><tspan x="0" y="0">Every source vessel retained; FTUs contain their internal vessels</tspan></text>
