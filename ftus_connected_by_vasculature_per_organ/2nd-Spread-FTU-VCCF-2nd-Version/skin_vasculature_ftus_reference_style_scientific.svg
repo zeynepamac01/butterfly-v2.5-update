@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 3000 900">
+  <!-- Generator: Adobe Illustrator 30.8.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 1)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9 {
+        fill: none;
+      }
+
+      .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17 {
+        fill: #111;
+      }
+
+      .st18, .st19, .st20, .st21, .st1, .st2, .st3, .st4, .st5, .st22, .st6, .st23, .st7, .st8, .st9 {
+        stroke-miterlimit: 10;
+      }
+
+      .st18, .st19, .st21, .st22 {
+        stroke: #fff;
+        stroke-width: .5px;
+      }
+
+      .st18, .st24, .st25 {
+        fill: #7b3294;
+      }
+
+      .st19, .st26, .st27 {
+        fill: #d73027;
+      }
+
+      .st20 {
+        fill: #f7f7f7;
+        stroke: #5c5c5c;
+        stroke-opacity: .72;
+      }
+
+      .st20, .st1, .st5, .st6, .st8 {
+        stroke-width: 1.98px;
+      }
+
+      .st20, .st24, .st28, .st27, .st29, .st15 {
+        fill-opacity: 0;
+      }
+
+      .st11, .st26, .st12, .st13, .st14, .st30, .st31, .st16, .st25, .st32 {
+        isolation: isolate;
+      }
+
+      .st11, .st26, .st30, .st31, .st25, .st32 {
+        font-family: BentonSans-Medium, 'Benton Sans';
+        font-weight: 500;
+      }
+
+      .st11, .st26, .st31, .st25, .st32 {
+        font-size: 12px;
+      }
+
+      .st21, .st28, .st31 {
+        fill: #2878b5;
+      }
+
+      .st12 {
+        font-size: 30px;
+      }
+
+      .st12, .st13, .st14, .st16 {
+        font-family: BentonSans-Bold, 'Benton Sans';
+        font-weight: 700;
+      }
+
+      .st1 {
+        stroke: #6b6b6b;
+      }
+
+      .st1, .st2, .st5, .st6 {
+        stroke-opacity: .76;
+      }
+
+      .st2 {
+        stroke-width: 1.54px;
+      }
+
+      .st2, .st4, .st5 {
+        stroke: #d73027;
+      }
+
+      .st13 {
+        font-size: 14px;
+      }
+
+      .st14 {
+        font-size: 13px;
+      }
+
+      .st3, .st4, .st7, .st9 {
+        stroke-width: 3px;
+      }
+
+      .st3, .st8 {
+        stroke: #7b3294;
+      }
+
+      .st33, .st23 {
+        fill: #fff;
+      }
+
+      .st22, .st29, .st32 {
+        fill: #6b6b6b;
+      }
+
+      .st6, .st7 {
+        stroke: #2878b5;
+      }
+
+      .st30 {
+        fill: #5c5c5c;
+        font-size: 15px;
+      }
+
+      .st16 {
+        font-size: 18px;
+      }
+
+      .st23 {
+        stroke: #111;
+        stroke-width: 1.5px;
+      }
+
+      .st8 {
+        stroke-opacity: .56;
+      }
+
+      .st17 {
+        display: none;
+      }
+
+      .st9 {
+        stroke: #984ea3;
+      }
+    </style>
+  </defs>
+  <rect class="st33" width="3000" height="900"/>
+  <text class="st12" transform="translate(61.21 61.36)"><tspan x="0" y="0">Skin</tspan></text>
+  <text class="st30" transform="translate(61.21 86.36)"><tspan x="0" y="0">Every source vessel retained; FTUs contain their internal vessels</tspan></text>
+  <path class="st20" d="M2134.92,377.48h223.33v71.9h-223.33v-71.9Z"/>
+  <path class="st20" d="M2136.59,481.8h221.67v105.4h-221.67v-105.4Z"/>
+  <path class="st20" d="M2145.37,502.2h199.36v61.2h-199.36v-61.2Z"/>
+  <path class="st1" d="M120,475h60v-87.5"/>
+  <path class="st1" d="M180,387.5v-87.5h60"/>
+  <path class="st1" d="M240,300h75"/>
+  <path class="st5" d="M315,300h74.99"/>
+  <path class="st5" d="M389.99,300h75.01"/>
+  <path class="st5" d="M465,300h75.01"/>
+  <path class="st5" d="M540.01,300h74.99"/>
+  <path class="st5" d="M615,300h75"/>
+  <path class="st5" d="M690,300h75"/>
+  <path class="st5" d="M765,300h74.99"/>
+  <path class="st5" d="M839.99,300h75.01"/>
+  <path class="st5" d="M915,300h75.01"/>
+  <path class="st5" d="M990.01,300h75"/>
+  <path class="st5" d="M1065.01,300h74.99"/>
+  <path class="st5" d="M1140,300h74.99"/>
+  <path class="st5" d="M1214.99,300h75"/>
+  <path class="st5" d="M1289.99,300h75.01"/>
+  <path class="st5" d="M1365,300h75.01"/>
+  <path class="st5" d="M1440.01,300h75"/>
+  <path class="st5" d="M1515.01,300h74.99"/>
+  <path class="st5" d="M1590,300h74.99"/>
+  <path class="st5" d="M1664.99,300h75"/>
+  <path class="st5" d="M1739.99,300h75.01"/>
+  <path class="st5" d="M1815,300h75.01"/>
+  <path class="st2" d="M1890.01,300h75v81.9"/>
+  <path class="st8" d="M1965.01,381.9v72.89h74.99"/>
+  <path class="st8" d="M2040,454.79h76.7v-19.98"/>
+  <path class="st8" d="M2116.7,434.96v-22.45h126.05"/>
+  <path class="st6" d="M1964.82,570.37v79.63h-88.45"/>
+  <path class="st6" d="M1876.37,650h-81.82"/>
+  <path class="st6" d="M1794.55,650h-81.83"/>
+  <path class="st6" d="M1712.72,650h-81.82"/>
+  <path class="st6" d="M1630.9,650h-81.81"/>
+  <path class="st6" d="M1549.09,650h-81.81"/>
+  <path class="st6" d="M1467.28,650h-81.82"/>
+  <path class="st6" d="M1385.46,650h-81.82"/>
+  <path class="st6" d="M1303.64,650h-81.82"/>
+  <path class="st6" d="M1221.82,650h-81.82"/>
+  <path class="st6" d="M1140,650h-81.82"/>
+  <path class="st6" d="M1058.18,650h-81.82"/>
+  <path class="st6" d="M976.36,650h-81.82"/>
+  <path class="st6" d="M894.54,650h-81.82"/>
+  <path class="st6" d="M812.72,650h-81.81"/>
+  <path class="st6" d="M730.91,650h-81.81"/>
+  <path class="st6" d="M649.1,650h-81.82"/>
+  <path class="st6" d="M567.28,650h-81.83"/>
+  <path class="st6" d="M485.45,650h-81.82"/>
+  <path class="st6" d="M403.63,650h-81.82"/>
+  <path class="st1" d="M321.81,650h-81.81"/>
+  <path class="st1" d="M240,650h-60v-175.67"/>
+  <path class="st5" d="M1890.01,300h75v97"/>
+  <path class="st8" d="M2040,494h76.7v19.4"/>
+  <path class="st8" d="M2116.7,513.4v19.4h127.89"/>
+  <path class="st8" d="M2040,494h-75.11v78"/>
+  <path class="st29" d="M180,348.72l-.5.87h1l-.5-.87Z"/>
+  <path class="st27" d="M334.92,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M484.93,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M634.93,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M784.92,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M934.93,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M1084.93,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M1234.92,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M1384.93,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M1534.93,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M1684.92,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st27" d="M1834.93,300l-.87-.5v1l.87-.5Z"/>
+  <path class="st24" d="M1965.01,423.12l.5-.87h-1l.5.87Z"/>
+  <path class="st24" d="M2120.47,418.9l-.87-.5v1l.87-.5Z"/>
+  <path class="st24" d="M2112.94,463.8l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M1958.18,602.81l.5-.87h-1l.5.87Z"/>
+  <path class="st28" d="M1772.84,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M1609.2,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M1445.57,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M1281.94,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M1118.3,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M954.66,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M791.02,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M627.39,650l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M463.75,650l.87.5v-1l-.87.5Z"/>
+  <path class="st29" d="M300.11,650l.87.5v-1l-.87.5Z"/>
+  <path class="st15" d="M180,523.72l-.5.87h1l-.5-.87Z"/>
+  <path class="st24" d="M1965.01,442.15l.5-.87h-1l.5.87Z"/>
+  <path class="st24" d="M2122.72,532.8l-.87-.5v1l.87-.5Z"/>
+  <path class="st24" d="M2110.69,494l.87.5v-1l-.87.5Z"/>
+  <path class="st28" d="M1958.18,613.98l.5-.87h-1l.5.87Z"/>
+  <path class="st22" d="M244.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M394.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M544.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M694.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M844.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M994.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M1144.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M1294.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M1444.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M1594.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M1744.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st19" d="M1894.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st18" d="M2046.27,454.8c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st18" d="M2246.08,412.01c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M1880.55,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M1716.9,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M1553.27,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M1389.64,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M1226,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M1062.36,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M898.72,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M735.09,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M571.46,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st21" d="M407.81,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st22" d="M244.18,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st18" d="M2046.27,494c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <path class="st18" d="M2246.08,532.74c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  <text class="st32" transform="translate(231.5 289.91) rotate(-15)"><tspan x="0" y="0">left ventricle</tspan></text>
+  <text class="st26" transform="translate(399.2 289.91) rotate(-15)"><tspan x="0" y="0">aorta</tspan></text>
+  <text class="st26" transform="translate(521.19 289.91) rotate(-15)"><tspan x="0" y="0">ascending aorta</tspan></text>
+  <text class="st26" transform="translate(685.37 289.91) rotate(-15)"><tspan x="0" y="0">aortic arch</tspan></text>
+  <text class="st26" transform="translate(818.6 289.91) rotate(-15)"><tspan x="0" y="0">subclavian artery</tspan></text>
+  <text class="st26" transform="translate(977.97 289.91) rotate(-15)"><tspan x="0" y="0">axillary artery</tspan></text>
+  <text class="st26" transform="translate(1125.7014 289.9139) rotate(-15)"><tspan x="0" y="0">brachial artery</tspan></text>
+  <text class="st26" transform="translate(1283.0998 289.9136) rotate(-15)"><tspan x="0" y="0">ulnar artery</tspan></text>
+  <text class="st26" transform="translate(1404.1309 289.9138) rotate(-15)"><tspan x="0" y="0">superficial palmar arch</tspan></text>
+  <text class="st26" transform="translate(1587.4354 284.753) rotate(-15)"><tspan x="0" y="0">medial proper palmar digital artery of fifth digit of hand</tspan></text>
+  <text class="st26" transform="translate(1745.1572 274.1599) rotate(-15)"><tspan x="0" y="0">cutaneous branch of medial proper </tspan><tspan x="-14.89" y="14.4">palmar digital artery of fifth digit of hand</tspan></text>
+  <text class="st26" transform="translate(1863.1383 289.9138) rotate(-15)"><tspan x="0" y="0">cutaneous arteriole</tspan></text>
+  <text class="st25" transform="translate(1993.444 446.4281) rotate(-.977)"><tspan x="0" y="0">subpapillary plexus</tspan></text>
+  <text class="st25" transform="translate(2160.173 430.9792)"><tspan x="0" y="0">branch of subpapillary plexus</tspan></text>
+  <text class="st31" transform="translate(1800.2148 691.0501) rotate(-15)"><tspan x="0" y="0">cutaneous venule</tspan></text>
+  <text class="st31" transform="translate(1531.1524 719.576) rotate(-15)"><tspan x="0" y="0">cutaneous branch of medial proper </tspan><tspan x="-10.77" y="14.4" xml:space="preserve">palmar digital vein of fifth digit of  hand</tspan></text>
+  <text class="st31" transform="translate(1388.0474 706.8238) rotate(-15)"><tspan x="0" y="0">medial proper palmar digital</tspan><tspan x="9.31" y="14.4" xml:space="preserve"> vein of fifth digit of hand</tspan></text>
+  <text class="st31" transform="translate(1232.6597 708.8233) rotate(-15)"><tspan x="0" y="0">superficial palmar venous arch</tspan></text>
+  <text class="st31" transform="translate(1171.2534 680.1694) rotate(-15)"><tspan x="0" y="0">ulnar vein</tspan></text>
+  <text class="st31" transform="translate(995.38 684.14) rotate(-15)"><tspan x="0" y="0">brachial vein</tspan></text>
+  <text class="st31" transform="translate(832.78 682.93) rotate(-15)"><tspan x="0" y="0">axillary vein</tspan></text>
+  <text class="st31" transform="translate(659.8 687.94) rotate(-15)"><tspan x="0" y="0">subclavian vein</tspan></text>
+  <text class="st31" transform="translate(463.78 694.84) rotate(-15)"><tspan x="0" y="0">brachiocephalic vein</tspan></text>
+  <text class="st31" transform="translate(302.43 692.94) rotate(-15)"><tspan x="0" y="0">superior vena cava</tspan></text>
+  <text class="st32" transform="translate(170.99 682.24) rotate(-15)"><tspan x="0" y="0">right atrium</tspan></text>
+  <text class="st25" transform="translate(1980.3262 512.8286) rotate(-.3831)"><tspan x="0" y="0">deep cutaneous plexus</tspan></text>
+  <text class="st25" transform="translate(2149.2271 553.2123)"><tspan x="0" y="0">branch of deep cutaneous plexus</tspan></text>
+  <text class="st13" transform="translate(2134.134 373.0007)"><tspan x="0" y="0">epidermal ridge of digit</tspan></text>
+  <text class="st16" transform="translate(2135.7571 478.2916)"><tspan x="0" y="0">hair follicle</tspan></text>
+  <text class="st13" transform="translate(2146.7524 499.7525)"><tspan x="0" y="0">dermal papilla</tspan></text>
+  <path class="st10" d="M120,438.77l-41.83,72.46h83.67l-41.83-72.46Z"/>
+  <text class="st16" transform="translate(92.9 529.53)"><tspan x="0" y="0">Heart</tspan></text>
+  <g>
+    <path class="st0" d="M2110.86,35.62h3000v900h-3000V35.62Z"/>
+    <text class="st14" transform="translate(2128.8585 49.6227)"><tspan x="0" y="0">Vessel class</tspan></text>
+    <g>
+      <line class="st4" x1="2128.86" y1="60.62" x2="2178.86" y2="60.62"/>
+      <line class="st3" x1="2128.86" y1="83.62" x2="2178.86" y2="83.62"/>
+      <line class="st7" x1="2128.86" y1="106.62" x2="2178.86" y2="106.62"/>
+      <line class="st7" x1="2128.86" y1="129.62" x2="2178.86" y2="129.62"/>
+      <line class="st9" x1="2128.86" y1="152.62" x2="2178.86" y2="152.62"/>
+    </g>
+    <text class="st11" transform="translate(2188.8585 64.6227)"><tspan x="0" y="0">Arterial vessel</tspan></text>
+    <text class="st11" transform="translate(2188.8585 87.6227)"><tspan x="0" y="0">Capillary</tspan></text>
+    <text class="st11" transform="translate(2188.8585 110.6227)"><tspan x="0" y="0">Sinusoid</tspan></text>
+    <text class="st11" transform="translate(2188.8585 133.6227)"><tspan x="0" y="0">Venous vessel</tspan></text>
+    <text class="st11" transform="translate(2188.8585 156.6227)"><tspan x="0" y="0">Portal vein</tspan></text>
+    <path class="st23" d="M2138.86,167.62h30v14h-30v-14Z"/>
+    <text class="st11" transform="translate(2188.8585 178.6227)"><tspan x="0" y="0">FTU boundary (hollow)</tspan></text>
+    <path class="st10" d="M2153.86,193.32l-6.12,10.61h12.25l-6.12-10.61Z"/>
+    <text class="st11" transform="translate(2188.8585 202.6227)"><tspan x="0" y="0">Heart</tspan></text>
+  </g>
+  <path class="st17" d="M0,0"/>
+</svg>

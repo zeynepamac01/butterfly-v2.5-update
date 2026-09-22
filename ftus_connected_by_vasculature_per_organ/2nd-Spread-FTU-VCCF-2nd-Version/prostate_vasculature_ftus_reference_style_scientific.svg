@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 3000 900">
+  <!-- Generator: Adobe Illustrator 30.8.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 1)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8 {
+        fill: none;
+      }
+
+      .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16 {
+        fill: #111;
+      }
+
+      .st17, .st18, .st19, .st1, .st20, .st2, .st3, .st4, .st21, .st5, .st22, .st6, .st7, .st8 {
+        stroke-miterlimit: 10;
+      }
+
+      .st17, .st18, .st19, .st21 {
+        stroke: #fff;
+        stroke-width: .5px;
+      }
+
+      .st17, .st23, .st24 {
+        fill: #7b3294;
+      }
+
+      .st18, .st25, .st26 {
+        fill: #d73027;
+      }
+
+      .st10, .st25, .st11, .st12, .st13, .st27, .st28, .st15, .st24, .st29 {
+        isolation: isolate;
+      }
+
+      .st10, .st25, .st27, .st28, .st24, .st29 {
+        font-family: BentonSans-Medium, 'Benton Sans';
+        font-weight: 500;
+      }
+
+      .st10, .st25, .st28, .st24, .st29 {
+        font-size: 12px;
+      }
+
+      .st19, .st30, .st28 {
+        fill: #2878b5;
+      }
+
+      .st11 {
+        font-size: 30px;
+      }
+
+      .st11, .st12, .st13, .st15 {
+        font-family: BentonSans-Bold, 'Benton Sans';
+        font-weight: 700;
+      }
+
+      .st12 {
+        font-size: 16px;
+      }
+
+      .st1 {
+        stroke: #6b6b6b;
+      }
+
+      .st1, .st4, .st5 {
+        stroke-opacity: .76;
+      }
+
+      .st1, .st4, .st5, .st7 {
+        stroke-width: 1.98px;
+      }
+
+      .st23, .st20, .st30, .st26, .st31, .st14 {
+        fill-opacity: 0;
+      }
+
+      .st13 {
+        font-size: 13px;
+      }
+
+      .st20 {
+        fill: #f7f7f7;
+        stroke: #5c5c5c;
+        stroke-opacity: .72;
+      }
+
+      .st20, .st22 {
+        stroke-width: 1.5px;
+      }
+
+      .st2, .st3, .st6, .st8 {
+        stroke-width: 3px;
+      }
+
+      .st2, .st7 {
+        stroke: #7b3294;
+      }
+
+      .st3, .st4 {
+        stroke: #d73027;
+      }
+
+      .st32, .st22 {
+        fill: #fff;
+      }
+
+      .st21, .st31, .st29 {
+        fill: #6b6b6b;
+      }
+
+      .st5, .st6 {
+        stroke: #2878b5;
+      }
+
+      .st27 {
+        fill: #5c5c5c;
+        font-size: 15px;
+      }
+
+      .st15 {
+        font-size: 18px;
+      }
+
+      .st22 {
+        stroke: #111;
+      }
+
+      .st7 {
+        stroke-opacity: .56;
+      }
+
+      .st16 {
+        display: none;
+      }
+
+      .st8 {
+        stroke: #984ea3;
+      }
+    </style>
+  </defs>
+  <rect class="st32" width="3000" height="900"/>
+  <g>
+    <text class="st11" transform="translate(81.56 80.93)"><tspan x="0" y="0">Prostate</tspan></text>
+    <text class="st27" transform="translate(81.56 105.93)"><tspan x="0" y="0">Every source vessel retained; FTUs contain their internal vessels</tspan></text>
+  </g>
+  <path class="st20" d="M2282.82,443.72h141.87v62.56h-141.87v-62.56Z"/>
+  <path class="st1" d="M120,475h60v-87.5"/>
+  <path class="st1" d="M180,387.5v-87.5h60"/>
+  <path class="st1" d="M240,300h75"/>
+  <path class="st4" d="M315,300h74.99"/>
+  <path class="st4" d="M389.99,300h75.01"/>
+  <path class="st4" d="M465,300h75.01"/>
+  <path class="st4" d="M540.01,300h74.99"/>
+  <path class="st4" d="M615,300h75"/>
+  <path class="st4" d="M690,300h75"/>
+  <path class="st4" d="M765,300h74.99"/>
+  <path class="st4" d="M839.99,300h75.01"/>
+  <path class="st4" d="M915,300h75.01"/>
+  <path class="st4" d="M990.01,300h75"/>
+  <path class="st4" d="M1065.01,300h74.99"/>
+  <path class="st4" d="M1140,300h74.99"/>
+  <path class="st4" d="M1214.99,300h75"/>
+  <path class="st4" d="M1289.99,300h75.01"/>
+  <path class="st4" d="M1365,300h75.01"/>
+  <path class="st4" d="M1440.01,300h75"/>
+  <path class="st4" d="M1515.01,300h74.99"/>
+  <path class="st4" d="M1590,300h74.99"/>
+  <path class="st4" d="M1664.99,300h75"/>
+  <path class="st4" d="M1739.99,300h75.01"/>
+  <path class="st4" d="M1815,300h75.01"/>
+  <path class="st4" d="M1890.01,300h75"/>
+  <path class="st4" d="M1965.01,300h74.99"/>
+  <path class="st4" d="M2040,300h156.25v87.5"/>
+  <path class="st7" d="M2196.25,387.5v87.5h156.25"/>
+  <path class="st7" d="M2352.5,475h-156.25v87.5"/>
+  <path class="st5" d="M2196.25,562.5v87.5h-156.25"/>
+  <path class="st5" d="M2040,650h-150.01"/>
+  <path class="st5" d="M1889.99,650h-150"/>
+  <path class="st5" d="M1739.99,650h-149.99"/>
+  <path class="st5" d="M1590,650h-149.99"/>
+  <path class="st5" d="M1440.01,650h-150"/>
+  <path class="st5" d="M1290.01,650h-150.01"/>
+  <path class="st5" d="M1140,650h-150"/>
+  <path class="st5" d="M990,650h-150.01"/>
+  <path class="st5" d="M839.99,650h-149.99"/>
+  <path class="st5" d="M690,650h-149.99"/>
+  <path class="st5" d="M540.01,650h-150.01"/>
+  <path class="st1" d="M390,650h-150"/>
+  <path class="st1" d="M240,650h-60v-175.56"/>
+  <path class="st31" d="M180,562.5v-87.5h-60"/>
+  <g>
+    <path class="st31" d="M180,348.72l-.5.87h1l-.5-.87Z"/>
+    <path class="st26" d="M334.92,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M484.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M634.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M784.92,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M934.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M1084.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M1234.92,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M1384.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M1534.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M1684.92,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M1834.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st26" d="M1984.93,300l-.87-.5v1l.87-.5Z"/>
+    <path class="st23" d="M2196.25,451.31l.5-.87h-1l.5.87Z"/>
+    <path class="st30" d="M2196.25,626.31l.5-.87h-1l.5.87Z"/>
+    <path class="st30" d="M1850.56,650l.87.5v-1l-.87.5Z"/>
+    <path class="st30" d="M1550.57,650l.87.5v-1l-.87.5Z"/>
+    <path class="st30" d="M1250.57,650l.87.5v-1l-.87.5Z"/>
+    <path class="st30" d="M950.56,650l.87.5v-1l-.87.5Z"/>
+    <path class="st30" d="M650.57,650l.87.5v-1l-.87.5Z"/>
+    <path class="st31" d="M350.57,650l.87.5v-1l-.87.5Z"/>
+    <path class="st14" d="M180,523.72l-.5.87h1l-.5-.87Z"/>
+  </g>
+  <g>
+    <path class="st21" d="M244.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M394.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M544.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M694.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M844.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M994.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M1144.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M1294.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M1444.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M1594.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M1744.17,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M1894.19,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st18" d="M2044.18,300c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st17" d="M2356.68,475c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st19" d="M2044.18,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st19" d="M1744.17,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st19" d="M1444.19,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st19" d="M1144.18,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st19" d="M844.17,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st19" d="M544.19,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+    <path class="st21" d="M244.18,650c0,2.31-1.87,4.18-4.18,4.18-2.31,0-4.18-1.87-4.18-4.18h0c0-2.31,1.87-4.18,4.18-4.18,2.31,0,4.18,1.87,4.18,4.18h0"/>
+  </g>
+  <text class="st29" transform="translate(234.5 288.32) rotate(-15)"><tspan x="0" y="0">left ventricle</tspan></text>
+  <text class="st25" transform="translate(402.21 288.32) rotate(-15)"><tspan x="0" y="0">aorta</tspan></text>
+  <text class="st25" transform="translate(524.19 288.32) rotate(-15)"><tspan x="0" y="0">ascending aorta</tspan></text>
+  <text class="st25" transform="translate(688.37 288.32) rotate(-15)"><tspan x="0" y="0">aortic arch</tspan></text>
+  <text class="st25" transform="translate(820.95 288.32) rotate(-15)"><tspan x="0" y="0">descending aorta</tspan></text>
+  <text class="st25" transform="translate(949.07 288.32) rotate(-15)"><tspan x="0" y="0">descending thoracic aorta</tspan></text>
+  <text class="st25" transform="translate(1123.8636 288.3215) rotate(-15)"><tspan x="0" y="0">abdominal aorta</tspan></text>
+  <text class="st25" transform="translate(1265.1744 288.3218) rotate(-15)"><tspan x="0" y="0">common iliac artery</tspan></text>
+  <text class="st25" transform="translate(1418.4092 288.3217) rotate(-15)"><tspan x="0" y="0">internal iliac artery</tspan></text>
+  <text class="st25" transform="translate(1600.5472 288.3215) rotate(-15)"><tspan x="0" y="0">anterior division of internal iliac artery</tspan></text>
+  <text class="st25" transform="translate(1749.0713 288.3213) rotate(-15)"><tspan x="0" y="0">inferior vesical artery</tspan></text>
+  <text class="st25" transform="translate(1877.1082 288.3215) rotate(-15)"><tspan x="0" y="0">prostatic artery</tspan></text>
+  <text class="st25" transform="translate(2020.9744 288.3217) rotate(-15)"><tspan x="0" y="0">prostatic arteriole</tspan></text>
+  <text class="st24" transform="translate(2297.4153 462.7209)"><tspan x="0" y="0">prostatic capillary</tspan></text>
+  <text class="st28" transform="translate(1951.5167 684.9389) rotate(-15)"><tspan x="0" y="0">prostatic venule</tspan></text>
+  <text class="st28" transform="translate(1614.0652 695.6421) rotate(-15)"><tspan x="0" y="0">prostatic venous plexus</tspan></text>
+  <text class="st28" transform="translate(1331.3234 689.5964) rotate(-15)"><tspan x="0" y="0">inferior vesical vein</tspan></text>
+  <text class="st28" transform="translate(1042.7135 686.1459) rotate(-15)"><tspan x="0" y="0">internal iliac vein</tspan></text>
+  <text class="st28" transform="translate(735.12 687.87) rotate(-15)"><tspan x="0" y="0">common iliac vein</tspan></text>
+  <text class="st28" transform="translate(433.27 687.7) rotate(-15)"><tspan x="0" y="0">inferior vena cava</tspan></text>
+  <text class="st29" transform="translate(204.61 678.72) rotate(-15)"><tspan x="0" y="0">right atrium</tspan></text>
+  <text class="st12" transform="translate(2257.698 435.7377)"><tspan x="0" y="0">prostate glandular acinus</tspan></text>
+  <path class="st9" d="M120,438.77l-41.83,72.46h83.67l-41.83-72.46Z"/>
+  <text class="st15" transform="translate(93.27 530.46)"><tspan x="0" y="0">Heart</tspan></text>
+  <g>
+    <path class="st0" d="M2255.76,55.19h3000v900h-3000V55.19Z"/>
+    <text class="st13" transform="translate(2273.7627 69.1943)"><tspan x="0" y="0">Vessel class</tspan></text>
+    <g>
+      <line class="st3" x1="2273.76" y1="80.19" x2="2323.76" y2="80.19"/>
+      <line class="st2" x1="2273.76" y1="103.19" x2="2323.76" y2="103.19"/>
+      <line class="st6" x1="2273.76" y1="126.19" x2="2323.76" y2="126.19"/>
+      <line class="st6" x1="2273.76" y1="149.19" x2="2323.76" y2="149.19"/>
+      <line class="st8" x1="2273.76" y1="172.19" x2="2323.76" y2="172.19"/>
+    </g>
+    <g>
+      <text class="st10" transform="translate(2333.7627 84.1944)"><tspan x="0" y="0">Arterial vessel</tspan></text>
+      <text class="st10" transform="translate(2333.7627 107.1944)"><tspan x="0" y="0">Capillary</tspan></text>
+      <text class="st10" transform="translate(2333.7627 130.1944)"><tspan x="0" y="0">Sinusoid</tspan></text>
+      <text class="st10" transform="translate(2333.7627 153.1944)"><tspan x="0" y="0">Venous vessel</tspan></text>
+      <text class="st10" transform="translate(2333.7627 176.1944)"><tspan x="0" y="0">Portal vein</tspan></text>
+    </g>
+    <path class="st22" d="M2283.76,187.19h30v14h-30v-14Z"/>
+    <text class="st10" transform="translate(2333.7627 198.1944)"><tspan x="0" y="0">FTU boundary (hollow)</tspan></text>
+    <path class="st9" d="M2298.76,212.89l-6.12,10.61h12.25l-6.12-10.61Z"/>
+    <text class="st10" transform="translate(2333.7627 222.1944)"><tspan x="0" y="0">Heart</tspan></text>
+  </g>
+  <path class="st16" d="M0,0"/>
+</svg>
