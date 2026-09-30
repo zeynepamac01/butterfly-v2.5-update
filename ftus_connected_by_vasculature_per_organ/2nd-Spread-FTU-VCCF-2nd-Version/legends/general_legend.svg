@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="6in" height="3.2in" viewBox="0 0 432 230" role="img" aria-labelledby="title desc">
+  <title id="title">General vasculature and FTU legend</title>
+  <desc id="desc">A general legend using node symbols for vessel classes and separate structural symbols for FTUs, boundaries, and association connectors.</desc>
+  <style>
+    .medium { font-family: "BentonSans-Medium", "Benton Sans", sans-serif; font-size: 8pt; font-weight: 500; }
+    .bold { font-family: "BentonSans-Bold", "Benton Sans", sans-serif; font-size: 8pt; font-weight: 700; }
+    .node { stroke-width: 1.5; }
+    .boundary { fill: none; stroke: #111111; stroke-width: 1.5; }
+    .association { fill: none; stroke: #b8b8b8; stroke-width: 1.5; }
+  </style>
+
+  <rect width="432" height="230" fill="#ffffff"/>
+
+  <text x="14" y="17" class="bold">GENERAL LEGEND</text>
+  <text x="14" y="37" class="bold">VESSEL NODES</text>
+
+  <circle cx="22" cy="54" r="4.5" fill="#d73027" stroke="#d73027" class="node"/>
+  <text x="35" y="57" class="medium">Systemic arterial vessel</text>
+
+  <circle cx="22" cy="76" r="4.5" fill="#2878b5" stroke="#2878b5" class="node"/>
+  <text x="35" y="79" class="medium">Systemic venous vessel</text>
+
+  <circle cx="22" cy="98" r="4.5" fill="#7b3294" stroke="#7b3294" class="node"/>
+  <text x="35" y="101" class="medium">Capillary vessel</text>
+
+  <circle cx="232" cy="54" r="4.5" fill="#2878b5" stroke="#2878b5" class="node"/>
+  <text x="245" y="57" class="medium">Pulmonary arterial vessel</text>
+
+  <circle cx="232" cy="76" r="4.5" fill="#d73027" stroke="#d73027" class="node"/>
+  <text x="245" y="79" class="medium">Pulmonary venous vessel</text>
+
+  <circle cx="232" cy="98" r="4.5" fill="#ffffff" stroke="#984ea3" class="node"/>
+  <text x="245" y="101" class="medium">Portal-system vessel</text>
+
+  <circle cx="232" cy="120" r="4.5" fill="#ffffff" stroke="#2878b5" class="node"/>
+  <text x="245" y="123" class="medium">Sinusoid</text>
+
+  <text x="14" y="148" class="bold">STRUCTURAL SYMBOLS</text>
+
+  <rect x="17.5" y="161.5" width="9" height="9" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="35" y="170" class="medium">FTU marker</text>
+
+  <rect x="217" y="158" width="30" height="16" class="boundary"/>
+  <text x="257" y="170" class="medium">FTU boundary</text>
+
+  <circle cx="22" cy="197" r="4.5" fill="#7b3294" stroke="#7b3294" class="node"/>
+  <path d="M22 201.5 V209" class="association"/>
+  <rect x="17.5" y="209" width="9" height="9" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="35" y="206" class="medium">FTU–vessel association</text>
+
+  <rect x="219" y="189" width="26" height="26" fill="#111111"/>
+  <text x="257" y="206" class="medium">Heart</text>
+</svg>
